@@ -1,0 +1,145 @@
+/* Основные стили сайта — Международная логистика */
+:root {
+  --bg: #f6f7f9;
+  --card: #ffffff;
+  --text: #1a2332;
+  --muted: #5c6672;
+  --accent: #0a5c8a;
+  --accent-2: #0e7490;
+  --border: #e3e7ec;
+  --radius: 12px;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Шапка */
+header {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.header-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+.logo span { color: var(--muted); font-weight: 400; }
+nav { display: flex; flex-wrap: wrap; gap: 14px; }
+nav a {
+  color: var(--text);
+  font-size: 0.95rem;
+  padding: 4px 2px;
+  border-bottom: 2px solid transparent;
+}
+nav a:hover, nav a.active { color: var(--accent); border-bottom-color: var(--accent); text-decoration: none; }
+
+/* Основной контейнер */
+main { max-width: 1080px; margin: 0 auto; padding: 28px 24px 60px; }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 40px 32px;
+  margin-bottom: 28px;
+}
+.hero h1 { font-size: 2rem; margin-bottom: 10px; line-height: 1.25; }
+.hero p { font-size: 1.1rem; opacity: 0.95; max-width: 720px; }
+
+/* Карточки тем */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+  transition: box-shadow .15s ease, transform .15s ease;
+}
+.card:hover { box-shadow: 0 6px 20px rgba(10, 60, 90, 0.12); transform: translateY(-2px); }
+.card h3 { font-size: 1.15rem; margin-bottom: 8px; color: var(--accent); }
+.card p { color: var(--muted); font-size: 0.95rem; }
+
+/* Контентные страницы */
+article h1 { font-size: 1.8rem; margin: 8px 0 18px; color: var(--accent); }
+article h2 { font-size: 1.3rem; margin: 30px 0 12px; }
+article h3 { font-size: 1.1rem; margin: 22px 0 8px; }
+article p { margin-bottom: 14px; }
+article ul, article ol { margin: 0 0 16px 22px; }
+article li { margin-bottom: 6px; }
+article .note {
+  background: #eef6fb;
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 16px 0;
+}
+article .note strong { color: var(--accent); }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  background: var(--card);
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0.92rem;
+}
+th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+th { background: var(--accent); color: #fff; font-weight: 600; }
+tr:last-child td { border-bottom: none; }
+tbody tr:hover { background: #f0f6fa; }
+
+.breadcrumb { font-size: 0.9rem; color: var(--muted); margin-bottom: 6px; }
+
+footer {
+  border-top: 1px solid var(--border);
+  background: var(--card);
+  padding: 20px 24px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Форма связи */
+.form-group { margin-bottom: 16px; }
+.form-group label { display: block; font-weight: 600; margin-bottom: 6px; }
+.form-group input, .form-group textarea {
+  width: 100%; padding: 10px 12px; border: 1px solid var(--border);
+  border-radius: 8px; font-family: inherit; font-size: 1rem;
+}
+.form-group textarea { min-height: 140px; resize: vertical; }
+.btn-submit {
+  background: var(--accent); color: #fff; border: none; border-radius: 8px;
+  padding: 12px 24px; font-size: 1rem; cursor: pointer; font-weight: 600;
+}
+.btn-submit:hover { background: var(--accent-2); }
+#contact-status { margin-top: 12px; font-size: 0.95rem; }
