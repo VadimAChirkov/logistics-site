@@ -6,16 +6,6 @@
   for (var i = 0; i < els.length; i++) els[i].textContent = year;
 })();
 
-// Счётчик посещений
-(function () {
-  var el = document.getElementById('visit-counter');
-  if (!el) return;
-  fetch('/api/visit')
-    .then(function (r) { return r.json(); })
-    .then(function (d) { el.textContent = 'Посещений: ' + d.count; })
-    .catch(function () { el.textContent = ''; });
-})();
-
 // Форма связи
 (function () {
   var form = document.getElementById('contact-form');
