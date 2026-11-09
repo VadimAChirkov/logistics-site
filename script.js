@@ -6,26 +6,33 @@
   for (var i = 0; i < els.length; i++) els[i].textContent = year;
 })();
 
-// Форма связи
+// Форма связи (Formspree)
 (function () {
   var form = document.getElementById('contact-form');
   if (!form) return;
   var status = document.getElementById('contact-status');
+  var ENDPOINT = 'https://formspree.io/f/xkjjlpzw';
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     var name = document.getElementById('cf-name').value.trim();
+    var email = document.getElementById('cf-email').value.trim();
     var msg = document.getElementById('cf-message').value.trim();
     if (!msg) {
       status.textContent = 'Напишите сообщение.';
       status.style.color = '#b00020';
       return;
     }
+    if (!email || email.indexOf('@') < 0) {
+      status.textContent = 'Укажите корректный email.';
+      status.style.color = '#b00020';
+      return;
+    }
     status.textContent = 'Отправка…';
     status.style.color = '#5c6672';
-    fetch('/api/contact', {
+    fetch(ENDPOINT, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name: name, message: msg })
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ name: name, email: email, message: msg })
     })
       .then(function (r) { return r.json(); })
       .then(function (d) {
