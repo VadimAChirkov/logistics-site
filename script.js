@@ -17,6 +17,14 @@
     var name = document.getElementById('cf-name').value.trim();
     var email = document.getElementById('cf-email').value.trim();
     var msg = document.getElementById('cf-message').value.trim();
+    var gotcha = document.getElementById('cf-company').value;
+    if (gotcha) {
+      // бот заполнил скрытое поле — молча игнорируем
+      status.textContent = 'Спасибо! Сообщение отправлено.';
+      status.style.color = '#1a7a3a';
+      form.reset();
+      return;
+    }
     if (!msg) {
       status.textContent = 'Напишите сообщение.';
       status.style.color = '#b00020';
@@ -32,7 +40,7 @@
     fetch(ENDPOINT, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify({ name: name, email: email, message: msg })
+      body: JSON.stringify({ name: name, email: email, message: msg, _gotcha: gotcha })
     })
       .then(function (r) { return r.json(); })
       .then(function (d) {
