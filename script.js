@@ -1,3 +1,11 @@
+// Автообновление года в футере
+(function () {
+  var els = document.querySelectorAll('#current-year');
+  if (!els.length) return;
+  var year = new Date().getFullYear();
+  for (var i = 0; i < els.length; i++) els[i].textContent = year;
+})();
+
 // Счётчик посещений
 (function () {
   var el = document.getElementById('visit-counter');
