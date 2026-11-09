@@ -157,3 +157,24 @@ footer {
 }
 .btn-submit:hover { background: var(--accent-2); }
 #contact-status { margin-top: 12px; font-size: 0.95rem; }
+
+/* Блоки-примеры (рекапы, оферты, расчёты) */
+article pre {
+  background: #0f1a24;
+  color: #d7e2ec;
+  padding: 16px 18px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  margin: 14px 0;
+  white-space: pre;
+}
+article pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+}

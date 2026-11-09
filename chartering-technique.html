@@ -44,127 +44,722 @@
       <p class="breadcrumb">Главная → Техника фрахтовых операций</p>
       <h1>Техника фрахтовых операций</h1>
 
-      <p>Сделки по фрахтованию тоннажа совершаются на фрахтовом рынке. Крупные долгосрочные контракты заключаются в результате прямых переговоров или международных торгов (international bid), однако большинство сделок проходит через специализированные посреднические фирмы — <strong>судовых (фрахтовых) брокеров</strong>.</p>
+      <h2>Этапы фрахтовой сделки</h2>
+      <p>Процесс фрахтовой сделки проходит семь последовательных этапов — от оферты до окончательных расчётов.</p>
 
-      <h2>Роль и виды брокеров</h2>
-      <p>По сфере деятельности различают фрахтовых брокеров, букинг-агентов в линейном судоходстве и брокеров по купле-продаже судов. Фрахтовые брокеры специализируются по видам флота: танкерный, балкерный, рефрижераторный, лесной, под перевозку тяжеловесных грузов и т.д.</p>
-      <p>По отношению к принципалу (судовладельцу или фрахтователю) различаются:</p>
-      <ul>
-        <li><strong>Эксклюзивный брокер</strong> — имеет рамочное соглашение с принципалом, который обращается к нему в первую очередь и предоставляет эксклюзивное право на поиск партнёра.</li>
-        <li><strong>Рыночный брокер</strong> — работает по разовым поручениям различных принципалов.</li>
-        <li><strong>House broker</strong> — собственный фрахтовый отдел крупной промышленной или торговой компании, выходящей на рынок без посредников.</li>
-      </ul>
-      <p>В каждой конкретной сделке обычно участвуют два брокера — со стороны фрахтователя и со стороны судовладельца.</p>
+      <ol>
+        <li><strong>Оферта (Offer)</strong> — судовладелец или брокер предлагает судно: характеристики (тип, тоннаж, скорость, грузоподъёмность), маршрут (порты погрузки/разгрузки) и фрахтовую ставку.</li>
+        <li><strong>Переговоры (Negotiations)</strong> — фрахтователь уточняет условия: цена, lay days, demurrage, dispatch; возможна корректировка ставок и обсуждение специальных условий.</li>
+        <li><strong>Рекап (Recap / Confirmation)</strong> — письменное подтверждение основных условий, обмен рекапами между брокерами, согласование деталей и финальное согласие сторон.</li>
+        <li><strong>Заключение чартер-пати (Charter Party Execution)</strong> — подписание договора, использование стандартных условий (GENCON, NYPE и др.), подсчёт фрахта и авансов, определение даты готовности судна.</li>
+        <li><strong>Мобилизация (Mobilization)</strong> — судно направляется к порту погрузки, грузоподготовка, оформление документов, уведомление портовых служб.</li>
+        <li><strong>Операции (Operations)</strong> — погрузка (loading) и выгрузка (discharging) груза, контроль lay days, оформление коносаментов.</li>
+        <li><strong>Расчёты (Settlement)</strong> — выставление счёта (invoice), начисление demurrage/dispatch, финальный расчёт фрахта, платежи всех сторон.</li>
+      </ol>
 
-      <h2>Поручения брокеру: котировка и фрахтовый ордер</h2>
-      <p>Брокер получает от принципала два вида поручений:</p>
-      <ul>
-        <li><strong>Котировка рынка (индикация)</strong> — запрос об ориентировочных ставках и условиях перевозки конкретного груза. Обычно запрашивается за 3–5 недель вперёд, перед подписанием торгового контракта. Не оплачивается (если это не развёрнутое исследование).</li>
-        <li><strong>Фрахтовый ордер</strong> — твёрдое поручение заключить сделку на изложенных условиях.</li>
-      </ul>
+      <h2>Типовые стадии фрахтовой переписки</h2>
 
-      <h3>Содержание фрахтового ордера</h3>
+      <h3>Стадия 1: Оферта (Offer)</h3>
+      <pre><code>FROM: [Судовладелец / Брокер]
+TO: [Фрахтователь / Брокер фрахтователя]
+
+OFFERING FOR PROMPT FIXTURE:
+
+Vessel Name: MV EXAMPLE
+Type: General Cargo / Container / Tanker
+Class: [Classification Society]
+DWT: [Deadweight Tonnage]
+Bale Capacity: [куб. метры]
+Speed: [узлов]
+Built: [год постройки]
+Flag: [флаг]
+
+TRADING: [область плавания]
+
+LOAD PORT(S): [порты погрузки со сроками]
+DISCHARGE PORT(S): [порты выгрузки]
+
+FREIGHT: $[сумма] per metric ton / per container / Lumpsum
+PAYABLE: [способ оплаты]
+
+LAY DAYS: [дни, отводимые на операции]
+DEMURRAGE: $[сумма] per day per port
+DISPATCH: [% фрахта при сбережении lay days]
+
+CAN LOAD: [дата готовности судна]
+EARLIEST: [дата готовности]
+
+GENERAL CONDITIONS: [GENCON / BALTIME / NYPE / etc.]
+
+Validity: [срок действия оферты, обычно 24–48 часов]</code></pre>
+
+      <h3>Стадия 2: Рекап (Recap)</h3>
+      <pre><code>RECAP — CONFIRMATION OF FIXTURE
+
+FROM: [Брокер фрахтователя]
+TO: [Брокер судовладельца]
+
+REF: [номер оферты]
+DATE: [дата рекапа]
+
+FIXTURE DETAILS:
+
+VESSEL: MV EXAMPLE (как выше)
+
+CARGO: [описание груза]
+Quantity: [количество в метрических тоннах]
+Package: [упаковка]
+
+LOAD PORT(S): [порты и сроки]
+DISCHARGE: [порты]
+
+FREIGHT: $[сумма] all-in [способ расчёта]
+
+PAYMENT TERMS: Bill of Lading terms / Prepaid / 1/2 on B/L, 1/2 on delivery
+
+LAY DAYS PROVISIONS:
+- Lay Days: [количество дней]
+- Time begins: [с какого момента]
+- Time stops: [когда прекращается]
+- Demurrage: $[сумма] per day per port or pro-rata
+- Dispatch money: [% за сбережение]
+
+GENERAL CONDITIONS: [стандартные условия]
+
+SPECIAL CLAUSES:
+- [любые дополнительные условия]
+
+BOOKING REFERENCE: [ссылка на букинг]
+
+OWNER'S CONFIRMATION: [дата подтверждения судовладельцем]
+CHARTERER'S CONFIRMATION: [дата подтверждения фрахтователем]
+
+BROKERS: [брокеры сторон]</code></pre>
+
+      <h3>Стадия 3: Рекап-корректив (Recap Correction)</h3>
+      <pre><code>RECAP CORRECTION / RELETTERING
+
+TO AMEND RECAP DTD [дата оригинального рекапа]
+
+PLEASE NOTE THE FOLLOWING AMENDMENTS:
+
+ITEM 1: [что было] SHOULD READ [как должно быть]
+ITEM 2: [что было] SHOULD READ [как должно быть]
+
+ALL OTHER TERMS AS IN RECAP DATED [дата]
+
+PLEASE CONFIRM YOUR ACCEPTANCE OF ABOVE AMENDED TERMS</code></pre>
+
+      <h2>Ключевые параметры фрахтовой сделки</h2>
+
+      <h3>Фрахтовая ставка (Freight Rate)</h3>
       <table>
-        <thead><tr><th>Ордер фрахтователя</th><th>Ордер судовладельца</th></tr></thead>
+        <thead><tr><th>Тип ставки</th><th>Описание</th><th>Пример</th></tr></thead>
         <tbody>
-          <tr>
-            <td>род груза и его характеристики; количество; разовая отправка или часть контракта; порты погрузки/выгрузки; дата готовности груза; нормы грузовых работ; идея ставки и условия оплаты; особые требования к судну (возраст, грузовые средства).</td>
-            <td>наименование судна и его характеристики; флаг и возраст; порт/район и дата освобождения судна; перечень нежелательных грузов и направлений (Суэцкий канал, металлолом, уголь).</td>
-          </tr>
+          <tr><td><strong>Адвалорем</strong> (Ad valorem)</td><td>% от стоимости груза</td><td>5% стоимости груза</td></tr>
+          <tr><td><strong>По метрической тонне</strong> (Per metric ton)</td><td>За каждую тонну груза</td><td>$50/MT</td></tr>
+          <tr><td><strong>По регистровой тонне</strong> (Per ton)</td><td>За тонну вместимости судна</td><td>$100/ton судна</td></tr>
+          <tr><td><strong>Паушальный</strong> (Lumpsum)</td><td>Фиксированная сумма за рейс независимо от груза</td><td>$500 000 за весь рейс</td></tr>
+          <tr><td><strong>По контейнерам</strong> (Per TEU/FEU)</td><td>За контейнерную единицу</td><td>$2 000 per TEU</td></tr>
+          <tr><td><strong>Прогрессивный</strong> (Sliding scale)</td><td>Чем больше груз, тем ниже ставка</td><td>Скидка за объём</td></tr>
+          <tr><td><strong>Дневной</strong> (Per diem)</td><td>Ставка найма за сутки (таймчартер)</td><td>$50 000 в день</td></tr>
         </tbody>
       </table>
 
-      <h3>Три позиции ордера по срокам</h3>
-      <ul>
-        <li><strong>Нормальная</strong> — ордер выдан за 2–3 недели до даты laydays (достаточно времени для подготовки сделки).</li>
-        <li><strong>Промптовая</strong> — за 3–7 дней до laydays.</li>
-        <li><strong>Спот-промптовая (spot)</strong> — судно или груз нужны немедленно.</li>
-      </ul>
-      <p>Тактика зависит от конъюнктуры: при падающем рынке фрахтователю выгодно выходить в промптовой позиции, при растущем — судовладельцу.</p>
-
-      <h2>Три этапа фрахтовой сделки</h2>
-      <ol>
-        <li><strong>Prefixing</strong> — подготовка переговоров: сбор информации, выбор момента выхода на рынок, отбор партнёров, определение формы предложения.</li>
-        <li><strong>Fixing</strong> — проведение переговоров: обмен офертами и каунтерами, уторговывание условий, фиксовка.</li>
-        <li><strong>Postfixing</strong> — оформление и контроль исполнения сделки: рекап, чартер, инвойсы, расчёты.</li>
-      </ol>
-
-      <h2>Предложения (оферты)</h2>
-      <p>Предложение каждому партнёру может быть двух видов:</p>
-      <ul>
-        <li><strong>Твёрдое предложение (firm offer)</strong> — обязательство заключить сделку, если партнёр к обусловленному сроку подтвердит готовность. Брокерская этика: по каждой сделке — только одно твёрдое предложение.</li>
-        <li><strong>Простое / условное предложение (subject open)</strong> — «если буду свободен». Используется осторожно: большое число предложений делает груз широко известным и повышает ставки.</li>
-      </ul>
-      <p>Наименование компании фрахтователя в оферте обычно не указывается — вместо этого формула <strong>FCC</strong> (first class charterer). Если не указывается судовладелец — <strong>FCO</strong> (first class owner), а название судна заменяется на <strong>TBN</strong> («to be nominated», будет сообщено).</p>
-
-      <h2>Переговоры: accept / except, counter, decline</h2>
-      <p>Изучив твёрдое предложение, судовладелец может дать один из трёх ответов:</p>
-      <ul>
-        <li><strong>accept/except</strong> — предложение принимается «за исключением…» отдельных пунктов;</li>
-        <li><strong>counter</strong> — встречное предложение как база для переговоров;</li>
-        <li><strong>decline without counter</strong> — отказ без контрпредложения (переговоры нецелесообразны).</li>
-      </ul>
-      <p>Лишь в редких случаях предложение принимается сразу, без замечаний (<strong>clear</strong>). Судовладелец в каунтере, как правило, завышает ставку на 5–10% и указывает срок ответа (к определённому часу, по Гринвичу).</p>
-
-      <h3>Оговорки (subject / sub)</h3>
-      <p>Наиболее частые «сабы»:</p>
-      <ul>
-        <li><strong>sub details</strong> — при условии согласования деталей чартера (аддендума);</li>
-        <li><strong>stem</strong> — при условии подтверждения отправителем готовности груза в сроки laycan;</li>
-        <li><strong>BOD</strong> (board of directors approval) — при условии подтверждения руководством компании.</li>
-      </ul>
-      <p>Один раз заявленные «сабы» должны повторяться в течение всех переговоров, иначе считаются «поднятыми» (снятыми).</p>
-
-      <h2>Фиксовка: рекап и clear fixture</h2>
-      <p>Когда одна сторона принимает последнее предложение партнёра полностью, она извещает его фразой <strong>«Charterers confirm the fixture»</strong>; партнёр отвечает <strong>«reconfirm»</strong>. После этого судно «зафиксировано» за перевозкой.</p>
-      <p>Затем в минимальный срок составляется полный <strong>fixture recapitulation (рекап)</strong> — все согласованные условия без изменений. Если остаются «сабы», указывается срок их снятия: <em>«fixture recap on main terms, subject to be lifted w/i 24 hrs C.O.B. London…»</em>. Только после снятия всех оговорок фиксовка становится чистой (<strong>clear fixture</strong>), и эта дата становится датой чартера.</p>
-      <div class="note">
-        <strong>Важно:</strong> при составлении рекапа недопустимо менять, дополнять или исключать условия по сравнению с результатами переговоров. Партнёр немедленно потребует исправить рекап, ссылаясь на переписку с датами и номерами документов.
-      </div>
-
-      <h2>Постфиксинг</h2>
-      <p>Комплекс операций после заключения сделки:</p>
-      <ul>
-        <li>Брокер фрахтователя готовит <strong>чартер и аддендум</strong>, подписывает оригиналы у обеих сторон (при доверенности — от имени принципала).</li>
-        <li>Брокер судовладельца составляет <strong>инвойс на фрахт</strong>, выставляет счета за демередж и мёртвый фрахт, оценивает эффективность рейса.</li>
-        <li>При работе с постоянным партнёром на коротких рейсах чартер может не составляться — сделка оформляется только <strong>fixrecap</strong>.</li>
-      </ul>
-
-      <h2>Тайм-чартерный эквивалент (TCE)</h2>
-      <p>Показывает доход судовладельца в сутки эксплуатации судна за вычетом переменных расходов. Формула:</p>
-      <div class="note">
-        <strong>Э = NF − (R<sub>т</sub> + R<sub>п</sub>) / T<sub>р</sub></strong> (долл./сут.),<br>
-        где NF — нетто-фрахт за рейс (фрахт минус брокерская комиссия);<br>
-        R<sub>т</sub> — расходы на топливо за рейс (на ходу и на стоянке);<br>
-        R<sub>п</sub> — расходы на портовые сборы, услуги, стивидорные операции;<br>
-        T<sub>р</sub> — общая продолжительность рейса (сут.).
-      </div>
-      <p>TCE позволяет сравнивать эффективность отфрахтовки судна в разных рейсах. Он должен быть на 10–15% выше тайм-чартерной ставки, так как оператор принимает дополнительные риски (простои, ущерб, претензии).</p>
-      <p>Зная TCE на базисном направлении, можно рассчитать ставку фрахта для любого другого направления:</p>
-      <div class="note">
-        <strong>f = (Э<sub>б</sub> × T<sub>р</sub> + R<sub>т</sub> + R<sub>п</sub>) / Q</strong> (долл./т),<br>
-        где Э<sub>б</sub> — TCE на базисном направлении; Q — количество груза.
-      </div>
-
-      <h2>«Золотые правила» брокера</h2>
-      <ol>
-        <li>Действовать только в пределах полномочий, полученных от принципала.</li>
-        <li>Всю информацию от партнёра и указания принципала фиксировать письменно (факс, e-mail).</li>
-        <li>При отсутствии второго брокера чётко определить свой статус и придерживаться его.</li>
-        <li>Не бороться против рынка: не навязывать условия при неблагоприятной конъюнктуре.</li>
-        <li>Не давать твёрдое предложение более чем одному партнёру и не соглашаться на условия, которые не сможешь выполнить.</li>
-      </ol>
-
-      <h2>Типовые фразы фрахтовой переписки (EN)</h2>
+      <h3>Lay Days (сталийное время)</h3>
       <table>
-        <thead><tr><th>Ситуация</th><th>Английское выражение</th></tr></thead>
+        <thead><tr><th>Вид дней</th><th>Определение</th></tr></thead>
         <tbody>
-          <tr><td>Оферта</td><td>«We are offering…», «For your prompt fixture…», «Subject to owner's approval…»</td></tr>
-          <tr><td>Переговоры</td><td>«Can you reduce the rate?», «This is our rock bottom…», «We are more at…»</td></tr>
-          <tr><td>Рекап</td><td>«As per recap dated…», «We hereby confirm…», «Please confirm…»</td></tr>
-          <tr><td>Ссылка на условия</td><td>«Under the General Conditions…», «According to the Charter Party…», «As per Clause…»</td></tr>
+          <tr><td><strong>Running days</strong></td><td>Календарные дни (подряд).</td></tr>
+          <tr><td><strong>Working days</strong></td><td>Рабочие дни, исключая выходные.</td></tr>
+          <tr><td><strong>Weather-working days</strong></td><td>С исключением дней при плохой погоде.</td></tr>
+          <tr><td><strong>Excepted days</strong></td><td>Исключённые дни: праздники, забастовки.</td></tr>
         </tbody>
       </table>
+      <p>Примеры формулировок:</p>
+      <ul>
+        <li>«10 running lay days» — 10 календарных дней.</li>
+        <li>«7 working days, Sundays and holidays excepted» — только рабочие дни.</li>
+        <li>«Weather working days» — исключаются дни плохой погоды.</li>
+        <li>«Lay days commence when vessel is ready, berth or no berth» — дни начинаются с готовности судна, даже если причала нет.</li>
+        <li>«Lay days commence upon receipt of notice of readiness (NOR)» — дни начинаются с момента получения уведомления о готовности.</li>
+      </ul>
+
+      <h3>Demurrage (демередж) и Dispatch (диспач)</h3>
+      <p>Lay days входят в стоимость фрахта. Превышение лимита влечёт демередж, досрочное завершение — диспач (премия за сбережение времени, обычно 50% от ставки демереджа).</p>
+      <pre><code>ФОРМУЛЫ:
+
+DEMURRAGE = Количество лишних дней × Ставка демереджа в сутки
+
+DISPATCH = Количество сэкономленных дней × 50% × Ставка демереджа
+
+ПРИМЕР (просрочка):
+- Lay days: 10 дней
+- Фактически проработано: 12 дней
+- Ставка демереджа: $5 000/день
+- DEMURRAGE = 2 дня × $5 000 = $10 000
+
+ПРИМЕР (ускорение):
+- Lay days: 10 дней
+- Фактически: 8 дней
+- DISPATCH = 2 дня × 50% × $5 000 = $5 000 (экономия для судовладельца)</code></pre>
+
+      <h2>Типовые условия чартер-пати (GENCON 94)</h2>
+      <ol>
+        <li><strong>Стороны</strong> — судовладелец (Owner) и фрахтователь (Charterer).</li>
+        <li><strong>Судно</strong> — название, тип, класс, грузоподъёмность (DWT), допустимые порты.</li>
+        <li><strong>Груз</strong> — описание и количество, упаковка и маркировка, запрещённые грузы.</li>
+        <li><strong>Фрахт</strong> — размер и единица расчёта, способ оплаты (Bill of Lading terms, Prepaid), валюта платежа.</li>
+        <li><strong>Lay days</strong> — количество дней, виды дней (running, working, weather-working), начало отсчёта (ready, NOR), исключённые дни.</li>
+        <li><strong>Demurrage &amp; Dispatch</strong> — ставка за просрочку, процент от фрахта за досрочное завершение.</li>
+        <li><strong>Портовые сборы</strong> — кто платит (Owner, Charterer, split), размеры сборов.</li>
+        <li><strong>Страховка</strong> — кто страхует груз, размер покрытия (обычно 110% стоимости).</li>
+        <li><strong>Генеральное среднее (General Average)</strong> — солидарное участие в возмещении убытков.</li>
+        <li><strong>Ответственность</strong> — исключения из ответственности, лимиты ответственности.</li>
+        <li><strong>Форс-мажор (Force Majeure)</strong> — виды обстоятельств и последствия.</li>
+        <li><strong>Спор и арбитраж</strong> — выбор закона, арбитраж (Лондон, Нью-Йорк и др.).</li>
+      </ol>
+
+      <h2>Примеры рекапов с пояснениями</h2>
+
+      <h3>Пример 1. Рейсовый чартер на сухой груз (Dry Cargo)</h3>
+      <pre><code>                    RECAP CONFIRMATION
+
+DATE: 30 July 2026
+REFERENCE: 2026/DC/001
+VESSEL: MV NORTHERN STAR
+TYPE: General Cargo Ship
+DWT: 35,000 MT
+FLAG: Panama
+CLASS: Lloyd's Register + DNV
+
+FROM: SHIPPER'S BROKER (Экспортёр)
+TO: OWNER'S BROKER (Судовладелец)
+
+CARGO DESCRIPTION:
+- Steel coils
+- Quantity: 32,000 metric tons
+- In 40 x 40 ft containers (800 containers total)
+- Shipper: ABC Steel Mills, South Korea
+
+LOAD PORT: Busan, South Korea
+ETA: 10–15 August 2026
+DISCHARGE PORT: Rotterdam, The Netherlands
+ETA: 15–20 September 2026 (via Suez Canal)
+
+FREIGHT RATE:
+Base Freight: $18.50 per metric ton
+Total Freight: 32,000 × $18.50 = $592,000
+Currency: USD
+
+PAYMENT TERMS:
+- 50% on B/L signing: $296,000
+- 50% on arrival: $296,000
+- Payment method: Bank transfer
+
+LAY DAYS PROVISIONS:
+- Loading lay days: 5 running days
+- Discharging lay days: 5 running days
+- Time commences: Upon notice of readiness (NOR)
+- Time ceases: Upon completion of all cargo work
+
+DEMURRAGE:
+- $3,500 per day per port
+- Pro-rata for part of day
+
+DISPATCH MONEY:
+- 50% of demurrage rate for each day saved
+- Applicable if operations completed before lay days expire
+- Example: 1 day saved = $1,750 dispatch
+
+GENERAL CONDITIONS:
+- GENCON 94
+- Hague-Visby Rules apply
+- All bills of lading to be clean
+
+SPECIAL CLAUSES:
+1. Both ports will revert at Owner's/Charterer's option
+2. Cargo to be worked 24 hours per day if both parties agree
+3. Gears to be used if available at no extra cost to Charterer
+4. Owner's agent at load port to be nominated by shippers
+5. All stevedoring to be in accordance with local regulations
+
+INSURANCE:
+- Charterer to arrange insurance at 110% of cargo value
+- B/L to be marked "Freight prepaid"
+
+VALIDITY OF OFFER: 48 hours from this date
+
+OWNER'S BROKER: Nordic Shipping AS
+Tel: +47 2223 4444, Email: broker@nordicship.no
+CHARTERER'S BROKER: Global Trade Partners
+Tel: +82 2 1234 5678, Email: bp@globalpartners.kr</code></pre>
+
+      <table>
+        <thead><tr><th>Пункт</th><th>Что означает</th><th>Почему это важно</th></tr></thead>
+        <tbody>
+          <tr><td><strong>ETA Busan</strong></td><td>Судно будет готово грузиться 10–15 августа</td><td>Фрахтователь должен подготовить груз к этому времени</td></tr>
+          <tr><td><strong>Freight $18.50/MT</strong></td><td>Стандартная ставка для корейского экспорта стали</td><td>Если груз не поместится в тоннаж, фрахт может измениться</td></tr>
+          <tr><td><strong>50/50 payment</strong></td><td>Половина при подписании, половина при прибытии</td><td>Судовладелец гарантирует получение хотя бы половины до доставки</td></tr>
+          <tr><td><strong>5 lay days</strong></td><td>На погрузку и выгрузку по 5 дней</td><td>За 6-й день платится демередж</td></tr>
+          <tr><td><strong>$3,500/day demurrage</strong></td><td>За каждый день просрочки платится $3 500</td><td>Дорого — фрахтователь стремится закончить вовремя</td></tr>
+          <tr><td><strong>GENCON 94</strong></td><td>Стандартные условия Международной ассоциации</td><td>Стороны знают обязанности без подробного описания</td></tr>
+          <tr><td><strong>Gears to be used</strong></td><td>Судовые краны используются бесплатно</td><td>Экономия для фрахтователя (обычно $200–300/день)</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Пример 2. Таймчартер танкера (Tanker Time Charter)</h3>
+      <pre><code>                    RECAP — TIME CHARTER
+
+DATE: 5 August 2026
+REFERENCE: 2026/TC/TANK/042
+
+VESSEL: MT OCEAN PIONEER
+Type: Crude Oil Tanker
+Capacity: 130,000 metric tons (DWT)
+Age: 5 years, Class: ABS + Nippon Kaiji Kyokai
+Flag: Liberia
+Speed: 14.5 knots loaded, 15 knots ballast
+
+PERIOD: 36 months
+EARLIEST DELIVERY: 15 September 2026
+PLACE OF DELIVERY: Singapore (Seller's option between Singapore/Rotterdam)
+PLACE OF REDELIVERY: Worldwide, normal trading limits
+
+HIRE (DAILY RATE):
+Base Rate: $48,000 USD per calendar day
+Delivery to 25,000 bbls basis Suez passing = $48,000
+- Full period, all risks for Charterer
+
+PAYMENT:
+- Monthly in advance on a fixed date
+- Account payable: [Bank details]
+- Currency: USD
+
+CREW COSTS:
+- Owner pays all crew costs
+- Charterer reimburses Owner monthly for crew changes
+- Estimated: $800/month per crew member
+
+FUEL/BUNKERS:
+- Charterer to pay all fuel and bunker costs
+- Owner to provide clean ship; Charterer to settle all bunkering invoices
+- Bunker sampling at load port and discharge port
+
+MAINTENANCE:
+- Owner responsible for hull and machinery maintenance
+- Charterer responsible for cargo-related maintenance
+- Vessel in "good and efficient" condition
+
+INSURANCE:
+- Owner to maintain P&amp;I insurance (Protection &amp; Indemnity)
+- Charterer to arrange cargo insurance
+- Owner's All Risks coverage at Charterer's expense
+
+REDELIVERY:
+- Vessel to be redelivered "in same good condition as delivered"
+- With fuel (if time permits, seller to top off bunkers)
+- Normal wear and tear excepted
+
+OFF-HIRE CLAUSE:
+- $900/day deduction from hire for each day of breakdown exceeding 24 hours
+- Examples of off-hire events:
+  * Machinery breakdown
+  * Hull repairs
+  * Defects affecting cargo operations
+
+GENERAL CONDITIONS:
+- SHELLTIME 4 (Tanker Time Charter Uniform Conditions)
+- BIMCO Standard Form
+- Hague-Visby Rules
+
+SPECIAL PROVISIONS:
+1. Charterer has options to extend for additional 12, 24, or 36 months
+2. Early redelivery possible with 90 days' notice
+3. Vessel capable of all ports worldwide except those restricted by draft
+4. Charterer has right to substitute similar vessel with Owner's approval
+5. War risk insurance to be arranged at Charterer's cost if required
+
+PERFORMANCE BONDS:
+- Charterer to provide performance bond = 3 months hire
+- Amount: $144,000 (3 × $48,000)
+
+DISPUTES:
+- London Arbitration
+- Two arbitrators + umpire
+- LCIA Rules apply
+
+VALIDITY: 48 hours from this date
+
+Owner's Broker: Tanker Solutions Inc.
+Tel: +1 212 555 0123
+Charterer's Broker: Global Energy Logistics
+Tel: +44 20 7123 4567</code></pre>
+
+      <table>
+        <thead><tr><th>Пункт</th><th>Что означает</th><th>Почему это важно</th></tr></thead>
+        <tbody>
+          <tr><td><strong>36 months</strong></td><td>Судно берётся в аренду на 3 года</td><td>Долгосрочное обязательство, стабильные доходы судовладельца</td></tr>
+          <tr><td><strong>$48,000/day</strong></td><td>Оплата $48 000 каждый день в течение 3 лет</td><td>Всего: 48 000 × 365 × 3 ≈ $52,6 млн за период</td></tr>
+          <tr><td><strong>Delivery Singapore</strong></td><td>Судно передаётся в Сингапуре (или Роттердаме)</td><td>Фрахтователь начинает платить с этого момента</td></tr>
+          <tr><td><strong>Owner pays crew</strong></td><td>Судовладелец платит зарплату экипажу</td><td>Фрахтователь возмещает расходы при смене экипажа</td></tr>
+          <tr><td><strong>Charterer pays fuel</strong></td><td>Фрахтователь платит за топливо</td><td>Судовладелец экономит на расходных материалах</td></tr>
+          <tr><td><strong>Off-hire clause</strong></td><td>За каждый день поломки свыше 24 ч вычитается $900</td><td>Мотивирует содержать судно в хорошем состоянии</td></tr>
+          <tr><td><strong>Performance bond</strong></td><td>Фрахтователь вносит $144 000 гарантии</td><td>Страховка судовладельца на случай неплатежа</td></tr>
+          <tr><td><strong>SHELLTIME 4</strong></td><td>Стандартные условия танкерных чартеров Shell</td><td>Стороны точно знают права и обязанности</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Пример 3. Контейнерный фрахт (Container Voyage Charter)</h3>
+      <pre><code>                RECAP — CONTAINER VOYAGE CHARTER
+
+DATE: 12 August 2026
+REFERENCE: 2026/CONT/SH/089
+
+VESSEL: CONTAINER STAR EXPRESS
+Type: Container Ship (Cellular)
+Capacity: 5,400 TEU (20-foot equivalent units)
+Speed: 23 knots
+Gear: Gearless vessel
+Flag: Hong Kong
+
+TRADING:
+Route: Asia — Europe
+Load Port: Shanghai, China
+Discharge Port: Rotterdam, The Netherlands
+
+LOADING: CW 36-37, 2026 (Week 36-37 of 2026)
+ETA Load: 2–8 September 2026
+ETA Discharge: 2–8 October 2026 (via Suez)
+
+FREIGHT RATE:
+Base: $1,200 per TEU for full containers
+Empty Container Cost: $200 per TEU (if repositioning required)
+Reefer Surcharge: +15% (for refrigerated containers)
+Total Estimated Freight:
+- 4,000 Loaded TEU × $1,200 = $4,800,000
+- 400 Empty TEU × $200 = $80,000
+- 200 Reefer TEU (в загруженных) × 15% × $1,200 = $36,000
+TOTAL: ~$4,916,000
+
+PAYMENT TERMS:
+- Payment due within 10 days of B/L date
+- Advance: 25% before loading starts = $1,229,000
+- Balance: 75% within 10 days of B/L = $3,687,000
+
+LAY DAYS:
+- Loading: 5 days (included in freight)
+- Discharging: 5 days (included in freight)
+- Free time includes ship-to-shore (STS) cranes
+- Additional days: $8,500 per day per port
+
+DEMURRAGE:
+- Port demurrage: $8,500 per day
+- Container demurrage (after discharge):
+  * 20-ft: $5 per day
+  * 40-ft: $8 per day
+- Free time: 7 days after discharge
+
+DISPATCH BONUS:
+- 50% of daily detention rate if loading/discharging completed early
+
+GENERAL CONDITIONS:
+- CONTINOLOAD terms (Container Voyage Charter Standard)
+- Hague-Visby Rules
+- Bills of Lading to be clean
+
+WEIGHT LIMITATIONS:
+- Maximum container weight: 30 MT per container
+- Overweight surcharge: $200 per MT in excess of 20 MT
+- Dangerous goods: IMDG Code compliance mandatory
+
+SPECIAL CLAUSES:
+1. Containers must be inspected and weighed at load port
+2. Shipper responsible for accurate weight declaration
+3. Heavy containers to be declared 14 days before loading
+4. Reefer containers: Owner to provide power connection and monitoring
+5. SOC (Shipper Owned Container) allowed: $75 per TEU additional fee
+6. Vessel to call at Suez Canal pilots' station (on-hire)
+
+CARGO INSURANCE:
+- Shipper to arrange insurance at 110% CIF value
+- B/L must state "Freight prepaid" or "Freight to pay" as per agreement
+
+DOCUMENTATION:
+- Shipper to provide shipping instructions 7 days before loading
+- Container number, seal numbers, weights must be accurate
+- Shipper liable for errors in documentation
+
+STRIKES/FORCE MAJEURE:
+- Strikes and lockouts: time on demurrage + hire continues
+- War: time suspended, no demurrage/hire accrual
+- Deviation: not payable unless forced by circumstances
+
+REDELIVERY/RETURN:
+- Empty containers must be returned within free time (7 days)
+- Storage charge: $10 per container per day after free time
+- Damaged containers: repaired at Owner's expense or charged to charterer
+
+COMPLAINTS:
+- Load port: must be filed within 72 hours of operations
+- Discharge port: must be filed within 48 hours of discharge
+- Later claims not accepted
+
+VALIDITY: 36 hours from this date, then null and void unless extended
+
+Owner's Broker: Coastal Shipping &amp; Logistics
+Tel: +852 2299 1234
+Charterer's Broker: Sunrise Forwarding Ltd.
+Tel: +8610 5555 6666</code></pre>
+
+      <table>
+        <thead><tr><th>Пункт</th><th>Что означает</th><th>Почему это важно</th></tr></thead>
+        <tbody>
+          <tr><td><strong>5,400 TEU</strong></td><td>Судно вмещает 5 400 контейнеров по 20 футов</td><td>Максимальная грузоподъёмность при 20-футовых контейнерах</td></tr>
+          <tr><td><strong>$1,200/TEU</strong></td><td>Стандартная ставка Шанхай–Роттердам</td><td>Зависит от спроса, сезона, вместимости</td></tr>
+          <tr><td><strong>5 lay days</strong></td><td>На погрузку и выгрузку по 5 дней</td><td>Контейнерные операции обычно быстрее — 2–3 дня</td></tr>
+          <tr><td><strong>Empty container $200</strong></td><td>Плата за перевозку порожних контейнеров</td><td>Типично для маршрутов с дисбалансом грузопотока</td></tr>
+          <tr><td><strong>Reefer surcharge +15%</strong></td><td>Рефрижераторные контейнеры дороже</td><td>Плата за повышенное потребление энергии</td></tr>
+          <tr><td><strong>$8,500/day additional</strong></td><td>За дополнительные дни сверх 5 lay days</td><td>Мотивирует быструю работу портов</td></tr>
+          <tr><td><strong>Weight limitations 30 MT</strong></td><td>Максимум 30 тонн в контейнер</td><td>Защита от перегруза, стабильность судна</td></tr>
+          <tr><td><strong>SOC containers $75</strong></td><td>Контейнер грузоотправителя вместо судового</td><td>Допускается за дополнительную плату</td></tr>
+          <tr><td><strong>Complaints 72/48 часов</strong></td><td>Претензии подаются в сжатые сроки</td><td>Иначе груз считается доставленным в надлежащем состоянии</td></tr>
+          <tr><td><strong>Validity 36 hours</strong></td><td>Оферта действует 36 часов</td><td>Быстро меняющийся рынок требует оперативности</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Особенности переписки и стандартные выражения</h2>
+
+      <h3>Фразы в фрахтовой переписке</h3>
+      <table>
+        <thead><tr><th>Ситуация</th><th>Английское выражение</th><th>Перевод</th></tr></thead>
+        <tbody>
+          <tr><td rowspan="4"><strong>При оферте</strong></td><td>We are offering…</td><td>Мы предлагаем…</td></tr>
+          <tr><td>For your prompt fixture…</td><td>Для вашего срочного фрахта…</td></tr>
+          <tr><td>Subject to owner's approval…</td><td>При одобрении судовладельцем…</td></tr>
+          <tr><td>Validity of 48 hours…</td><td>Действительно 48 часов…</td></tr>
+          <tr><td rowspan="5"><strong>При переговорах</strong></td><td>We are a bit high at this level…</td><td>Это немного дорого…</td></tr>
+          <tr><td>Can you reduce the rate?</td><td>Можете ли вы снизить ставку?</td></tr>
+          <tr><td>We are more at…</td><td>Мы ближе к [сумме]…</td></tr>
+          <tr><td>This is our rock bottom…</td><td>Это наша минимальная цена…</td></tr>
+          <tr><td>Let us come back to you…</td><td>Мы вернёмся к вам…</td></tr>
+          <tr><td rowspan="5"><strong>При рекапе</strong></td><td>As per recap dated…</td><td>Согласно рекапу от…</td></tr>
+          <tr><td>Please confirm…</td><td>Пожалуйста, подтвердите…</td></tr>
+          <tr><td>We hereby confirm…</td><td>Мы тем самым подтверждаем…</td></tr>
+          <tr><td>Subject to</td><td>При условии…</td></tr>
+          <tr><td>All other terms as previously agreed</td><td>Все остальные условия как ранее согласовано…</td></tr>
+          <tr><td rowspan="3"><strong>При ссылке на условия</strong></td><td>Under the General Conditions…</td><td>Согласно Общим Условиям…</td></tr>
+          <tr><td>According to the Charter Party…</td><td>В соответствии с Чартер-Пати…</td></tr>
+          <tr><td>As per Clause…</td><td>Согласно Пункту…</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Типичная последовательность переписки</h3>
+      <pre><code>ДЕНЬ 1, 09:00 — ОФЕРТА от судовладельца
+
+From: Owner's Broker
+To: Charterer's Broker
+Subject: OFFERING MV EXAMPLE
+
+Dear Sirs,
+
+We are offering for your prompt fixture:
+
+VESSEL: MV EXAMPLE
+DWT: 35,000 MT
+CAN LOAD: 15–20 August
+LOAD: Shanghai
+DISCHARGE: Rotterdam
+FREIGHT: $18.50/MT
+LAY DAYS: 5 running days each port
+DEMURRAGE: $3,500 per day
+DISPATCH: 50%
+GENERAL CONDITIONS: GENCON 94
+
+Please advise your interest.
+
+Best regards,
+Owner's Broker
+
+────────────────────────────────
+
+ДЕНЬ 1, 10:30 — УТОЧНЯЮЩИЙ ВОПРОС
+
+From: Charterer's Broker
+To: Owner's Broker
+Subject: RE: OFFERING MV EXAMPLE
+
+Thanks for the offer.
+
+We are interested but have some questions:
+
+1. What's the earliest you can adjust your freight level?
+2. Can you accept 7 days laying days?
+3. Who pays stevedoring?
+
+Please advise.
+
+────────────────────────────────
+
+ДЕНЬ 1, 11:45 — ОТВЕТ НА ВОПРОСЫ
+
+From: Owner's Broker
+To: Charterer's Broker
+Subject: RE: RE: OFFERING MV EXAMPLE
+
+Regarding your questions:
+
+1. Freight: We can consider $18.00/MT but no further reduction.
+2. Lay days: 5 days is our limit as per other commitments.
+3. Stevedoring: All in cost, included in freight.
+
+Please confirm if acceptable.
+
+────────────────────────────────
+
+ДЕНЬ 1, 14:00 — СОГЛАСИЕ
+
+From: Charterer's Broker
+To: Owner's Broker
+Subject: RECAP — MV EXAMPLE FIXED
+
+We confirm fixture on the following terms:
+
+VESSEL: MV EXAMPLE
+LOAD: Shanghai, CW 33-34, 2026
+DISCHARGE: Rotterdam
+CARGO: 32,000 MT steel coils
+FREIGHT: $18.00/MT = $576,000
+PAYMENT: 50% on B/L, 50% on arrival
+LAY DAYS: 5 running days loading, 5 running days discharging
+DEMURRAGE: $3,500 per day
+DISPATCH: 50%
+GENERAL CONDITIONS: GENCON 94
+
+Please confirm your acceptance.
+
+────────────────────────────────
+
+ДЕНЬ 1, 15:30 — ПОДТВЕРЖДЕНИЕ РЕКАПА
+
+From: Owner's Broker
+To: Charterer's Broker
+Subject: RECAP CONFIRMATION
+
+We confirm your recap dated 01 August 2026 with reference MV EXAMPLE.
+
+All terms as per your recap accepted.
+
+Fixture confirmed.
+
+────────────────────────────────
+
+ДЕНЬ 2, 09:00 — ПОДПИСАНИЕ ЧАРТЕР-ПАТИ
+
+[Обе стороны получают подписанный документ]</code></pre>
+
+      <h2>Практические советы фрахтующему специалисту</h2>
+
+      <h3>Что делать</h3>
+      <ul>
+        <li><strong>Будьте оперативны</strong> — фрахтовый рынок движется быстро.</li>
+        <li><strong>Ясно излагайте условия</strong> — избегайте двусмысленности.</li>
+        <li><strong>Проверяйте документы</strong> — коносаменты, инвойсы, рекапы.</li>
+        <li><strong>Знайте рынок</strong> — следите за котировками, ставками, спросом.</li>
+        <li><strong>Общайтесь через брокеров</strong> — они профессионалы в переговорах.</li>
+        <li><strong>Документируйте всё</strong> — письменно подтверждайте условия.</li>
+        <li><strong>Соблюдайте сроки</strong> — особенно lay days и платежи.</li>
+        <li><strong>Проверяйте грузоподъёмность</strong> — не превышайте DWT судна.</li>
+      </ul>
+
+      <h3>Чего не делать</h3>
+      <ul>
+        <li><strong>Не давайте обещаний без одобрения</strong> — сначала согласуйте с руководством.</li>
+        <li><strong>Не игнорируйте специальные условия</strong> — они важны.</li>
+        <li><strong>Не опаздывайте с платежами</strong> — это портит репутацию.</li>
+        <li><strong>Не подписывайте чартер-пати без внимательного прочтения.</strong></li>
+        <li><strong>Не пренебрегайте страховкой</strong> — это дорого обходится.</li>
+        <li><strong>Не забывайте о lay days</strong> — это деньги.</li>
+        <li><strong>Не экономьте на документации</strong> — сэкономите на проблемах.</li>
+      </ul>
+
+      <h2>Расчёт фрахта: примеры</h2>
+
+      <h3>Пример 1. Рейсовый чартер (Voyage Charter)</h3>
+      <pre><code>ДАНО:
+- Судно: General Cargo, 35,000 MT DWT
+- Фрахтовая ставка: $50/MT
+- Груз: Стальные изделия, 28,000 MT
+- Lay days: 5 дней по 1 000 MT/день = 28 дней
+- Фактическая работа: 35 дней
+- Demurrage: $3,500/день
+
+РАСЧЁТ:
+1. Базовый фрахт = 28,000 MT × $50 = $1,400,000
+
+2. Demurrage:
+   - Лишние дни: 35 − 28 = 7 дней
+   - Demurrage = 7 × $3,500 = $24,500
+
+3. Итоговый фрахт:
+   Total = $1,400,000 + $24,500 = $1,424,500
+
+УСЛОВИЯ ОПЛАТЫ:
+- 50% = $712,250 (при подписании B/L)
+- 50% = $712,250 (при прибытии в порт)</code></pre>
+
+      <h3>Пример 2. Таймчартер (Time Charter)</h3>
+      <pre><code>ДАНО:
+- Судно: Танкер, 130,000 MT
+- Дневная ставка: $48,000/день
+- Период: 6 месяцев ≈ 180 дней
+- Delivery: 1 сентября 2026
+- Redelivery: 28 февраля 2027
+- Off-hire events: 8 дней поломки
+
+РАСЧЁТ:
+1. Базовый наём:
+   - Количество дней: 1 сентября — 28 февраля = 180 дней
+   - Дневная ставка: $48,000
+   - Базовый наём = 180 × $48,000 = $8,640,000
+
+2. Off-hire (вычитаемое):
+   - Дни без платежа: 8 дней × $48,000 = $384,000
+
+3. Итоговый наём:
+   Total = $8,640,000 − $384,000 = $8,256,000
+
+УСЛОВИЯ ОПЛАТЫ:
+- Ежемесячно авансом: 30 × $48,000 = $1,440,000/месяц
+- За 6 месяцев: 6 × $1,440,000 = $8,640,000
+- После вычета off-hire: $8,256,000</code></pre>
+
+      <h3>Пример 3. Контейнерный фрахт (Container Charter)</h3>
+      <pre><code>ДАНО:
+- Судно: 5,400 TEU
+- Ставка: $1,200/TEU
+- Груз: 4,000 полных контейнеров (20-ft)
+  + 200 reefer контейнеров (входят в 4,000)
+  + 400 пустых контейнеров для переделки
+- Reefer surcharge: +15%
+
+РАСЧЁТ:
+1. Стандартные контейнеры:
+   - (4,000 − 200 reefer) × $1,200 = 3,800 × $1,200 = $4,560,000
+
+2. Reefer контейнеры:
+   - 200 × $1,200 × 1.15 = 200 × $1,380 = $276,000
+
+3. Пустые контейнеры:
+   - 400 × $200 = $80,000
+
+4. Итоговый фрахт:
+   Total = $4,560,000 + $276,000 + $80,000 = $4,916,000
+
+УСЛОВИЯ ОПЛАТЫ:
+- Авансовый платёж (25%): $1,229,000
+- Остаток (75%): $3,687,000
+- Платёж в течение 10 дней B/L</code></pre>
     </article>
   </main>
   <footer>
