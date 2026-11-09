@@ -120,6 +120,20 @@ tbody tr:hover { background: #f0f6fa; }
 
 .breadcrumb { font-size: 0.9rem; color: var(--muted); margin-bottom: 6px; }
 
+/* Фото автора на странице «О себе» */
+.about-photo {
+  float: right;
+  width: 240px;
+  max-width: 40%;
+  margin: 0 0 18px 22px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 20px rgba(10, 60, 90, 0.14);
+}
+@media (max-width: 640px) {
+  .about-photo { float: none; display: block; width: 100%; max-width: 260px; margin: 0 auto 18px; }
+}
+
 footer {
   border-top: 1px solid var(--border);
   background: var(--card);
