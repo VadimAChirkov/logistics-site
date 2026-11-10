@@ -50,11 +50,11 @@
 
       <ol>
         <li><strong>Оферта (Offer)</strong> — судовладелец или брокер предлагает судно: характеристики (тип, тоннаж, скорость, грузоподъёмность), маршрут (порты погрузки/разгрузки) и фрахтовую ставку.</li>
-        <li><strong>Переговоры (Negotiations)</strong> — фрахтователь уточняет условия: цена, lay days, demurrage, dispatch; возможна корректировка ставок и обсуждение специальных условий.</li>
+        <li><strong>Переговоры (Negotiations)</strong> — фрахтователь уточняет условия: цена, laytime, demurrage, dispatch; возможна корректировка ставок и обсуждение специальных условий.</li>
         <li><strong>Рекап (Recap / Confirmation)</strong> — письменное подтверждение основных условий, обмен рекапами между брокерами, согласование деталей и финальное согласие сторон.</li>
         <li><strong>Заключение чартер-пати (Charter Party Execution)</strong> — подписание договора, использование стандартных условий (GENCON, NYPE и др.), подсчёт фрахта и авансов, определение даты готовности судна.</li>
         <li><strong>Мобилизация (Mobilization)</strong> — судно направляется к порту погрузки, грузоподготовка, оформление документов, уведомление портовых служб.</li>
-        <li><strong>Операции (Operations)</strong> — погрузка (loading) и выгрузка (discharging) груза, контроль lay days, оформление коносаментов.</li>
+        <li><strong>Операции (Operations)</strong> — погрузка (loading) и выгрузка (discharging) груза, контроль laytime, оформление коносаментов.</li>
         <li><strong>Расчёты (Settlement)</strong> — выставление счёта (invoice), начисление demurrage/dispatch, финальный расчёт фрахта, платежи всех сторон.</li>
       </ol>
 
@@ -83,9 +83,9 @@ DISCHARGE PORT(S): [порты выгрузки]
 FREIGHT: $[сумма] per metric ton / per container / Lumpsum
 PAYABLE: [способ оплаты]
 
-LAY DAYS: [дни, отводимые на операции]
+LAYTIME: [дни, отводимые на операции]
 DEMURRAGE: $[сумма] per day per port
-DISPATCH: [% фрахта при сбережении lay days]
+DISPATCH: [% фрахта при сбережении laytime]
 
 CAN LOAD: [дата готовности судна]
 EARLIEST: [дата готовности]
@@ -118,8 +118,8 @@ FREIGHT: $[сумма] all-in [способ расчёта]
 
 PAYMENT TERMS: Bill of Lading terms / Prepaid / 1/2 on B/L, 1/2 on delivery
 
-LAY DAYS PROVISIONS:
-- Lay Days: [количество дней]
+LAYTIME PROVISIONS:
+- Laytime: [количество дней]
 - Time begins: [с какого момента]
 - Time stops: [когда прекращается]
 - Demurrage: $[сумма] per day per port or pro-rata
@@ -167,7 +167,7 @@ PLEASE CONFIRM YOUR ACCEPTANCE OF ABOVE AMENDED TERMS</code></pre>
         </tbody>
       </table>
 
-      <h3>Lay Days (сталийное время)</h3>
+      <h3>Laytime (сталийное время)</h3>
       <table>
         <thead><tr><th>Вид дней</th><th>Определение</th></tr></thead>
         <tbody>
@@ -179,15 +179,15 @@ PLEASE CONFIRM YOUR ACCEPTANCE OF ABOVE AMENDED TERMS</code></pre>
       </table>
       <p>Примеры формулировок:</p>
       <ul>
-        <li>«10 running lay days» — 10 календарных дней.</li>
+        <li>«10 running days» — 10 календарных дней.</li>
         <li>«7 working days, Sundays and holidays excepted» — только рабочие дни.</li>
         <li>«Weather working days» — исключаются дни плохой погоды.</li>
-        <li>«Lay days commence when vessel is ready, berth or no berth» — дни начинаются с готовности судна, даже если причала нет.</li>
-        <li>«Lay days commence upon receipt of notice of readiness (NOR)» — дни начинаются с момента получения уведомления о готовности.</li>
+        <li>«Laytime shall commence when vessel is ready, berth or no berth» — дни начинаются с готовности судна, даже если причала нет.</li>
+        <li>«Laytime shall commence upon receipt of notice of readiness (NOR)» — дни начинаются с момента получения уведомления о готовности.</li>
       </ul>
 
       <h3>Demurrage (демередж) и Dispatch (диспач)</h3>
-      <p>Lay days входят в стоимость фрахта. Превышение лимита влечёт демередж, досрочное завершение — диспач (премия за сбережение времени, обычно 50% от ставки демереджа).</p>
+      <p>Laytime входит в стоимость фрахта. Превышение лимита влечёт демередж, досрочное завершение — диспач (премия за сбережение времени, обычно 50% от ставки демереджа).</p>
       <pre><code>ФОРМУЛЫ:
 
 DEMURRAGE = Количество лишних дней × Ставка демереджа в сутки
@@ -195,13 +195,13 @@ DEMURRAGE = Количество лишних дней × Ставка деме�
 DISPATCH = Количество сэкономленных дней × 50% × Ставка демереджа
 
 ПРИМЕР (просрочка):
-- Lay days: 10 дней
+- Laytime: 10 дней
 - Фактически проработано: 12 дней
 - Ставка демереджа: $5 000/день
 - DEMURRAGE = 2 дня × $5 000 = $10 000
 
 ПРИМЕР (ускорение):
-- Lay days: 10 дней
+- Laytime: 10 дней
 - Фактически: 8 дней
 - DISPATCH = 2 дня × 50% × $5 000 = $5 000 (экономия для судовладельца)</code></pre>
 
@@ -211,7 +211,7 @@ DISPATCH = Количество сэкономленных дней × 50% × С
         <li><strong>Судно</strong> — название, тип, класс, грузоподъёмность (DWT), допустимые порты.</li>
         <li><strong>Груз</strong> — описание и количество, упаковка и маркировка, запрещённые грузы.</li>
         <li><strong>Фрахт</strong> — размер и единица расчёта, способ оплаты (Bill of Lading terms, Prepaid), валюта платежа.</li>
-        <li><strong>Lay days</strong> — количество дней, виды дней (running, working, weather-working), начало отсчёта (ready, NOR), исключённые дни.</li>
+        <li><strong>Laytime</strong> — количество дней, виды дней (running, working, weather-working), начало отсчёта (ready, NOR), исключённые дни.</li>
         <li><strong>Demurrage &amp; Dispatch</strong> — ставка за просрочку, процент от фрахта за досрочное завершение.</li>
         <li><strong>Портовые сборы</strong> — кто платит (Owner, Charterer, split), размеры сборов.</li>
         <li><strong>Страховка</strong> — кто страхует груз, размер покрытия (обычно 110% стоимости).</li>
@@ -258,9 +258,9 @@ PAYMENT TERMS:
 - 50% on arrival: $296,000
 - Payment method: Bank transfer
 
-LAY DAYS PROVISIONS:
-- Loading lay days: 5 running days
-- Discharging lay days: 5 running days
+LAYTIME PROVISIONS:
+- Loading laytime: 5 running days
+- Discharging laytime: 5 running days
 - Time commences: Upon notice of readiness (NOR)
 - Time ceases: Upon completion of all cargo work
 
@@ -270,7 +270,7 @@ DEMURRAGE:
 
 DISPATCH MONEY:
 - 50% of demurrage rate for each day saved
-- Applicable if operations completed before lay days expire
+- Applicable if operations completed before laytime expires
 - Example: 1 day saved = $1,750 dispatch
 
 GENERAL CONDITIONS:
@@ -302,7 +302,7 @@ Tel: +82 2 1234 5678, Email: bp@globalpartners.kr</code></pre>
           <tr><td><strong>ETA Busan</strong></td><td>Судно будет готово грузиться 10–15 августа</td><td>Фрахтователь должен подготовить груз к этому времени</td></tr>
           <tr><td><strong>Freight $18.50/MT</strong></td><td>Стандартная ставка для корейского экспорта стали</td><td>Если груз не поместится в тоннаж, фрахт может измениться</td></tr>
           <tr><td><strong>50/50 payment</strong></td><td>Половина при подписании, половина при прибытии</td><td>Судовладелец гарантирует получение хотя бы половины до доставки</td></tr>
-          <tr><td><strong>5 lay days</strong></td><td>На погрузку и выгрузку по 5 дней</td><td>За 6-й день платится демередж</td></tr>
+          <tr><td><strong>5 дней laytime</strong></td><td>На погрузку и выгрузку по 5 дней</td><td>За 6-й день платится демередж</td></tr>
           <tr><td><strong>$3,500/day demurrage</strong></td><td>За каждый день просрочки платится $3 500</td><td>Дорого — фрахтователь стремится закончить вовремя</td></tr>
           <tr><td><strong>GENCON 94</strong></td><td>Стандартные условия Международной ассоциации</td><td>Стороны знают обязанности без подробного описания</td></tr>
           <tr><td><strong>Gears to be used</strong></td><td>Судовые краны используются бесплатно</td><td>Экономия для фрахтователя (обычно $200–300/день)</td></tr>
@@ -448,7 +448,7 @@ PAYMENT TERMS:
 - Advance: 25% before loading starts = $1,229,000
 - Balance: 75% within 10 days of B/L = $3,687,000
 
-LAY DAYS:
+LAYTIME:
 - Loading: 5 days (included in freight)
 - Discharging: 5 days (included in freight)
 - Free time includes ship-to-shore (STS) cranes
@@ -518,10 +518,10 @@ Tel: +8610 5555 6666</code></pre>
         <tbody>
           <tr><td><strong>5,400 TEU</strong></td><td>Судно вмещает 5 400 контейнеров по 20 футов</td><td>Максимальная грузоподъёмность при 20-футовых контейнерах</td></tr>
           <tr><td><strong>$1,200/TEU</strong></td><td>Стандартная ставка Шанхай–Роттердам</td><td>Зависит от спроса, сезона, вместимости</td></tr>
-          <tr><td><strong>5 lay days</strong></td><td>На погрузку и выгрузку по 5 дней</td><td>Контейнерные операции обычно быстрее — 2–3 дня</td></tr>
+          <tr><td><strong>5 дней laytime</strong></td><td>На погрузку и выгрузку по 5 дней</td><td>Контейнерные операции обычно быстрее — 2–3 дня</td></tr>
           <tr><td><strong>Empty container $200</strong></td><td>Плата за перевозку порожних контейнеров</td><td>Типично для маршрутов с дисбалансом грузопотока</td></tr>
           <tr><td><strong>Reefer surcharge +15%</strong></td><td>Рефрижераторные контейнеры дороже</td><td>Плата за повышенное потребление энергии</td></tr>
-          <tr><td><strong>$8,500/day additional</strong></td><td>За дополнительные дни сверх 5 lay days</td><td>Мотивирует быструю работу портов</td></tr>
+          <tr><td><strong>$8,500/day additional</strong></td><td>За дополнительные дни сверх 5 дней laytime</td><td>Мотивирует быструю работу портов</td></tr>
           <tr><td><strong>Weight limitations 30 MT</strong></td><td>Максимум 30 тонн в контейнер</td><td>Защита от перегруза, стабильность судна</td></tr>
           <tr><td><strong>SOC containers $75</strong></td><td>Контейнер грузоотправителя вместо судового</td><td>Допускается за дополнительную плату</td></tr>
           <tr><td><strong>Complaints 72/48 часов</strong></td><td>Претензии подаются в сжатые сроки</td><td>Иначе груз считается доставленным в надлежащем состоянии</td></tr>
@@ -667,7 +667,7 @@ CAN LOAD: 15–20 August
 LOAD: Shanghai
 DISCHARGE: Rotterdam
 FREIGHT: $18.50/MT
-LAY DAYS: 5 running days each port
+LAYTIME: 5 running days each port
 DEMURRAGE: $3,500 per day
 DISPATCH: 50%
 GENERAL CONDITIONS: GENCON 94
@@ -706,7 +706,7 @@ Subject: RE: RE: OFFERING MV EXAMPLE
 Regarding your questions:
 
 1. Freight: We can consider $18.00/MT but no further reduction.
-2. Lay days: 5 days is our limit as per other commitments.
+2. Laytime: 5 days is our limit as per other commitments.
 3. Stevedoring: All in cost, included in freight.
 
 Please confirm if acceptable.
@@ -727,7 +727,7 @@ DISCHARGE: Rotterdam
 CARGO: 32,000 MT steel coils
 FREIGHT: $18.00/MT = $576,000
 PAYMENT: 50% on B/L, 50% on arrival
-LAY DAYS: 5 running days loading, 5 running days discharging
+LAYTIME: 5 running days loading, 5 running days discharging
 DEMURRAGE: $3,500 per day
 DISPATCH: 50%
 GENERAL CONDITIONS: GENCON 94
@@ -764,7 +764,7 @@ Fixture confirmed.
         <li><strong>Знайте рынок</strong> — следите за котировками, ставками, спросом.</li>
         <li><strong>Общайтесь через брокеров</strong> — они профессионалы в переговорах.</li>
         <li><strong>Документируйте всё</strong> — письменно подтверждайте условия.</li>
-        <li><strong>Соблюдайте сроки</strong> — особенно lay days и платежи.</li>
+        <li><strong>Соблюдайте сроки</strong> — особенно laytime и платежи.</li>
         <li><strong>Проверяйте грузоподъёмность</strong> — не превышайте DWT судна.</li>
       </ul>
 
@@ -775,7 +775,7 @@ Fixture confirmed.
         <li><strong>Не опаздывайте с платежами</strong> — это портит репутацию.</li>
         <li><strong>Не подписывайте чартер-пати без внимательного прочтения.</strong></li>
         <li><strong>Не пренебрегайте страховкой</strong> — это дорого обходится.</li>
-        <li><strong>Не забывайте о lay days</strong> — это деньги.</li>
+        <li><strong>Не забывайте о laytime</strong> — это деньги.</li>
         <li><strong>Не экономьте на документации</strong> — сэкономите на проблемах.</li>
       </ul>
 
@@ -786,7 +786,7 @@ Fixture confirmed.
 - Судно: General Cargo, 35,000 MT DWT
 - Фрахтовая ставка: $50/MT
 - Груз: Стальные изделия, 28,000 MT
-- Lay days: 5 дней по 1 000 MT/день = 28 дней
+- Laytime: 5 дней по 1 000 MT/день = 28 дней
 - Фактическая работа: 35 дней
 - Demurrage: $3,500/день
 
