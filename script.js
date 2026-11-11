@@ -91,6 +91,35 @@
   });
 })();
 
+// Виджеты главной страницы: SCFI и новости (данные из market-data.js)
+(function () {
+  if (!window.MARKET) return;
+  var M = window.MARKET;
+
+  // SCFI
+  var scfiBox = document.getElementById('scfi-widget');
+  if (scfiBox) {
+    var deltaClass = M.scfi.delta.indexOf('−') === 0 || M.scfi.delta.indexOf('-') === 0 ? 'scfi-delta-down' : 'scfi-delta-up';
+    scfiBox.innerHTML =
+      '<div class="scfi-value">' + M.scfi.value + '</div>' +
+      '<div class="' + deltaClass + '">' + M.scfi.delta + ' (' + M.scfi.deltaPct + ') к пред. неделе</div>' +
+      '<div class="scfi-meta">SCFI (Shanghai Containerized Freight Index) · на ' + M.scfi.date + ' · обновлено ' + M.updated + '</div>';
+  }
+
+  // Новости
+  var newsBox = document.getElementById('news-widget');
+  if (newsBox && M.news && M.news.length) {
+    var html = '<ul class="news-list">';
+    for (var i = 0; i < M.news.length; i++) {
+      var n = M.news[i];
+      html += '<li><a href="' + n.url + '" target="_blank" rel="noopener noreferrer">' + n.title + '</a>' +
+              '<span class="news-src">' + n.src + ' · ' + n.date + '</span></li>';
+    }
+    html += '</ul>';
+    newsBox.innerHTML = html;
+  }
+})();
+
 // Форма связи (Formspree)
 (function () {
   var form = document.getElementById('contact-form');
