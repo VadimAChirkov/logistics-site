@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Генератор полнотекстового поискового индекса для сайта «Международная логистика».
 
-Проходит все HTML-страницы в корне сайта, извлекает <title> и текст из
-<main>/<article> (без тегов, скриптов и стилей), и пишет search-index.js
-со структурой: window.SEARCH_INDEX = [{t, u, text}].
+Проходит все HTML-страницы в корне сайта (русские) и в en/ (английские),
+извлекает <title> и текст из <main>/<article> (без тегов, скриптов и стилей),
+и пишет search-index.js со структурой: window.SEARCH_INDEX = [{t, u, text}].
 
 Запуск: python3 scripts/build_search_index.py
 """
@@ -42,10 +42,14 @@ def normalize(text: str) -> str:
     return text.strip()
 
 
-def main():
-    files = sorted(glob.glob(os.path.join(BASE, '*.html')))
+def esc(s: str) -> str:
+    return s.replace('\\', '\\\\').replace("'", "\\'")
+
+
+def build_index(html_files, out_path):
+    """Строит индекс из списка html-файлов и пишет JS-файл. Возвращает кол-во страниц."""
     entries = []
-    for path in files:
+    for path in html_files:
         name = os.path.basename(path)
         with open(path, encoding='utf-8') as f:
             html = f.read()
@@ -60,18 +64,31 @@ def main():
     lines = ['// Полнотекстовый поисковый индекс — генерируется скриптом scripts/build_search_index.py',
              'window.SEARCH_INDEX = [']
     for title, name, text in entries:
-        # экранируем для JS-строки
-        t = title.replace('\\', '\\\\').replace("'", "\\'")
-        u = name.replace('\\', '\\\\').replace("'", "\\'")
-        x = text.replace('\\', '\\\\').replace("'", "\\'")
-        lines.append("  {t:'%s', u:'%s', text:'%s'}," % (t, u, x))
+        lines.append("  {t:'%s', u:'%s', text:'%s'}," % (esc(title), esc(name), esc(text)))
     lines.append('];')
 
-    out = os.path.join(BASE, 'search-index.js')
-    with open(out, 'w', encoding='utf-8') as f:
+    with open(out_path, 'w', encoding='utf-8') as f:
         f.write('\n'.join(lines))
-    print('Сгенерировано %d страниц → %s (%d байт)' % (
-        len(entries), out, os.path.getsize(out)))
+    return len(entries)
+
+
+def main():
+    # Русский индекс (страницы в корне)
+    ru_files = sorted(glob.glob(os.path.join(BASE, '*.html')))
+    n_ru = build_index(ru_files, os.path.join(BASE, 'search-index.js'))
+    print('RU: %d страниц → %s (%d байт)' % (
+        n_ru, os.path.join(BASE, 'search-index.js'),
+        os.path.getsize(os.path.join(BASE, 'search-index.js'))))
+
+    # Английский индекс (страницы в en/)
+    en_dir = os.path.join(BASE, 'en')
+    if os.path.isdir(en_dir):
+        en_files = sorted(glob.glob(os.path.join(en_dir, '*.html')))
+        if en_files:
+            n_en = build_index(en_files, os.path.join(en_dir, 'search-index.js'))
+            print('EN: %d страниц → %s (%d байт)' % (
+                n_en, os.path.join(en_dir, 'search-index.js'),
+                os.path.getsize(os.path.join(en_dir, 'search-index.js'))))
 
 
 if __name__ == '__main__':

@@ -1,3 +1,19 @@
+// Локализация интерфейса (RU/EN)
+window.L10N = (function () {
+  var en = (document.documentElement.lang === 'en');
+  return en ? {
+    searchPlaceholder: 'Search…', searchAria: 'Search',
+    voiceTitle: 'Voice search', empty: 'Nothing found',
+    idxHeaders: ['Index', 'Value', 'Change', 'As of'],
+    voiceLang: 'en-US'
+  } : {
+    searchPlaceholder: 'Поиск по сайту…', searchAria: 'Поиск по сайту',
+    voiceTitle: 'Голосовой поиск', empty: 'Ничего не найдено',
+    idxHeaders: ['Индекс', 'Значение', 'Изменение', 'На дату'],
+    voiceLang: 'ru-RU'
+  };
+})();
+
 // Автообновление года в футере
 (function () {
   var els = document.querySelectorAll('#current-year');
@@ -14,12 +30,13 @@
 
   var header = document.querySelector('.header-inner');
   if (!header) return;
+  var S = window.L10N || {};
 
   var wrap = document.createElement('div');
   wrap.className = 'site-search';
   wrap.innerHTML = '<div class="site-search-box">' +
-                   '<input type="search" id="site-search-input" placeholder="Поиск по сайту…" autocomplete="off" aria-label="Поиск по сайту">' +
-                   '<button type="button" id="site-search-mic" class="site-search-mic" title="Голосовой поиск" aria-label="Голосовой поиск">🎤</button>' +
+                   '<input type="search" id="site-search-input" placeholder="' + S.searchPlaceholder + '" autocomplete="off" aria-label="' + S.searchAria + '">' +
+                   '<button type="button" id="site-search-mic" class="site-search-mic" title="' + S.voiceTitle + '" aria-label="' + S.voiceTitle + '">🎤</button>' +
                    '</div>' +
                    '<div id="site-search-results" class="site-search-results" hidden></div>';
   header.appendChild(wrap);
@@ -53,7 +70,7 @@
       if (ok) hits.push(INDEX[i]);
     }
     if (!hits.length) {
-      results.innerHTML = '<div class="site-search-empty">Ничего не найдено</div>';
+      results.innerHTML = '<div class="site-search-empty">' + S.empty + '</div>';
     } else {
       var html = '';
       for (var h = 0; h < Math.min(hits.length, 8); h++) {
@@ -77,7 +94,7 @@
   var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
   if (mic && SR) {
     var rec = new SR();
-    rec.lang = 'ru-RU';
+    rec.lang = S.voiceLang || 'ru-RU';
     rec.interimResults = false;
     rec.maxAlternatives = 1;
     rec.onresult = function (e) {
@@ -121,6 +138,8 @@
   // Рыночные индексы (таблица)
   var idxBox = document.getElementById('indices-widget');
   if (idxBox && M.indices && M.indices.length) {
+    var S = window.L10N || {};
+    var hd = S.idxHeaders || ['Индекс', 'Значение', 'Изменение', 'На дату'];
     var rows = '';
     for (var i = 0; i < M.indices.length; i++) {
       var d = M.indices[i];
@@ -132,7 +151,7 @@
         '<td class="scfi-meta">' + d.date + '</td>' +
         '</tr>';
     }
-    idxBox.innerHTML = '<table><thead><tr><th>Индекс</th><th>Значение</th><th>Изменение</th><th>На дату</th></tr></thead><tbody>' + rows + '</tbody></table>';
+    idxBox.innerHTML = '<table><thead><tr><th>' + hd[0] + '</th><th>' + hd[1] + '</th><th>' + hd[2] + '</th><th>' + hd[3] + '</th></tr></thead><tbody>' + rows + '</tbody></table>';
   }
   var updEl = document.getElementById('market-updated');
   if (updEl) updEl.textContent = M.updated;

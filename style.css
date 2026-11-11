@@ -180,6 +180,27 @@ article pre code {
 }
 
 /* Поиск по сайту */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 14px;
+  padding: 5px 11px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: #fff;
+  white-space: nowrap;
+  transition: background .15s ease, border-color .15s ease;
+}
+.lang-switch:hover {
+  background: #eef6fb;
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
 .site-search {
   position: relative;
   margin-left: auto;
