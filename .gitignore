@@ -22,3 +22,7 @@ credentials.*
 # IDE
 .idea/
 .vscode/
+
+# Внутренние служебные документы (не для публичного репозитория)
+SITE_BRIEFING.md
+NODE_UPDATE_PLAN.md
