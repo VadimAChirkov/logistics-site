@@ -9,6 +9,7 @@ window.MARKET = {
       value: "3633.45",
       unit: "пункты",
       change: "−53.90 (−1.46%)",
+      shortChange: "−1.46%",
       down: true,
       date: "06.11.2026"
     },
@@ -18,6 +19,7 @@ window.MARKET = {
       value: "$4 389",
       unit: "USD / 40ft",
       change: "−1% к пред. неделе",
+      shortChange: "−1%",
       down: true,
       date: "05.11.2026"
     },
@@ -27,6 +29,7 @@ window.MARKET = {
       value: "2 862",
       unit: "пункты",
       change: "+0.28%",
+      shortChange: "+0.28%",
       down: false,
       date: "10.11.2026"
     }

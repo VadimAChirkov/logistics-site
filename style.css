@@ -231,6 +231,25 @@ article pre code {
   .site-search { flex: 1 1 100%; order: 10; min-width: 0; }
 }
 
+/* Компактная строка индексов под шапкой */
+.indices-strip {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 8px 24px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.indices-strip .idx-item strong { color: var(--text); font-weight: 700; }
+.indices-strip .idx-sep { color: var(--border); }
+@media (max-width: 900px) {
+  .indices-strip { justify-content: flex-start; }
+}
+
 /* Индикатор SCFI и новости */
 .widget {
   background: var(--card);

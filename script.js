@@ -96,6 +96,19 @@
   if (!window.MARKET) return;
   var M = window.MARKET;
 
+  // Компактная строка индексов под шапкой (вверху справа)
+  var strip = document.getElementById('indices-strip');
+  if (strip && M.indices && M.indices.length) {
+    var parts = [];
+    for (var s = 0; s < M.indices.length; s++) {
+      var x = M.indices[s];
+      var xc = x.down ? 'scfi-delta-down' : 'scfi-delta-up';
+      parts.push('<span class="idx-item"><strong>' + x.name + '</strong> ' + x.value +
+        ' <span class="' + xc + '">' + x.shortChange + '</span></span>');
+    }
+    strip.innerHTML = parts.join('<span class="idx-sep">·</span>');
+  }
+
   // Рыночные индексы (таблица)
   var idxBox = document.getElementById('indices-widget');
   if (idxBox && M.indices && M.indices.length) {
