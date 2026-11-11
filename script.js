@@ -6,40 +6,11 @@
   for (var i = 0; i < els.length; i++) els[i].textContent = year;
 })();
 
-// Поиск по сайту (клиентский, по локальному индексу)
+// Поиск по сайту (полнотекстовый, по индексу search-index.js)
 (function () {
-  var INDEX = [
-    { t: "Главная", u: "index.html", k: "главная логистика международная вэд" },
-    { t: "Инкотермс 2020", u: "incoterms.html", k: "инкотермс incoterms базис поставки exw fob cif dap ddp fca" },
-    { t: "Морские перевозки", u: "sea-freight.html", k: "море морские перевозки фрахт коносамент конвенции" },
-    { t: "Коносамент (B/L)", u: "documents-sea.html", k: "коносамент bill of lading bl коносамент морской документ" },
-    { t: "Морские конвенции", u: "regulations-sea.html", k: "конвенции гаагские висби гамбургские роттердамские solas imdg ктм" },
-    { t: "Фрахтование", u: "chartering.html", k: "фрахтование чартер проформа дженкон тайм-чартер рейсовый" },
-    { t: "Техника фрахтовых операций", u: "chartering-technique.html", k: "фрахтовые операции рекап сталия демередж диспач" },
-    { t: "Фрахтовые сокращения", u: "chartering-abbreviations.html", k: "сокращения аббревиатуры фрахт словарь" },
-    { t: "Ж/д перевозки", u: "rail-freight.html", k: "железнодорожные перевозки жд смгс гу накладная" },
-    { t: "Ж/д перевозочные документы", u: "documents-rail.html", k: "смгс гу накладная железнодорожная этран" },
-    { t: "Ж/д соглашения и правила", u: "regulations-rail.html", k: "смгс цим cotif отиф осжд устав железнодорожного" },
-    { t: "Коммерческий акт и Акт общей формы", u: "railway-acts.html", k: "коммерческий акт общей формы акт претензия недостача порча" },
-    { t: "Негабаритные и тяжеловесные грузы", u: "railway-oversized.html", k: "негабаритные тяжеловесные дч-1835 индекс негабаритности габарит погрузки" },
-    { t: "Авиаперевозки", u: "air-freight.html", k: "авиа авиаперевозки воздушные грузовые" },
-    { t: "Авиадокументы (AWB)", u: "documents-air.html", k: "авианакладная awb air waybill авиа" },
-    { t: "Авиа конвенции", u: "regulations-air.html", k: "варшавская монреальская чикагская iata icao авиа" },
-    { t: "Автоперевозки", u: "road-freight.html", k: "авто автоперевозки дорожные грузовые" },
-    { t: "Автодокументы (CMR, ТН, ЭТрН)", u: "documents-road.html", k: "cmr транспортная накладная тн электронная этран адр" },
-    { t: "Авто конвенции", u: "regulations-road.html", k: "cmr tir мдп адр допуск правила перевозок авто" },
-    { t: "Опасные грузы", u: "dangerous-goods.html", k: "опасные грузы классы опасности оон un классификация msds паспорт безопасности material safety data sheet ghs 16 разделов химическая продукция" },
-    { t: "Опасные грузы: авто (ДОПОГ)", u: "dangerous-goods-road.html", k: "допог adr опасные грузы авто водитель свидетельство" },
-    { t: "Опасные грузы: ж/д (ППОГ, ЦМ-407)", u: "dangerous-goods-rail.html", k: "ппог смгс опасные грузы жд аварийная карточка цм-407" },
-    { t: "Опасные грузы: море (IMDG)", u: "dangerous-goods-sea.html", k: "imdg опасные грузы море декларация группа упаковки" },
-    { t: "Опасные грузы: авиа (IATA)", u: "dangerous-goods-air.html", k: "iata dgr опасные грузы авиа литиевые батареи" },
-    { t: "UCP-600", u: "ucp600.html", k: "ucp 600 аккредитив документарный банк" },
-    { t: "Глоссарий", u: "glossary.html", k: "глоссарий термины словарь определения логистика" },
-    { t: "Литература и источники", u: "literature.html", k: "литература источники документы приказы конвенции" },
-    { t: "О себе", u: "about.html", k: "о себе автор специалист" },
-    { t: "Связаться", u: "contact.html", k: "связаться контакты форма связь" },
-    { t: "Правовая информация", u: "disclaimer.html", k: "правовая информация дисклеймер" }
-  ];
+  var INDEX = (window.SEARCH_INDEX || []).map(function (e) {
+    return { t: e.t, u: e.u, k: e.text };
+  });
 
   var header = document.querySelector('.header-inner');
   if (!header) return;
@@ -55,6 +26,14 @@
   if (!input || !results) return;
 
   function norm(s) { return (s || '').toLowerCase(); }
+
+  function snippet(text, q) {
+    var idx = text.toLowerCase().indexOf(q.toLowerCase());
+    if (idx < 0) return text.slice(0, 140) + '…';
+    var start = Math.max(0, idx - 40);
+    var end = Math.min(text.length, idx + q.length + 100);
+    return (start > 0 ? '…' : '') + text.slice(start, end) + (end < text.length ? '…' : '');
+  }
 
   function render(q) {
     q = norm(q).trim();
