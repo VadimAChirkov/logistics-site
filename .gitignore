@@ -1,4 +1,24 @@
+# Артефакты и временные файлы
 visits.txt
 __pycache__/
 *.pyc
+*.pyo
 .DS_Store
+Thumbs.db
+
+# Локальные настройки и чувствительные данные
+.env
+.env.*
+*.local
+secrets.*
+credentials.*
+
+# Резервные копии и логи
+*.bak
+*.log
+*.sqlite
+*.sqlite3
+
+# IDE
+.idea/
+.vscode/

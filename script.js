@@ -117,15 +117,18 @@
 
   // Новости
   var newsBox = document.getElementById('news-widget');
-  if (newsBox && M.news && M.news.length) {
+  var newsData = window.NEWS;
+  if (newsBox && newsData && newsData.items && newsData.items.length) {
     var html = '<ul class="news-list">';
-    for (var j = 0; j < M.news.length; j++) {
-      var n = M.news[j];
+    for (var j = 0; j < newsData.items.length; j++) {
+      var n = newsData.items[j];
       html += '<li><a href="' + n.url + '" target="_blank" rel="noopener noreferrer">' + n.title + '</a>' +
               '<span class="news-src">' + n.src + ' · ' + n.date + '</span></li>';
     }
     html += '</ul>';
     newsBox.innerHTML = html;
+    var newsUpd = document.getElementById('news-updated');
+    if (newsUpd && newsData.updated) newsUpd.textContent = newsData.updated;
   }
 })();
 

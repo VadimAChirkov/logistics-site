@@ -1,9 +1,5 @@
-// Данные для виджетов главной страницы: рыночные индексы и новости.
-// Обновляется ВРУЧНУЮ еженедельно (по пятницам):
-//   - SCFI — официальный источник Shanghai Shipping Exchange (sse.net.cn), публикуется по пятницам.
-//   - Drewry WCI — drewry.co.uk, публикуется по четвергам.
-//   - BDI — Baltic Exchange / TradingEconomics, публикуется ежедневно.
-// Новости также обновляются вручную (тот же еженедельный прогон).
+// Рыночные индексы (обновляются вручную еженедельно).
+// SCFI — sse.net.cn (пятница); Drewry WCI — drewry.co.uk (четверг); BDI — balticexchange.com (ежедневно).
 window.MARKET = {
   updated: "11.11.2026",
   indices: [
@@ -33,32 +29,6 @@ window.MARKET = {
       change: "+0.28%",
       down: false,
       date: "10.11.2026"
-    }
-  ],
-  news: [
-    {
-      title: "Эксперт: России необходимо строить ещё одну железную дорогу в Китай",
-      src: "Trans.ru",
-      date: "10.11.2026",
-      url: "https://trans.ru/news/ekspert-rossii-neobhodimo-stroit-esche-odnu-zheleznuyu-dorogu-v-kitai"
-    },
-    {
-      title: "В Казахстане хотят сделать обязательными электронные международные накладные",
-      src: "Trans.ru",
-      date: "10.11.2026",
-      url: "https://trans.ru/news/v-kazahstane-hotyat-sdelat-obyazatelnimi-esche-i-elektronnie-mezhdunarodnie-nakladnie"
-    },
-    {
-      title: "Атаки на танкеры у Ормузского пролива продолжаются",
-      src: "Splash 247",
-      date: "11.11.2026",
-      url: "https://splash247.com/hormuz-tanker-attacks-mount/"
-    },
-    {
-      title: "Панамский канал вновь увеличивает пропускную способность",
-      src: "Splash 247",
-      date: "11.11.2026",
-      url: "https://splash247.com/panama-canal-turns-the-taps-back-on/"
     }
   ]
 };
