@@ -17,12 +17,16 @@
 
   var wrap = document.createElement('div');
   wrap.className = 'site-search';
-  wrap.innerHTML = '<input type="search" id="site-search-input" placeholder="Поиск по сайту…" autocomplete="off" aria-label="Поиск по сайту">' +
+  wrap.innerHTML = '<div class="site-search-box">' +
+                   '<input type="search" id="site-search-input" placeholder="Поиск по сайту…" autocomplete="off" aria-label="Поиск по сайту">' +
+                   '<button type="button" id="site-search-mic" class="site-search-mic" title="Голосовой поиск" aria-label="Голосовой поиск">🎤</button>' +
+                   '</div>' +
                    '<div id="site-search-results" class="site-search-results" hidden></div>';
   header.appendChild(wrap);
 
   var input = document.getElementById('site-search-input');
   var results = document.getElementById('site-search-results');
+  var mic = document.getElementById('site-search-mic');
   if (!input || !results) return;
 
   function norm(s) { return (s || '').toLowerCase(); }
@@ -68,6 +72,32 @@
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') { results.hidden = true; input.value = ''; }
   });
+
+  // Голосовой поиск (Web Speech API; если браузер не поддерживает — кнопку скрываем)
+  var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (mic && SR) {
+    var rec = new SR();
+    rec.lang = 'ru-RU';
+    rec.interimResults = false;
+    rec.maxAlternatives = 1;
+    rec.onresult = function (e) {
+      var text = e.results[0][0].transcript;
+      if (text) { input.value = text; render(text); }
+    };
+    rec.onerror = function () { mic.classList.remove('listening'); };
+    rec.onend = function () { mic.classList.remove('listening'); };
+    mic.addEventListener('click', function () {
+      if (mic.classList.contains('listening')) {
+        try { rec.stop(); } catch (err) {}
+        mic.classList.remove('listening');
+      } else {
+        try { rec.start(); } catch (err) {}
+        mic.classList.add('listening');
+      }
+    });
+  } else if (mic) {
+    mic.style.display = 'none';
+  }
 })();
 
 // Виджеты главной страницы: рыночные индексы и новости (данные из market-data.js)
