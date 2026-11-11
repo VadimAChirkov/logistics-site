@@ -250,3 +250,6 @@ article pre code {
 .news-list a { font-weight: 600; color: var(--text); font-size: 0.97rem; }
 .news-list a:hover { color: var(--accent); }
 .news-list .news-src { color: var(--muted); font-size: 0.82rem; display: block; margin-top: 2px; }
+.index-notes { margin-top: 18px; }
+.index-notes h3 { font-size: 1.02rem; margin: 16px 0 4px; color: var(--text); }
+.index-notes p { color: var(--muted); font-size: 0.92rem; margin-bottom: 6px; }

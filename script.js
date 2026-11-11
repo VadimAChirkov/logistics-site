@@ -91,27 +91,36 @@
   });
 })();
 
-// Виджеты главной страницы: SCFI и новости (данные из market-data.js)
+// Виджеты главной страницы: рыночные индексы и новости (данные из market-data.js)
 (function () {
   if (!window.MARKET) return;
   var M = window.MARKET;
 
-  // SCFI
-  var scfiBox = document.getElementById('scfi-widget');
-  if (scfiBox) {
-    var deltaClass = M.scfi.delta.indexOf('−') === 0 || M.scfi.delta.indexOf('-') === 0 ? 'scfi-delta-down' : 'scfi-delta-up';
-    scfiBox.innerHTML =
-      '<div class="scfi-value">' + M.scfi.value + '</div>' +
-      '<div class="' + deltaClass + '">' + M.scfi.delta + ' (' + M.scfi.deltaPct + ') к пред. неделе</div>' +
-      '<div class="scfi-meta">SCFI (Shanghai Containerized Freight Index) · на ' + M.scfi.date + ' · обновлено ' + M.updated + '</div>';
+  // Рыночные индексы (таблица)
+  var idxBox = document.getElementById('indices-widget');
+  if (idxBox && M.indices && M.indices.length) {
+    var rows = '';
+    for (var i = 0; i < M.indices.length; i++) {
+      var d = M.indices[i];
+      var cls = d.down ? 'scfi-delta-down' : 'scfi-delta-up';
+      rows += '<tr>' +
+        '<td><strong>' + d.name + '</strong><br><span class="scfi-meta">' + d.full + '</span></td>' +
+        '<td><strong>' + d.value + '</strong> <span class="scfi-meta">' + d.unit + '</span></td>' +
+        '<td class="' + cls + '">' + d.change + '</td>' +
+        '<td class="scfi-meta">' + d.date + '</td>' +
+        '</tr>';
+    }
+    idxBox.innerHTML = '<table><thead><tr><th>Индекс</th><th>Значение</th><th>Изменение</th><th>На дату</th></tr></thead><tbody>' + rows + '</tbody></table>';
   }
+  var updEl = document.getElementById('market-updated');
+  if (updEl) updEl.textContent = M.updated;
 
   // Новости
   var newsBox = document.getElementById('news-widget');
   if (newsBox && M.news && M.news.length) {
     var html = '<ul class="news-list">';
-    for (var i = 0; i < M.news.length; i++) {
-      var n = M.news[i];
+    for (var j = 0; j < M.news.length; j++) {
+      var n = M.news[j];
       html += '<li><a href="' + n.url + '" target="_blank" rel="noopener noreferrer">' + n.title + '</a>' +
               '<span class="news-src">' + n.src + ' · ' + n.date + '</span></li>';
     }
