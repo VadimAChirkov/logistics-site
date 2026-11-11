@@ -6,6 +6,91 @@
   for (var i = 0; i < els.length; i++) els[i].textContent = year;
 })();
 
+// Поиск по сайту (клиентский, по локальному индексу)
+(function () {
+  var INDEX = [
+    { t: "Главная", u: "index.html", k: "главная логистика международная вэд" },
+    { t: "Инкотермс 2020", u: "incoterms.html", k: "инкотермс incoterms базис поставки exw fob cif dap ddp fca" },
+    { t: "Морские перевозки", u: "sea-freight.html", k: "море морские перевозки фрахт коносамент конвенции" },
+    { t: "Коносамент (B/L)", u: "documents-sea.html", k: "коносамент bill of lading bl коносамент морской документ" },
+    { t: "Морские конвенции", u: "regulations-sea.html", k: "конвенции гаагские висби гамбургские роттердамские solas imdg ктм" },
+    { t: "Фрахтование", u: "chartering.html", k: "фрахтование чартер проформа дженкон тайм-чартер рейсовый" },
+    { t: "Техника фрахтовых операций", u: "chartering-technique.html", k: "фрахтовые операции рекап сталия демередж диспач" },
+    { t: "Фрахтовые сокращения", u: "chartering-abbreviations.html", k: "сокращения аббревиатуры фрахт словарь" },
+    { t: "Ж/д перевозки", u: "rail-freight.html", k: "железнодорожные перевозки жд смгс гу накладная" },
+    { t: "Ж/д перевозочные документы", u: "documents-rail.html", k: "смгс гу накладная железнодорожная этран" },
+    { t: "Ж/д соглашения и правила", u: "regulations-rail.html", k: "смгс цим cotif отиф осжд устав железнодорожного" },
+    { t: "Коммерческий акт и Акт общей формы", u: "railway-acts.html", k: "коммерческий акт общей формы акт претензия недостача порча" },
+    { t: "Негабаритные и тяжеловесные грузы", u: "railway-oversized.html", k: "негабаритные тяжеловесные дч-1835 индекс негабаритности габарит погрузки" },
+    { t: "Авиаперевозки", u: "air-freight.html", k: "авиа авиаперевозки воздушные грузовые" },
+    { t: "Авиадокументы (AWB)", u: "documents-air.html", k: "авианакладная awb air waybill авиа" },
+    { t: "Авиа конвенции", u: "regulations-air.html", k: "варшавская монреальская чикагская iata icao авиа" },
+    { t: "Автоперевозки", u: "road-freight.html", k: "авто автоперевозки дорожные грузовые" },
+    { t: "Автодокументы (CMR, ТН, ЭТрН)", u: "documents-road.html", k: "cmr транспортная накладная тн электронная этран адр" },
+    { t: "Авто конвенции", u: "regulations-road.html", k: "cmr tir мдп адр допуск правила перевозок авто" },
+    { t: "Опасные грузы", u: "dangerous-goods.html", k: "опасные грузы классы опасности оон un классификация" },
+    { t: "Опасные грузы: авто (ДОПОГ)", u: "dangerous-goods-road.html", k: "допог adr опасные грузы авто водитель свидетельство" },
+    { t: "Опасные грузы: ж/д (ППОГ, ЦМ-407)", u: "dangerous-goods-rail.html", k: "ппог смгс опасные грузы жд аварийная карточка цм-407" },
+    { t: "Опасные грузы: море (IMDG)", u: "dangerous-goods-sea.html", k: "imdg опасные грузы море декларация группа упаковки" },
+    { t: "Опасные грузы: авиа (IATA)", u: "dangerous-goods-air.html", k: "iata dgr опасные грузы авиа литиевые батареи" },
+    { t: "UCP-600", u: "ucp600.html", k: "ucp 600 аккредитив документарный банк" },
+    { t: "Глоссарий", u: "glossary.html", k: "глоссарий термины словарь определения логистика" },
+    { t: "Литература и источники", u: "literature.html", k: "литература источники документы приказы конвенции" },
+    { t: "О себе", u: "about.html", k: "о себе автор специалист" },
+    { t: "Связаться", u: "contact.html", k: "связаться контакты форма связь" },
+    { t: "Правовая информация", u: "disclaimer.html", k: "правовая информация дисклеймер" }
+  ];
+
+  var header = document.querySelector('.header-inner');
+  if (!header) return;
+
+  var wrap = document.createElement('div');
+  wrap.className = 'site-search';
+  wrap.innerHTML = '<input type="search" id="site-search-input" placeholder="Поиск по сайту…" autocomplete="off" aria-label="Поиск по сайту">' +
+                   '<div id="site-search-results" class="site-search-results" hidden></div>';
+  header.appendChild(wrap);
+
+  var input = document.getElementById('site-search-input');
+  var results = document.getElementById('site-search-results');
+  if (!input || !results) return;
+
+  function norm(s) { return (s || '').toLowerCase(); }
+
+  function render(q) {
+    q = norm(q).trim();
+    if (!q) { results.hidden = true; results.innerHTML = ''; return; }
+    var terms = q.split(/\s+/);
+    var hits = [];
+    for (var i = 0; i < INDEX.length; i++) {
+      var hay = norm(INDEX[i].t + ' ' + INDEX[i].k);
+      var ok = true;
+      for (var j = 0; j < terms.length; j++) {
+        if (hay.indexOf(terms[j]) < 0) { ok = false; break; }
+      }
+      if (ok) hits.push(INDEX[i]);
+    }
+    if (!hits.length) {
+      results.innerHTML = '<div class="site-search-empty">Ничего не найдено</div>';
+    } else {
+      var html = '';
+      for (var h = 0; h < Math.min(hits.length, 8); h++) {
+        html += '<a href="' + hits[h].u + '">' + hits[h].t + '</a>';
+      }
+      results.innerHTML = html;
+    }
+    results.hidden = false;
+  }
+
+  input.addEventListener('input', function () { render(input.value); });
+  input.addEventListener('focus', function () { if (input.value) render(input.value); });
+  document.addEventListener('click', function (e) {
+    if (!wrap.contains(e.target)) results.hidden = true;
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { results.hidden = true; input.value = ''; }
+  });
+})();
+
 // Форма связи (Formspree)
 (function () {
   var form = document.getElementById('contact-form');

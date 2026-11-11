@@ -178,3 +178,75 @@ article pre code {
   font-family: inherit;
   font-size: inherit;
 }
+
+/* Поиск по сайту */
+.site-search {
+  position: relative;
+  margin-left: auto;
+  min-width: 200px;
+  flex: 0 1 220px;
+}
+.site-search input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  background: #fff;
+  outline: none;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.site-search input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(10, 92, 138, 0.12);
+}
+.site-search-results {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  left: 0;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 10px 28px rgba(10, 60, 90, 0.18);
+  overflow: hidden;
+  z-index: 30;
+}
+.site-search-results a {
+  display: block;
+  padding: 10px 14px;
+  color: var(--text);
+  font-size: 0.92rem;
+  border-bottom: 1px solid var(--border);
+}
+.site-search-results a:last-child { border-bottom: none; }
+.site-search-results a:hover { background: #eef6fb; color: var(--accent); text-decoration: none; }
+.site-search-empty {
+  padding: 12px 14px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+@media (max-width: 900px) {
+  .site-search { flex: 1 1 100%; order: 10; min-width: 0; }
+}
+
+/* Индикатор SCFI и новости */
+.widget {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  margin-top: 24px;
+}
+.widget h2 { font-size: 1.25rem; margin-bottom: 12px; color: var(--accent); }
+.scfi-value { font-size: 1.7rem; font-weight: 700; color: var(--text); }
+.scfi-delta-up { color: #1a7a3a; font-weight: 600; }
+.scfi-delta-down { color: #b00020; font-weight: 600; }
+.scfi-meta { color: var(--muted); font-size: 0.85rem; margin-top: 4px; }
+.news-list { list-style: none; margin: 0; padding: 0; }
+.news-list li { margin: 0 0 12px; padding: 0 0 12px; border-bottom: 1px solid var(--border); }
+.news-list li:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.news-list a { font-weight: 600; color: var(--text); font-size: 0.97rem; }
+.news-list a:hover { color: var(--accent); }
+.news-list .news-src { color: var(--muted); font-size: 0.82rem; display: block; margin-top: 2px; }
