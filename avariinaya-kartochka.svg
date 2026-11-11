@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 860" font-family="Arial, sans-serif">
+  <rect width="640" height="860" fill="#ffffff"/>
+  <!-- Оранжевая шапка -->
+  <rect x="0" y="0" width="640" height="86" fill="#e65100"/>
+  <text x="320" y="34" fill="#ffffff" font-size="24" font-weight="bold" text-anchor="middle">АВАРИЙНАЯ КАРТОЧКА № 208</text>
+  <text x="320" y="66" fill="#ffffff" font-size="20" font-weight="bold" text-anchor="middle">АММИАК БЕЗВОДНЫЙ · ООН 1005</text>
+
+  <!-- Раздел 1 -->
+  <rect x="0" y="86" width="640" height="36" fill="#e65100" opacity="0.12"/>
+  <text x="12" y="110" font-size="17" font-weight="bold" fill="#b34700">ОСНОВНЫЕ СВОЙСТВА И ВИДЫ ОПАСНОСТИ</text>
+  <text x="12" y="136" font-size="13.5" fill="#333">Бесцветный газ с резким удушливым запахом. Легче воздуха,</text>
+  <text x="12" y="154" font-size="13.5" fill="#333">растворяется в воде. Токсичен, ядовит (класс 2.3), едкий (8).</text>
+  <text x="12" y="172" font-size="13.5" fill="#333">Воспламеняется в смеси с воздухом (взрывоопасен).</text>
+
+  <!-- Раздел 2 -->
+  <rect x="0" y="188" width="640" height="36" fill="#e65100" opacity="0.12"/>
+  <text x="12" y="212" font-size="17" font-weight="bold" fill="#b34700">СРЕДСТВА ИНДИВИДУАЛЬНОЙ ЗАЩИТЫ</text>
+  <text x="12" y="238" font-size="13.5" fill="#333">Изолирующий противогаз, защитный костюм, резиновые</text>
+  <text x="12" y="256" font-size="13.5" fill="#333">перчатки и сапоги. При пожаре — аппарат на сжатом воздухе.</text>
+
+  <!-- Раздел 3 -->
+  <rect x="0" y="272" width="640" height="36" fill="#e65100" opacity="0.12"/>
+  <text x="12" y="296" font-size="17" font-weight="bold" fill="#b34700">НЕОБХОДИМЫЕ ДЕЙСТВИЯ</text>
+  <text x="12" y="322" font-size="13.5" font-weight="bold" fill="#333">Общего характера:</text>
+  <text x="12" y="340" font-size="13.5" fill="#333">Удалить посторонних, держаться с наветренной стороны.</text>
+  <text x="12" y="358" font-size="13.5" fill="#333">Вызвать аварийные службы, оградить опасную зону.</text>
+  <text x="12" y="382" font-size="13.5" font-weight="bold" fill="#333">При утечке и разливе:</text>
+  <text x="12" y="400" font-size="13.5" fill="#333">Не прикасаться к пролитому веществу. Устранить источники</text>
+  <text x="12" y="418" font-size="13.5" fill="#333">огня и искр. Осадить газ распылённой водой.</text>
+  <text x="12" y="442" font-size="13.5" font-weight="bold" fill="#333">При пожаре:</text>
+  <text x="12" y="460" font-size="13.5" fill="#333">Тушить распылённой водой, пеной с максимального</text>
+  <text x="12" y="478" font-size="13.5" fill="#333">расстояния. Охлаждать ёмкости водой.</text>
+
+  <!-- Раздел 4 -->
+  <rect x="0" y="494" width="640" height="36" fill="#e65100" opacity="0.12"/>
+  <text x="12" y="518" font-size="17" font-weight="bold" fill="#b34700">МЕРЫ ПЕРВОЙ ПОМОЩИ</text>
+  <text x="12" y="544" font-size="13.5" fill="#333">Вынести пострадавшего на свежий воздух, обеспечить покой.</text>
+  <text x="12" y="562" font-size="13.5" fill="#333">При попадании в глаза — обильно промыть водой.</text>
+  <text x="12" y="580" font-size="13.5" fill="#333">При остановке дыхания — искусственное дыхание. Вызвать врача.</text>
+
+  <!-- Подвал -->
+  <rect x="0" y="600" width="640" height="260" fill="#fafafa" stroke="#ddd"/>
+  <text x="320" y="630" font-size="14" font-weight="bold" fill="#666" text-anchor="middle">Знак опасности: 2.3 (токсичный газ) + 8 (едкое)</text>
+  <text x="320" y="654" font-size="14" fill="#666" text-anchor="middle">Классификационный шифр: 2ТС · Аварийная карточка АК 208</text>
+  <text x="320" y="706" font-size="12" fill="#999" text-anchor="middle">Пример оформления аварийной карточки (ЦМ-407)</text>
+  <text x="320" y="728" font-size="12" fill="#999" text-anchor="middle">Наименование груза, номер ООН и содержание — иллюстративное</text>
+</svg>
