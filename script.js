@@ -5,12 +5,24 @@ window.L10N = (function () {
     searchPlaceholder: 'Search…', searchAria: 'Search',
     voiceTitle: 'Voice search', empty: 'Nothing found',
     idxHeaders: ['Index', 'Value', 'Change', 'As of'],
-    voiceLang: 'en-US'
+    voiceLang: 'en-US',
+    formThanks: 'Thank you! Your message has been sent.',
+    formEmpty: 'Please write a message.',
+    formBadEmail: 'Please enter a valid email.',
+    formSending: 'Sending…',
+    formNotSent: 'Not sent: ',
+    formError: 'Sending failed. Please try again.'
   } : {
     searchPlaceholder: 'Поиск по сайту…', searchAria: 'Поиск по сайту',
     voiceTitle: 'Голосовой поиск', empty: 'Ничего не найдено',
     idxHeaders: ['Индекс', 'Значение', 'Изменение', 'На дату'],
-    voiceLang: 'ru-RU'
+    voiceLang: 'ru-RU',
+    formThanks: 'Спасибо! Сообщение отправлено.',
+    formEmpty: 'Напишите сообщение.',
+    formBadEmail: 'Укажите корректный email.',
+    formSending: 'Отправка…',
+    formNotSent: 'Не отправлено: ',
+    formError: 'Ошибка отправки. Попробуйте ещё раз.'
   };
 })();
 
@@ -178,6 +190,7 @@ window.L10N = (function () {
   var form = document.getElementById('contact-form');
   if (!form) return;
   var status = document.getElementById('contact-status');
+  var T = window.L10N;
   var ENDPOINT = 'https://formspree.io/f/xkjjlpzw';
   form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -187,22 +200,22 @@ window.L10N = (function () {
     var gotcha = document.getElementById('cf-company').value;
     if (gotcha) {
       // бот заполнил скрытое поле — молча игнорируем
-      status.textContent = 'Спасибо! Сообщение отправлено.';
+      status.textContent = T.formThanks;
       status.style.color = '#1a7a3a';
       form.reset();
       return;
     }
     if (!msg) {
-      status.textContent = 'Напишите сообщение.';
+      status.textContent = T.formEmpty;
       status.style.color = '#b00020';
       return;
     }
     if (!email || email.indexOf('@') < 0) {
-      status.textContent = 'Укажите корректный email.';
+      status.textContent = T.formBadEmail;
       status.style.color = '#b00020';
       return;
     }
-    status.textContent = 'Отправка…';
+    status.textContent = T.formSending;
     status.style.color = '#5c6672';
     fetch(ENDPOINT, {
       method: 'POST',
@@ -212,16 +225,16 @@ window.L10N = (function () {
       .then(function (r) { return r.json(); })
       .then(function (d) {
         if (d.ok) {
-          status.textContent = 'Спасибо! Сообщение отправлено.';
+          status.textContent = T.formThanks;
           status.style.color = '#1a7a3a';
           form.reset();
         } else {
-          status.textContent = 'Не отправлено: ' + (d.error || 'ошибка');
+          status.textContent = T.formNotSent + (d.error || 'error');
           status.style.color = '#b00020';
         }
       })
       .catch(function () {
-        status.textContent = 'Ошибка отправки. Попробуйте ещё раз.';
+        status.textContent = T.formError;
         status.style.color = '#b00020';
       });
   });
