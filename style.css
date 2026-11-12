@@ -38,7 +38,6 @@ header {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 12px;
 }
@@ -48,7 +47,7 @@ header {
   color: var(--accent);
 }
 .logo span { color: var(--muted); font-weight: 400; }
-nav { display: flex; flex-wrap: wrap; gap: 14px; }
+nav { display: flex; flex-wrap: wrap; gap: 14px; order: 3; flex-basis: 100%; }
 nav a {
   color: var(--text);
   font-size: 0.95rem;
@@ -184,7 +183,8 @@ article pre code {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  margin-left: 14px;
+  order: 1;
+  margin-left: auto;
   padding: 5px 11px;
   border: 1px solid var(--border);
   border-radius: 16px;
@@ -203,7 +203,8 @@ article pre code {
 
 .site-search {
   position: relative;
-  margin-left: auto;
+  order: 2;
+  margin-left: 0;
   min-width: 200px;
   flex: 0 1 260px;
 }
