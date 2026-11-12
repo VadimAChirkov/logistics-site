@@ -1,31 +1,31 @@
 // Новости логистики и перевозок (автообновление GitHub Actions из RSS).
 // Ручная правка перезапишется при следующем автообновлении.
 window.NEWS = {
-  "updated": "11.11.2026",
+  "updated": "12.11.2026",
   "items": [
     {
-      "title": "Record rates mask ‘dire situation’ for hauliers as costs outstrip earnings",
-      "src": "The Loadstar",
-      "date": "11.11.2026",
-      "url": "https://theloadstar.com/record-rates-mask-dire-situation-for-hauliers-as-costs-outstrip-earnings/"
+      "title": "Экспорт российской молочной продукции по СМП может начаться в 2027 году",
+      "src": "РЖД-Партнер",
+      "date": "12.11.2026",
+      "url": "https://www.rzd-partner.ru/wate-transport/news/eksport-rossiyskoy-molochnoy-produktsii-po-smp-mozhet-nachatsya-v-2027-godu/"
     },
     {
-      "title": "Maersk hit by fresh cyber breach",
-      "src": "Splash 247",
-      "date": "11.11.2026",
-      "url": "https://splash247.com/maersk-hit-by-fresh-cyber-breach/"
+      "title": "Модернизация на взаимных гарантиях",
+      "src": "SeaNews",
+      "date": "12.11.2026",
+      "url": "https://seanews.ru/2026/11/12/ru-modernizacija-na-vzaimnyh-garantijah/"
     },
     {
-      "title": "Flex LNG lines up $145.5m leaseback",
-      "src": "Splash 247",
-      "date": "11.11.2026",
-      "url": "https://splash247.com/flex-lng-lines-up-145-5m-leaseback/"
+      "title": "Первые итоги перехода на электронные перевозочные документы",
+      "src": "SeaNews",
+      "date": "12.11.2026",
+      "url": "https://seanews.ru/2026/11/12/ru-pervye-itogi-perehoda-na-jelektronnye-perevozochnye-dokumenty/"
     },
     {
-      "title": "Volare snaps up $210m VLCC in Trafigura-linked deal",
-      "src": "Splash 247",
-      "date": "11.11.2026",
-      "url": "https://splash247.com/volare-snaps-up-210m-vlcc-in-trafigura-linked-deal/"
+      "title": "Фрахтовый рынок Балтийского моря, неделя 46, 2026",
+      "src": "SeaNews",
+      "date": "12.11.2026",
+      "url": "https://seanews.ru/2026/11/12/ru-frahtovyj-rynok-baltijskogo-morja-nedelja-46-2026/"
     }
   ]
 };
