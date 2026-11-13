@@ -26,12 +26,12 @@ window.MARKET = {
     {
       name: "BDI",
       full: "Baltic Exchange Dry Index",
-      value: "3 020",
+      value: "2 980",
       unit: "пункты",
-      change: "+2.06%",
-      shortChange: "+2.06%",
-      down: false,
-      date: "12.11.2026"
+      change: "−1.32%",
+      shortChange: "−1.32%",
+      down: true,
+      date: "13.11.2026"
     }
   ]
 };
