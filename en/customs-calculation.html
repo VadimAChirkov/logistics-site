@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculation of customs payments — International Logistics</title>
+  <meta name="description" content="Calculation of customs payments: the algorithm for calculating import duty and VAT on import into Russia + a real example on a Deye SUN-6K inverter (TN VED 8504 40 840 0), a 20-foot container from Shanghai.">
+  <link rel="canonical" href="https://chirkov-logistics.ru/en/customs-calculation.html">
+  <meta property="og:site_name" content="International Logistics and Foreign Trade">
+  <meta property="og:title" content="Calculation of customs payments — International Logistics">
+  <meta property="og:description" content="Calculation of customs payments: the algorithm for import duty and VAT + a real example on a Deye SUN-6K inverter, a 20-foot container from Shanghai.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://chirkov-logistics.ru/en/customs-calculation.html">
+  <meta property="og:image" content="https://chirkov-logistics.ru/og-image.png">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chirkov-logistics.ru/og-image.png">
+  <meta name="twitter:title" content="Calculation of customs payments — International Logistics">
+  <meta name="twitter:description" content="Calculation of customs payments: the algorithm for import duty and VAT + a real example on a Deye SUN-6K inverter.">
+  <link rel="alternate" hreflang="ru" href="../customs-calculation.html">
+  <link rel="alternate" hreflang="en" href="customs-calculation.html">
+  <link rel="stylesheet" href="../style.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+      m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=114146146', 'ym');
+
+    ym(114146146, 'init', {webvisor:true, clickmap:true, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/114146146" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://chirkov-logistics.ru/index.html"}, {"@type": "ListItem", "position": 2, "name": "Calculation of customs payments — International Logistics", "item": "https://chirkov-logistics.ru/en/customs-calculation.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "Calculation of customs payments — International Logistics", "url": "https://chirkov-logistics.ru/en/customs-calculation.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://chirkov-logistics.ru/en/customs-calculation.html"}}
+</script>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="logo">International Logistics <span>/ knowledge and practice</span></div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="incoterms.html">Incoterms</a>
+        <a href="sea-freight.html">Sea freight</a>
+        <a href="rail-freight.html">Rail freight</a>
+        <a href="air-freight.html">Air freight</a>
+        <a href="road-freight.html">Road freight</a>
+        <a href="dangerous-goods.html">Dangerous goods</a>
+        <a href="customs-clearance.html" class="active">Customs clearance</a>
+        <a href="ucp600.html">UCP-600</a>
+        <a href="vat-export-import.html">VAT (export/import)</a>
+        <a href="glossary.html">Glossary</a>
+        <a href="news.html">News market</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="../customs-calculation.html" class="lang-switch" lang="ru" title="Русский">RU</a>
+    </div>
+  </header>
+  <main>
+    <article>
+      <p class="breadcrumb">Home → Customs clearance → Calculation of customs payments</p>
+      <h1>Calculation of customs payments</h1>
+
+      <p>Below is the algorithm for calculating customs duty and VAT on the importation of goods into the customs territory of Russia, with a real example.</p>
+
+      <h2>Calculation algorithm</h2>
+      <ol>
+        <li><strong>Determine the customs value (CV)</strong> = value of the goods + cost of carriage to the EAEU border + insurance.</li>
+        <li><strong>Calculate the import duty</strong> = CV × duty rate (by TN VED code).</li>
+        <li><strong>Calculate VAT</strong> = (CV + duty) × VAT rate (usually 20%).</li>
+        <li><strong>Total payments</strong> = duty + VAT (+ customs fees for operations).</li>
+      </ol>
+
+      <div class="note">
+        <strong>An important nuance:</strong> the customs value includes carriage <strong>only up to the EAEU border</strong>. Carriage within the customs territory (for example, Vladivostok → Moscow) is <strong>not</strong> included in the CV where it is itemised separately in the documents and not included in the price of the goods. Including the full freight to the final destination in the CV is a frequent mistake leading to overpayment of VAT.
+      </div>
+
+      <h2>A real example</h2>
+      <p><strong>Product:</strong> Deye SUN-6K-SG05LP1-EU-SM2-P hybrid solar inverter, 6 kW.</p>
+      <p><strong>Delivery:</strong> Shanghai → Moscow, one 20-foot container.</p>
+
+      <h3>Initial data</h3>
+      <table>
+        <thead><tr><th>Parameter</th><th>Value</th></tr></thead>
+        <tbody>
+          <tr><td>TN VED code</td><td><strong>8504 40 840 0</strong> (static converters ≤ 7.5 kVA)</td></tr>
+          <tr><td>Import duty rate</td><td><strong>0%</strong></td></tr>
+          <tr><td>VAT rate</td><td><strong>20%</strong></td></tr>
+          <tr><td>Value of the goods in the container</td><td>RUB 3,453,750</td></tr>
+          <tr><td>Freight Shanghai → Vladivostok</td><td>USD 3,500</td></tr>
+          <tr><td>CBR exchange rate (on the settlement date)</td><td>82.9803 RUB/USD</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Step 1. Freight in rubles</h3>
+      <p>3,500 × 82.9803 = <strong>RUB 290,431.05</strong></p>
+
+      <h3>Step 2. Insurance premium</h3>
+      <p>Insurance base = freight + value of the goods = 290,431.05 + 3,453,750 = <strong>RUB 3,744,181.05</strong>.</p>
+      <p>Insured amount = base × 110% = 3,744,181.05 × 1.10 = <strong>RUB 4,118,599.16</strong>.</p>
+      <p>Insurance premium = insured amount × 0.5% = 4,118,599.16 × 0.005 = <strong>RUB 20,593.00</strong>.</p>
+
+      <h3>Step 3. Customs value</h3>
+      <p>CV = goods + freight to the border + insurance = 3,453,750 + 290,431.05 + 20,593.00 = <strong>RUB 3,764,774.05</strong>.</p>
+
+      <h3>Step 4. Import duty</h3>
+      <p>CV × 0% = <strong>RUB 0</strong>.</p>
+
+      <h3>Step 5. VAT</h3>
+      <p>(CV + duty) × 20% = 3,764,774.05 × 0.20 = <strong>RUB 752,954.81</strong>.</p>
+
+      <h3>Result</h3>
+      <table>
+        <thead><tr><th>Payment</th><th>Amount</th></tr></thead>
+        <tbody>
+          <tr><td>Import duty</td><td>RUB 0</td></tr>
+          <tr><td>VAT 20%</td><td>RUB 752,954.81</td></tr>
+          <tr><td><strong>Total customs payments</strong></td><td><strong>RUB 752,954.81</strong></td></tr>
+          <tr><td>Customs operations fee (for reference)</td><td>~RUB 7,500</td></tr>
+        </tbody>
+      </table>
+      <p><strong>The importer's full cost</strong> (goods + freight + insurance + VAT) ≈ <strong>RUB 4,517,729</strong> — excluding the Vladivostok → Moscow carriage.</p>
+
+      <div class="note">
+        <strong>Note:</strong> the calculation is given for educational purposes. Rates, exchange rates and thresholds may change — before a shipment, verify them against current data (EAEU TN VED, the Common Customs Tariff, the CBR exchange rate).
+      </div>
+    </article>
+  </main>
+  <footer>
+    © <span id="current-year"></span> International Logistics and Foreign Trade · materials for industry professionals
+    <br><a href="literature.html">References and sources</a> · <a href="disclaimer.html">Legal information</a> · <a href="contributors.html">Contributors</a>
+  </footer>
+  <script src="search-index.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
