@@ -4,34 +4,76 @@ window.NEWS = {
   "updated": "13.11.2026",
   "items": [
     {
-      "title": "Девелоперы придерживают метры: Light Industrial недодал рынку две трети обещанного",
+      "title": "Трамвайные диаметры сократили число автомобилей на дорогах Москвы на 1,1 тыс. в сутки",
+      "src": "РЖД-Партнер",
+      "date": "13.11.2026",
+      "url": "https://www.rzd-partner.ru/zhd-transport/news/tramvaynye-diametry-sokratili-chislo-avtomobiley-na-dorogakh-moskvy-na-1-1-tys-v-sutki/"
+    },
+    {
+      "title": "Суд взыскал с «Волго-Дон порта» 213,5 млн рублей в пользу «Астона»",
+      "src": "PortNews",
+      "date": "13.11.2026",
+      "url": "https://portnews.ru/news/399586/"
+    },
+    {
+      "title": "Ввоз через Казахстан и Турцию перестал быть безопасной схемой: таможня начисляет антидемпинг на товары",
       "src": "Logirus",
       "date": "13.11.2026",
-      "url": "https://logirus.ru/news/infrastructure/developery_priderzhivayut_metry_light_industrial_nedodal_rynku_dve_treti_obeshchannogo.html"
+      "url": "https://logirus.ru/news/custom_and_ved/vvoz_cherez_kazakhstan_i_turtsiyu_perestal_byt_bezopasnoy_skhemoy_tamozhnya_nachislyaet_antidemping.html"
     },
     {
-      "title": "Строительство глубоководного терминала Найба в Якутии может начаться в 2028 году",
+      "title": "На БАМе внедрят технологию виртуальной сцепки для тепловозов",
       "src": "РЖД-Партнер",
       "date": "13.11.2026",
-      "url": "https://www.rzd-partner.ru/wate-transport/news/stroitelstvo-glubokovodnogo-terminala-nayba-v-yakutii-mozhet-nachatsya-v-2028-godu/"
+      "url": "https://www.rzd-partner.ru/zhd-transport/news/na-bame-vnedryat-tekhnologiyu-virtualnoy-stsepki-dlya-teplovozov/"
     },
     {
-      "title": "Прибыль Таллинского порта сократилась на 18% на фоне роста выручки",
-      "src": "РЖД-Партнер",
+      "title": "Blanked sailings on the rise, with container spot rates on a gentle decline",
+      "src": "The Loadstar",
       "date": "13.11.2026",
-      "url": "https://www.rzd-partner.ru/wate-transport/news/pribyl-tallinskogo-porta-sokratilas-na-18-na-fone-rosta-vyruchki/"
+      "url": "https://theloadstar.com/blanked-sailings-on-the-rise-with-container-spot-rates-on-a-gentle-decline/"
     },
     {
-      "title": "Число проходов судов через Босфор и Дарданеллы сократилось на 7,4% за 9 месяцев",
+      "title": "Один блок – несколько хозяев: Light Industrial переходит на коммунальный режим",
+      "src": "Logirus",
+      "date": "13.11.2026",
+      "url": "https://logirus.ru/news/infrastructure/odin_blok_neskolko_khozyaev_light_industrial_perekhodit_na_kommunalnyy_rezhim.html"
+    },
+    {
+      "title": "Правительство обсудило развитие пяти международных транспортных коридоров",
+      "src": "InfraNews",
+      "date": "13.11.2026",
+      "url": "https://www.infranews.ru/novosti/72108-pravitelstvo-obsudilo-razvitie-pyati-mezhdunarodnyh-transportnyh-koridorov/"
+    },
+    {
+      "title": "VIII Международная конференция «ТрансКонт 2026»",
+      "src": "SeaNews",
+      "date": "13.11.2026",
+      "url": "https://seanews.ru/2026/11/13/ru-viii-mezhdunarodnaja-konferencija-transkont-2026/"
+    },
+    {
+      "title": "Андрей Никитин: Российские маршруты должны быть конкурентными по скорости, стоимости и качеству перевозки",
       "src": "PortNews",
       "date": "13.11.2026",
-      "url": "https://portnews.ru/news/399569/"
+      "url": "https://portnews.ru/news/399582/"
     },
     {
-      "title": "Китайские верфи сосредоточили 100% мировых заказов на контейнеровозы вместимостью 5000–7500 TEU",
-      "src": "PortNews",
+      "title": "After $604M verdict, fleets face AI camera blind spots",
+      "src": "FreightWaves",
       "date": "13.11.2026",
-      "url": "https://portnews.ru/news/399566/"
+      "url": "https://www.freightwaves.com/news/ai-dash-cam-false-negatives-fleet-liability"
+    },
+    {
+      "title": "Pinglu Canal fuels Nanning ambition to be an ASEAN logistics hub",
+      "src": "The Loadstar",
+      "date": "13.11.2026",
+      "url": "https://theloadstar.com/pinglu-canal-fuels-nanning-ambition-to-be-an-asean-logistics-hub/"
+    },
+    {
+      "title": "Хамина-Котка: Транзитная перевалка стремится к нулю",
+      "src": "InfraNews",
+      "date": "13.11.2026",
+      "url": "https://www.infranews.ru/novosti/72106-hamina-kotka-tranzitnaya-perevalka-stremitsya-k-nulyu/"
     },
     {
       "title": "From ocean liner to artificial reef: A warning for container shipping",
@@ -40,28 +82,10 @@ window.NEWS = {
       "url": "https://splash247.com/from-ocean-liner-to-artificial-reef-a-warning-for-container-shipping/"
     },
     {
-      "title": "Таможня централизовала предварительные решения: 1778 заявлений за неполный год",
-      "src": "Logirus",
-      "date": "13.11.2026",
-      "url": "https://logirus.ru/news/custom_and_ved/tamozhnya_tsentralizovala_predvaritelnye_resheniya_1778_zayavleniy_za_nepolnyy_god.html"
-    },
-    {
       "title": "BW LPG scores another lucrative Avance VLGC flip",
       "src": "Splash 247",
       "date": "13.11.2026",
       "url": "https://splash247.com/bw-lpg-scores-another-lucrative-avance-vlgc-flip/"
-    },
-    {
-      "title": "Композитный фрахтовый индекс Drewry WCI снижается третью неделю подряд",
-      "src": "InfraNews",
-      "date": "13.11.2026",
-      "url": "https://www.infranews.ru/novosti/72103-kompozitnyj-frahtovyj-indeks-drewry-wci-snizhaetsya-tretyu-nedelyu-podryad/"
-    },
-    {
-      "title": "СКЖД планирует развитие железнодорожной инфраструктуры в Дагестане",
-      "src": "InfraNews",
-      "date": "13.11.2026",
-      "url": "https://www.infranews.ru/novosti/72101-skzhd-planiruet-razvitie-zheleznodorozhnoj-infrastruktury-v-dagestane/"
     },
     {
       "title": "Фрахтовый рынок Черного моря, 46 неделя, 2026",
@@ -70,34 +94,10 @@ window.NEWS = {
       "url": "https://seanews.ru/2026/11/13/ru-frahtovyj-rynok-chernogo-morja-46-nedelja-2026/"
     },
     {
-      "title": "Прирост грузопотока по Каме может увеличиться на 4 млн тонн в год",
-      "src": "SeaNews",
-      "date": "13.11.2026",
-      "url": "https://seanews.ru/2026/11/13/ru-prirost-gruzopotoka-po-kame-mozhet-uvelichitsja-na-4-mln-tonn-v-god/"
-    },
-    {
-      "title": "SS United States Sits Upright on Gulf Seafloor After Historic Sinking",
-      "src": "gCaptain",
+      "title": "What The B-1 Visa Lets A Foreign Truck Driver Legally Do In The United States",
+      "src": "FreightWaves",
       "date": "12.11.2026",
-      "url": "https://gcaptain.com/ss-united-states-sits-upright-on-gulf-seafloor-after-historic-sinking/"
-    },
-    {
-      "title": "Port of Los Angeles Sets October Cargo Record as Strike Threat and Rail Delays Loom",
-      "src": "gCaptain",
-      "date": "12.11.2026",
-      "url": "https://gcaptain.com/port-of-los-angeles-sets-october-cargo-record-as-strike-threat-and-rail-delays-loom/"
-    },
-    {
-      "title": "Strong freight rates help Hapag-Lloyd profits soar, despite loss of market share",
-      "src": "The Loadstar",
-      "date": "12.11.2026",
-      "url": "https://theloadstar.com/strong-freight-rates-help-hapag-lloyd-profits-soar-despite-loss-of-market-share/"
-    },
-    {
-      "title": "Spanish box terminals face cargo backlog after general strike",
-      "src": "The Loadstar",
-      "date": "12.11.2026",
-      "url": "https://theloadstar.com/spanish-box-terminals-face-cargo-backlog-after-general-strike/"
+      "url": "https://www.freightwaves.com/news/what-the-b-1-visa-lets-a-foreign-truck-driver-legally-do-in-the-united-states"
     }
   ]
 };
