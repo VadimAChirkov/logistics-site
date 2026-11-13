@@ -15,7 +15,7 @@ GRAY_FILL = "#eef2f6"
 GRAY_BORDER = "#cbd5e0"
 
 W = 1040
-H = 1060
+H = 1180
 
 # --- Данные ---
 DATA = {
@@ -28,7 +28,7 @@ DATA = {
         "variant1_title": "ВАРИАНТ 1 · УСЛУГА «ПОД КЛЮЧ»",
         "variant1_lines": ["Договор с организацией, имеющей:", "подъездной путь · грузоподъёмные механизмы ·", "аттестованный персонал · ЕЛС"],
         "variant2_title": "ВАРИАНТ 2 · ПОШАГОВЫЙ ПОРЯДОК",
-        "variant2_sub": "11 шагов для владельца подъездного пути",
+        "variant2_sub": "12 шагов для владельца подъездного пути",
         "steps": [
             ("Договор на подачу-уборку вагонов", "заключить с РЖД на обслуживание пути"),
             ("Инспекция инфраструктуры", "ПЧ · ШЧ · соответствие ПТЭ"),
@@ -36,6 +36,7 @@ DATA = {
             ("Погрузка и крепление по ТУ", "Технические условия · ЦМ-943"),
             ("Аттестация работников", "проверка знаний ТУ · товарная контора"),
             ("Запись на обороте накладной", "графа 1 · средства крепления · печать"),
+            ("Договор с оператором подвижного состава", "согласовать ставку за перевозку"),
             ("Заявка на перевозку (ГУ-12)", "приказ Минтранса № 228 · за 10/15 дней"),
             ("Подача вагонов под погрузку", "планирование со станцией"),
             ("Проверка погрузки", "приёмосдатчик · ТУ / МТУ / НТУ"),
@@ -54,7 +55,7 @@ DATA = {
         "variant1_title": "OPTION 1 · TURNKEY SERVICE",
         "variant1_lines": ["Contract with an organisation that has:", "siding · lifting equipment ·", "certified personnel · ELS"],
         "variant2_title": "OPTION 2 · STEP-BY-STEP PROCEDURE",
-        "variant2_sub": "11 steps for the siding owner",
+        "variant2_sub": "12 steps for the siding owner",
         "steps": [
             ("Wagon supply/removal agreement", "conclude with RZD to service the siding"),
             ("Infrastructure inspection", "PCh · ShCh · compliance with PTE"),
@@ -62,6 +63,7 @@ DATA = {
             ("Loading and securing under the TU", "Technical Conditions · TsM-943"),
             ("Personnel certification", "TU knowledge test · goods office"),
             ("Endorsement on the note reverse", "column 1 · securing devices · seal"),
+            ("Contract with the rolling stock operator", "agree the carriage rate"),
             ("Carriage application (GU-12)", "Order No. 228 · 10/15 days ahead"),
             ("Wagon supply for loading", "planning with the station"),
             ("Loading check", "cargo acceptance clerk · TU / MTU / NTU"),
@@ -81,8 +83,8 @@ OUTCOME_Y, OUTCOME_H = 208, 100
 STEPS_Y = 348
 BOX_W, BOX_H, ROW_PITCH = 420, 92, 116
 COL0, COL1 = 60, 560
-CONCL_Y, CONCL_H = 928, 92
-FOOTER_Y = 1040
+CONCL_Y, CONCL_H = 1044, 92
+FOOTER_Y = 1166
 
 # Серпантин: 10 шагов на 5 рядах (2 колонки), 11-й — финальная широкая полоса
 def serpentine_pos(i):
@@ -169,7 +171,7 @@ def build(lang):
     def v_arrow(x, y1, y2):
         p.append('<line x1="%d" y1="%d" x2="%d" y2="%d" stroke="%s" stroke-width="2" marker-end="url(#arr)"/>' % (x, y1, x, y2, ACCENT))
     COL0_R, COL1_L = COL0 + BOX_W, COL1
-    for i in range(9):
+    for i in range(10):
         x, y = serpentine_pos(i)
         nx, ny = serpentine_pos(i + 1)
         cy = y + BOX_H // 2
@@ -185,11 +187,11 @@ def build(lang):
     fx, fw = 60, 920
     p.append('<rect x="%d" y="%d" width="%d" height="%d" rx="10" fill="%s"/>' % (fx, CONCL_Y, fw, CONCL_H, ACCENT))
     p.append('<circle cx="%d" cy="%d" r="16" fill="%s"/>' % (fx + 40, CONCL_Y + CONCL_H // 2, WHITE))
-    p.append('<text x="%d" y="%d" text-anchor="middle" font-size="14" font-weight="bold" fill="%s">11</text>' % (fx + 40, CONCL_Y + CONCL_H // 2 + 5, ACCENT))
+    p.append('<text x="%d" y="%d" text-anchor="middle" font-size="14" font-weight="bold" fill="%s">12</text>' % (fx + 40, CONCL_Y + CONCL_H // 2 + 5, ACCENT))
     p.append('<text x="%d" y="%d" font-size="16" font-weight="bold" fill="%s">%s</text>' % (fx + 68, CONCL_Y + 40, WHITE, esc(d["final_title"])))
     p.append('<text x="%d" y="%d" font-size="12.5" fill="%s" opacity="0.9">%s</text>' % (fx + 68, CONCL_Y + 64, WHITE, esc(d["final_sub"])))
-    # стрелка от шага 10 (нижний правый) вниз
-    lx, ly = serpentine_pos(9)
+    # стрелка от шага 11 вниз
+    lx, ly = serpentine_pos(10)
     v_arrow(lx + BOX_W // 2, ly + BOX_H + 2, CONCL_Y - 6)
 
     # Подпись-футер
