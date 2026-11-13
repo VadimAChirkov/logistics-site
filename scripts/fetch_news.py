@@ -14,13 +14,17 @@ from email.utils import parsedate_to_datetime
 
 # Источники: (url RSS, отображаемое имя)
 SOURCES = [
+    ("https://portnews.ru/news/rss/", "PortNews"),
+    ("https://infranews.ru/rss/", "InfraNews"),
+    ("https://logirus.ru/news/rss/", "Logirus"),
+    ("https://www.freightwaves.com/rss", "FreightWaves"),
     ("https://splash247.com/feed/", "Splash 247"),
     ("https://theloadstar.com/feed/", "The Loadstar"),
     ("https://www.rzd-partner.ru/news/rss/", "РЖД-Партнер"),
     ("https://seanews.ru/rss/", "SeaNews"),
 ]
 
-MAX_ITEMS = 4
+MAX_ITEMS = 10
 OUTPUT = "news-data.js"
 UA = "Mozilla/5.0 (compatible; logistics-news-bot/1.0)"
 
@@ -137,7 +141,7 @@ def main():
         "items": items_out,
     }
 
-    js = "// Новости логистики и перевозок (автообновление GitHub Actions из RSS).\n" \
+    js = "// Новости рынка логистики и перевозок (автообновление GitHub Actions из RSS).\n" \
          "// Ручная правка перезапишется при следующем автообновлении.\n" \
          "window.NEWS = " + json.dumps(payload, ensure_ascii=False, indent=2) + ";\n"
 
