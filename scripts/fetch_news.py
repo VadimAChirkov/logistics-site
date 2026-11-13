@@ -24,7 +24,8 @@ SOURCES = [
     ("https://seanews.ru/rss/", "SeaNews"),
 ]
 
-MAX_ITEMS = 10
+MAX_ITEMS = 14
+PER_SOURCE = 2   # сколько самых свежих записей брать с каждого источника
 OUTPUT = "news-data.js"
 UA = "Mozilla/5.0 (compatible; logistics-news-bot/1.0)"
 
@@ -85,31 +86,35 @@ def parse_date(raw):
 
 
 def main():
-    all_items = []
-    for url, name in SOURCES:
-        try:
-            data = fetch(url)
-            items = parse_feed(data, name)
-            all_items.extend(items)
-            print(f"[OK] {name}: {len(items)} записей")
-        except Exception as e:  # noqa: BLE001
-            print(f"[SKIP] {name}: {e}", file=sys.stderr)
-
-    if not all_items:
-        print("Не удалось получить ни одной записи. Выход без записи.", file=sys.stderr)
-        return 0
-
-    # сортировка по дате (новые сверху), без даты — в конец
     def sort_key(it):
         d = parse_date(it.get("date_raw"))
         return d.timestamp() if d else 0
 
-    all_items.sort(key=sort_key, reverse=True)
+    # 1) с каждого источника берём PER_SOURCE самых свежих записей,
+    #    чтобы в ленте были представлены ВСЕ источники, а не только самые оперативные
+    balanced = []
+    for url, name in SOURCES:
+        try:
+            data = fetch(url)
+            items = parse_feed(data, name)
+            items.sort(key=sort_key, reverse=True)
+            kept = items[:PER_SOURCE]
+            balanced.extend(kept)
+            print(f"[OK] {name}: {len(items)} записей, взято {len(kept)}")
+        except Exception as e:  # noqa: BLE001
+            print(f"[SKIP] {name}: {e}", file=sys.stderr)
 
-    # дедупликация по URL
+    if not balanced:
+        print("Не удалось получить ни одной записи. Выход без записи.", file=sys.stderr)
+        return 0
+
+    # 2) сортируем всё вместе по дате (новые сверху), без даты — в конец
+    balanced.sort(key=sort_key, reverse=True)
+
+    # 3) дедупликация по URL + ограничение MAX_ITEMS
     seen = set()
     picked = []
-    for it in all_items:
+    for it in balanced:
         if it["url"] in seen:
             continue
         seen.add(it["url"])

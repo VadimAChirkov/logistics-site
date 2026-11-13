@@ -4,40 +4,70 @@ window.NEWS = {
   "updated": "13.11.2026",
   "items": [
     {
-      "title": "HD Hyundai и Anduril спустили на воду в Южной Корее 600-тонный военный беспилотник",
-      "src": "PortNews",
-      "date": "13.11.2026",
-      "url": "https://portnews.ru/news/399555/"
-    },
-    {
-      "title": "Узбекистан и Таджикистан намерены ускорить разгрузку вагонов и повысить пропускную способность границы",
+      "title": "Строительство глубоководного терминала Найба в Якутии может начаться в 2028 году",
       "src": "РЖД-Партнер",
       "date": "13.11.2026",
-      "url": "https://www.rzd-partner.ru/zhd-transport/news/uzbekistan-i-tadzhikistan-namereny-uskorit-razgruzku-vagonov-i-povysit-propusknuyu-sposobnost-granits/"
+      "url": "https://www.rzd-partner.ru/wate-transport/news/stroitelstvo-glubokovodnogo-terminala-nayba-v-yakutii-mozhet-nachatsya-v-2028-godu/"
     },
     {
-      "title": "Мостовой переход Нижнеленинское – Тунцзян расширит перевозки грузов за счет продукции АПК",
+      "title": "Прибыль Таллинского порта сократилась на 18% на фоне роста выручки",
       "src": "РЖД-Партнер",
       "date": "13.11.2026",
-      "url": "https://www.rzd-partner.ru/logistics/news/mostovoy-perekhod-nizhneleninskoe-tuntszyan-rasshirit-perevozki-gruzov-za-schet-produktsii-apk/"
+      "url": "https://www.rzd-partner.ru/wate-transport/news/pribyl-tallinskogo-porta-sokratilas-na-18-na-fone-rosta-vyruchki/"
     },
     {
-      "title": "С терминала «Моби Дик» (Кронштадт) в Египет отправлена крупная партия продукции ЛПК",
+      "title": "Число проходов судов через Босфор и Дарданеллы сократилось на 7,4% за 9 месяцев",
       "src": "PortNews",
       "date": "13.11.2026",
-      "url": "https://portnews.ru/news/399553/"
+      "url": "https://portnews.ru/news/399569/"
     },
     {
-      "title": "На строящемся БМРТ «Виктор Гаврилов» начата затяжка магистрального кабеля",
+      "title": "‘Read my lips ass*ole: Collect. That. Credit. Fast!’",
+      "src": "The Loadstar",
+      "date": "13.11.2026",
+      "url": "https://theloadstar.com/read-my-lips-assole-collect-that-credit-fast/"
+    },
+    {
+      "title": "Китайские верфи сосредоточили 100% мировых заказов на контейнеровозы вместимостью 5000–7500 TEU",
       "src": "PortNews",
       "date": "13.11.2026",
-      "url": "https://portnews.ru/news/399551/"
+      "url": "https://portnews.ru/news/399566/"
     },
     {
-      "title": "Россия и Китай выбрали разные модели цифровизации перевозочных документов",
-      "src": "РЖД-Партнер",
+      "title": "From ocean liner to artificial reef: A warning for container shipping",
+      "src": "Splash 247",
       "date": "13.11.2026",
-      "url": "https://www.rzd-partner.ru/zhd-transport/news/rossiya-i-kitay-vybrali-raznye-modeli-tsifrovizatsii-perevozochnykh-dokumentov/"
+      "url": "https://splash247.com/from-ocean-liner-to-artificial-reef-a-warning-for-container-shipping/"
+    },
+    {
+      "title": "Таможня централизовала предварительные решения: 1778 заявлений за неполный год",
+      "src": "Logirus",
+      "date": "13.11.2026",
+      "url": "https://logirus.ru/news/custom_and_ved/tamozhnya_tsentralizovala_predvaritelnye_resheniya_1778_zayavleniy_za_nepolnyy_god.html"
+    },
+    {
+      "title": "BW LPG scores another lucrative Avance VLGC flip",
+      "src": "Splash 247",
+      "date": "13.11.2026",
+      "url": "https://splash247.com/bw-lpg-scores-another-lucrative-avance-vlgc-flip/"
+    },
+    {
+      "title": "Композитный фрахтовый индекс Drewry WCI снижается третью неделю подряд",
+      "src": "InfraNews",
+      "date": "13.11.2026",
+      "url": "https://www.infranews.ru/novosti/72103-kompozitnyj-frahtovyj-indeks-drewry-wci-snizhaetsya-tretyu-nedelyu-podryad/"
+    },
+    {
+      "title": "Сборка день в день или штраф по полной: у FBS-продавцов появился таймер обратного отсчета",
+      "src": "Logirus",
+      "date": "13.11.2026",
+      "url": "https://logirus.ru/news/e-commerce/sborka_den_v_den_ili_shtraf_po_polnoy_u_fbs-prodavtsov_poyavilsya_taymer_obratnogo_otscheta.html"
+    },
+    {
+      "title": "СКЖД планирует развитие железнодорожной инфраструктуры в Дагестане",
+      "src": "InfraNews",
+      "date": "13.11.2026",
+      "url": "https://www.infranews.ru/novosti/72101-skzhd-planiruet-razvitie-zheleznodorozhnoj-infrastruktury-v-dagestane/"
     },
     {
       "title": "BBC: Microsoft says attempts to fix global outage not going ‘as expected’",
@@ -46,22 +76,16 @@ window.NEWS = {
       "url": "https://theloadstar.com/bbc-microsoft-says-attempts-to-fix-global-outage-not-going-as-expected/"
     },
     {
-      "title": "Экспертный разговор «Макроэкономика и транспортный комплекс: вызовы, тенденции, прогнозы» в рамках XXIV конференции «Рынок транспортных услуг: взаимодействие и партнерство», 3.12.2026 г. в Москве",
-      "src": "РЖД-Партнер",
+      "title": "Фрахтовый рынок Черного моря, 46 неделя, 2026",
+      "src": "SeaNews",
       "date": "13.11.2026",
-      "url": "https://www.rzd-partner.ru/zhd-transport/news/ekspertnyy-razgovor-makroekonomika-i-transportnyy-kompleks-vyzovy-tendentsii-prognozy-v-ramkakh-xxiv/"
+      "url": "https://seanews.ru/2026/11/13/ru-frahtovyj-rynok-chernogo-morja-46-nedelja-2026/"
     },
     {
-      "title": "Понтонную переправу для грузовых перевозок между Россией и Китаем планируют запустить в 2027 году",
-      "src": "РЖД-Партнер",
+      "title": "Прирост грузопотока по Каме может увеличиться на 4 млн тонн в год",
+      "src": "SeaNews",
       "date": "13.11.2026",
-      "url": "https://www.rzd-partner.ru/zhd-transport/news/pontonnuyu-perepravu-dlya-gruzovykh-perevozok-mezhdu-rossiey-i-kitaem-planiruyut-zapustit-v-2027-god/"
-    },
-    {
-      "title": "В «Малом порту» (Находка) отработано тушение пожара в приближенных к реальным условиях",
-      "src": "PortNews",
-      "date": "13.11.2026",
-      "url": "https://portnews.ru/news/399550/"
+      "url": "https://seanews.ru/2026/11/13/ru-prirost-gruzopotoka-po-kame-mozhet-uvelichitsja-na-4-mln-tonn-v-god/"
     }
   ]
 };
