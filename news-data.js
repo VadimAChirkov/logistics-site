@@ -4,6 +4,12 @@ window.NEWS = {
   "updated": "13.11.2026",
   "items": [
     {
+      "title": "Девелоперы придерживают метры: Light Industrial недодал рынку две трети обещанного",
+      "src": "Logirus",
+      "date": "13.11.2026",
+      "url": "https://logirus.ru/news/infrastructure/developery_priderzhivayut_metry_light_industrial_nedodal_rynku_dve_treti_obeshchannogo.html"
+    },
+    {
       "title": "Строительство глубоководного терминала Найба в Якутии может начаться в 2028 году",
       "src": "РЖД-Партнер",
       "date": "13.11.2026",
@@ -20,12 +26,6 @@ window.NEWS = {
       "src": "PortNews",
       "date": "13.11.2026",
       "url": "https://portnews.ru/news/399569/"
-    },
-    {
-      "title": "‘Read my lips ass*ole: Collect. That. Credit. Fast!’",
-      "src": "The Loadstar",
-      "date": "13.11.2026",
-      "url": "https://theloadstar.com/read-my-lips-assole-collect-that-credit-fast/"
     },
     {
       "title": "Китайские верфи сосредоточили 100% мировых заказов на контейнеровозы вместимостью 5000–7500 TEU",
@@ -58,22 +58,10 @@ window.NEWS = {
       "url": "https://www.infranews.ru/novosti/72103-kompozitnyj-frahtovyj-indeks-drewry-wci-snizhaetsya-tretyu-nedelyu-podryad/"
     },
     {
-      "title": "Сборка день в день или штраф по полной: у FBS-продавцов появился таймер обратного отсчета",
-      "src": "Logirus",
-      "date": "13.11.2026",
-      "url": "https://logirus.ru/news/e-commerce/sborka_den_v_den_ili_shtraf_po_polnoy_u_fbs-prodavtsov_poyavilsya_taymer_obratnogo_otscheta.html"
-    },
-    {
       "title": "СКЖД планирует развитие железнодорожной инфраструктуры в Дагестане",
       "src": "InfraNews",
       "date": "13.11.2026",
       "url": "https://www.infranews.ru/novosti/72101-skzhd-planiruet-razvitie-zheleznodorozhnoj-infrastruktury-v-dagestane/"
-    },
-    {
-      "title": "BBC: Microsoft says attempts to fix global outage not going ‘as expected’",
-      "src": "The Loadstar",
-      "date": "13.11.2026",
-      "url": "https://theloadstar.com/bbc-microsoft-says-attempts-to-fix-global-outage-not-going-as-expected/"
     },
     {
       "title": "Фрахтовый рынок Черного моря, 46 неделя, 2026",
@@ -86,6 +74,30 @@ window.NEWS = {
       "src": "SeaNews",
       "date": "13.11.2026",
       "url": "https://seanews.ru/2026/11/13/ru-prirost-gruzopotoka-po-kame-mozhet-uvelichitsja-na-4-mln-tonn-v-god/"
+    },
+    {
+      "title": "SS United States Sits Upright on Gulf Seafloor After Historic Sinking",
+      "src": "gCaptain",
+      "date": "12.11.2026",
+      "url": "https://gcaptain.com/ss-united-states-sits-upright-on-gulf-seafloor-after-historic-sinking/"
+    },
+    {
+      "title": "Port of Los Angeles Sets October Cargo Record as Strike Threat and Rail Delays Loom",
+      "src": "gCaptain",
+      "date": "12.11.2026",
+      "url": "https://gcaptain.com/port-of-los-angeles-sets-october-cargo-record-as-strike-threat-and-rail-delays-loom/"
+    },
+    {
+      "title": "Strong freight rates help Hapag-Lloyd profits soar, despite loss of market share",
+      "src": "The Loadstar",
+      "date": "12.11.2026",
+      "url": "https://theloadstar.com/strong-freight-rates-help-hapag-lloyd-profits-soar-despite-loss-of-market-share/"
+    },
+    {
+      "title": "Spanish box terminals face cargo backlog after general strike",
+      "src": "The Loadstar",
+      "date": "12.11.2026",
+      "url": "https://theloadstar.com/spanish-box-terminals-face-cargo-backlog-after-general-strike/"
     }
   ]
 };

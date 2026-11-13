@@ -19,12 +19,13 @@ SOURCES = [
     ("https://logirus.ru/news/rss/", "Logirus"),
     ("https://www.freightwaves.com/rss", "FreightWaves"),
     ("https://splash247.com/feed/", "Splash 247"),
+    ("https://gcaptain.com/feed/", "gCaptain"),
     ("https://theloadstar.com/feed/", "The Loadstar"),
     ("https://www.rzd-partner.ru/news/rss/", "РЖД-Партнер"),
     ("https://seanews.ru/rss/", "SeaNews"),
 ]
 
-MAX_ITEMS = 14
+MAX_ITEMS = 16
 PER_SOURCE = 2   # сколько самых свежих записей брать с каждого источника
 OUTPUT = "news-data.js"
 UA = "Mozilla/5.0 (compatible; logistics-news-bot/1.0)"
@@ -59,6 +60,10 @@ def parse_feed(data, src_name):
         link = (item.findtext("link") or "").strip()
         pub = item.findtext("pubDate") or item.findtext("dc:date") or ""
         if not title or not link:
+            continue
+        # отсев платных/премиум-материалов (например, у The Loadstar категория "Premium")
+        cats = [(c.text or "").strip().lower() for c in item.findall("category")]
+        if any("premium" in c for c in cats):
             continue
         items.append({"title": title, "url": link, "src": src_name, "date_raw": pub})
 
