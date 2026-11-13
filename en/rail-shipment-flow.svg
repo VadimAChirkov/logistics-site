@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 1060" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<defs>
+<marker id="arr" markerWidth="11" markerHeight="11" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,5 L0,10 z" fill="#0a5c8a"/></marker>
+</defs>
+<rect width="1040" height="1060" fill="#ffffff"/>
+<rect x="0" y="0" width="1040" height="92" fill="#0a5c8a"/>
+<text x="520" y="42" text-anchor="middle" font-size="26" font-weight="bold" fill="#ffffff">HOW TO ORGANISE A RAIL SHIPMENT</text>
+<text x="520" y="72" text-anchor="middle" font-size="15" fill="#ffffff" opacity="0.88">within Russia · universal wagon (gondola, flat wagon, covered wagon)</text>
+<polygon points="520,112 670,150 520,188 370,150" fill="#ffffff" stroke="#0a5c8a" stroke-width="2"/>
+<text x="520" y="147" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a2332">Are you the owner</text>
+<text x="520" y="167" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a2332">of the siding?</text>
+<rect x="219" y="135" width="72" height="30" rx="15" fill="#eef2f6" stroke="#cbd5e0" stroke-width="1.5"/>
+<text x="255" y="155" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a2332">NO</text>
+<rect x="749" y="135" width="72" height="30" rx="15" fill="#0a5c8a" stroke="#0a5c8a" stroke-width="1.5"/>
+<text x="785" y="155" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">YES</text>
+<line x1="370" y1="150" x2="297" y2="150" stroke="#0a5c8a" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="670" y1="150" x2="743" y2="150" stroke="#0a5c8a" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="255" y1="165" x2="255" y2="202" stroke="#0a5c8a" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="785" y1="165" x2="785" y2="202" stroke="#0a5c8a" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="40" y="208" width="430" height="100" rx="10" fill="#eef2f6" stroke="#cbd5e0" stroke-width="1.5"/>
+<text x="255" y="236" text-anchor="middle" font-size="15" font-weight="bold" fill="#0a5c8a">OPTION 1 · TURNKEY SERVICE</text>
+<text x="255" y="260" text-anchor="middle" font-size="12.5" fill="#5c6672">Contract with an organisation that has:</text>
+<text x="255" y="278" text-anchor="middle" font-size="12.5" fill="#5c6672">siding · lifting equipment ·</text>
+<text x="255" y="296" text-anchor="middle" font-size="12.5" fill="#5c6672">certified personnel · ELS</text>
+<rect x="560" y="208" width="440" height="100" rx="10" fill="#0a5c8a"/>
+<text x="780" y="246" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffffff">OPTION 2 · STEP-BY-STEP PROCEDURE</text>
+<text x="780" y="272" text-anchor="middle" font-size="13" fill="#ffffff" opacity="0.9">11 steps for the siding owner</text>
+<path d="M 772 290 L 780 300 L 788 290" fill="none" stroke="#ffffff" stroke-width="2"/>
+<rect x="60" y="348" width="420" height="92" rx="10" fill="#ffffff" stroke="#d8e0e8" stroke-width="1.5"/>
+<rect x="60" y="362" width="5" height="64" rx="2" fill="#0a5c8a"/>
+<circle cx="100" cy="394" r="16" fill="#0a5c8a"/>
+<text x="100" y="399" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">1</text>
+<text x="128" y="388" font-size="15" font-weight="bold" fill="#1a2332">Wagon supply/removal agreement</text>
+<text x="128" y="412" font-size="12" fill="#5c6672">conclude with RZD to service the siding</text>
+<rect x="560" y="348" width="420" height="92" rx="10" fill="#ffffff" stroke="#d8e0e8" stroke-width="1.5"/>
+<rect x="560" y="362" width="5" height="64" rx="2" fill="#0a5c8a"/>
+<circle cx="600" cy="394" r="16" fill="#0a5c8a"/>
+<text x="600" y="399" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">2</text>
+<text x="628" y="388" font-size="15" font-weight="bold" fill="#1a2332">Infrastructure inspection</text>
+<text x="628" y="412" font-size="12" fill="#5c6672">PCh · ShCh · compliance with PTE</text>
+<rect x="560" y="464" width="420" height="92" rx="10" fill="#ffffff" stroke="#d8e0e8" stroke-width="1.5"/>
+<rect x="560" y="478" width="5" height="64" rx="2" fill="#0a5c8a"/>
+<circle cx="600" cy="510" r="16" fill="#0a5c8a"/>
+<text x="600" y="515" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">3</text>
+<text x="628" y="504" font-size="15" font-weight="bold" fill="#1a2332">Single settlement account (ELS)</text>
+<text x="628" y="528" font-size="12" fill="#5c6672">settlements with RZD for services</text>
+<rect x="60" y="464" width="420" height="92" rx="10" fill="#ffffff" stroke="#d8e0e8" stroke-width="1.5"/>
+<rect x="60" y="478" width="5" height="64" rx="2" fill="#0a5c8a"/>
+<circle cx="100" cy="510" r="16" fill="#0a5c8a"/>
+<text x="100" y="515" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">4</text>
+<text x="128" y="504" font-size="15" font-weight="bold" fill="#1a2332">Loading and securing under the TU</text>
+<text x="128" y="528" font-size="12" fill="#5c6672">Technical Conditions · TsM-943</text>
+<rect x="60" y="580" width="420" height="92" rx="10" fill="#ffffff" stroke="#d8e0e8" stroke-width="1.5"/>
+<rect x="60" y="594" width="5" height="64" rx="2" fill="#0a5c8a"/>
+<circle cx="100" cy="626" r="16" fill="#0a5c8a"/>
+<text x="100" y="631" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">5</text>
+<text x="128" y="620" font-size="15" font-weight="bold" fill="#1a2332">Personnel certification</text>
+<text x="128" y="644" font-size="12" fill="#5c6672">TU knowledge test · goods office</text>
+<rect x="560" y="580" width="420" height="92" rx="10" fill="#ffffff" stroke="#d8e0e8" stroke-width="1.5"/>
+<rect x="560" y="594" width="5" height="64" rx="2" fill="#0a5c8a"/>
+<circle cx="600" cy="626" r="16" fill="#0a5c8a"/>
+<text x="600" y="631" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">6</text>
+<text x="628" y="620" font-size="15" font-weight="bold" fill="#1a2332">Endorsement on the note reverse</text>
+<text x="628" y="644" font-size="12" fill="#5c6672">column 1 · securing devices · seal</text>
+<rect x="560" y="696" width="420" height="92" rx="10" fill="#ffffff" stroke="#d8e0e8" stroke-width="1.5"/>
+<rect x="560" y="710" width="5" height="64" rx="2" fill="#0a5c8a"/>
+<circle cx="600" cy="742" r="16" fill="#0a5c8a"/>
+<text x="600" y="747" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">7</text>
+<text x="628" y="736" font-size="15" font-weight="bold" fill="#1a2332">Carriage application (GU-12)</text>
+<text x="628" y="760" font-size="12" fill="#5c6672">Order No. 228 · 10/15 days ahead</text>
+<rect x="60" y="696" width="420" height="92" rx="10" fill="#ffffff" stroke="#d8e0e8" stroke-width="1.5"/>
+<rect x="60" y="710" width="5" height="64" rx="2" fill="#0a5c8a"/>
+<circle cx="100" cy="742" r="16" fill="#0a5c8a"/>
+<text x="100" y="747" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">8</text>
+<text x="128" y="736" font-size="15" font-weight="bold" fill="#1a2332">Wagon supply for loading</text>
+<text x="128" y="760" font-size="12" fill="#5c6672">planning with the station</text>
+<rect x="60" y="812" width="420" height="92" rx="10" fill="#ffffff" stroke="#d8e0e8" stroke-width="1.5"/>
+<rect x="60" y="826" width="5" height="64" rx="2" fill="#0a5c8a"/>
+<circle cx="100" cy="858" r="16" fill="#0a5c8a"/>
+<text x="100" y="863" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">9</text>
+<text x="128" y="852" font-size="15" font-weight="bold" fill="#1a2332">Loading check</text>
+<text x="128" y="876" font-size="12" fill="#5c6672">cargo acceptance clerk · TU / MTU / NTU</text>
+<rect x="560" y="812" width="420" height="92" rx="10" fill="#ffffff" stroke="#d8e0e8" stroke-width="1.5"/>
+<rect x="560" y="826" width="5" height="64" rx="2" fill="#0a5c8a"/>
+<circle cx="600" cy="858" r="16" fill="#0a5c8a"/>
+<text x="600" y="863" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">10</text>
+<text x="628" y="852" font-size="15" font-weight="bold" fill="#1a2332">Consignment note issue</text>
+<text x="628" y="876" font-size="12" fill="#5c6672">power of attorney · goods office</text>
+<line x1="482" y1="394" x2="554" y2="394" stroke="#0a5c8a" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="770" y1="442" x2="770" y2="458" stroke="#0a5c8a" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="554" y1="510" x2="482" y2="510" stroke="#0a5c8a" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="270" y1="558" x2="270" y2="574" stroke="#0a5c8a" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="482" y1="626" x2="554" y2="626" stroke="#0a5c8a" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="770" y1="674" x2="770" y2="690" stroke="#0a5c8a" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="554" y1="742" x2="482" y2="742" stroke="#0a5c8a" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="270" y1="790" x2="270" y2="806" stroke="#0a5c8a" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="482" y1="858" x2="554" y2="858" stroke="#0a5c8a" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="60" y="928" width="920" height="92" rx="10" fill="#0a5c8a"/>
+<circle cx="100" cy="974" r="16" fill="#ffffff"/>
+<text x="100" y="979" text-anchor="middle" font-size="14" font-weight="bold" fill="#0a5c8a">11</text>
+<text x="128" y="968" font-size="16" font-weight="bold" fill="#ffffff">Contract of carriage concluded</text>
+<text x="128" y="992" font-size="12.5" fill="#ffffff" opacity="0.9">ETRAN · payment · GU-46 record</text>
+<line x1="770" y1="906" x2="770" y2="922" stroke="#0a5c8a" stroke-width="2" marker-end="url(#arr)"/>
+<text x="520" y="1040" text-anchor="middle" font-size="12" fill="#5c6672">Key control points: personnel certification · securing endorsement · GU-12 request · ETRAN consignment note</text>
+</svg>

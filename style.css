@@ -103,6 +103,18 @@ article .note {
 }
 article .note strong { color: var(--accent); }
 
+/* Инфографика (блок-схемы) */
+figure.infographic { margin: 24px 0; text-align: center; }
+figure.infographic img {
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+}
+figure.infographic figcaption { margin-top: 10px; font-size: 0.85rem; color: var(--muted); }
+
 table {
   width: 100%;
   border-collapse: collapse;
