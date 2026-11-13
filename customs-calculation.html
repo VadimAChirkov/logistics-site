@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Расчёт таможенных платежей — Международная логистика</title>
+  <meta name="description" content="Расчёт таможенных платежей: алгоритм расчёта ввозной пошлины и НДС при импорте в РФ + реальный пример на инверторе Deye SUN-6K (ТН ВЭД 8504 40 840 0), контейнер 20 футов из Шанхая.">
+  <link rel="canonical" href="https://chirkov-logistics.ru/customs-calculation.html">
+  <meta property="og:site_name" content="Международная логистика и ВЭД">
+  <meta property="og:title" content="Расчёт таможенных платежей — Международная логистика">
+  <meta property="og:description" content="Расчёт таможенных платежей: алгоритм расчёта ввозной пошлины и НДС при импорте в РФ + реальный пример на инверторе Deye SUN-6K (ТН ВЭД 8504 40 840 0), контейнер 20 футов из Шанхая.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://chirkov-logistics.ru/customs-calculation.html">
+  <meta property="og:image" content="https://chirkov-logistics.ru/og-image.png">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chirkov-logistics.ru/og-image.png">
+  <meta name="twitter:title" content="Расчёт таможенных платежей — Международная логистика">
+  <meta name="twitter:description" content="Расчёт таможенных платежей: алгоритм расчёта ввозной пошлины и НДС при импорте в РФ + реальный пример на инверторе Deye SUN-6K (ТН ВЭД 8504 40 840 0), контейнер 20 футов из Шанхая.">
+  <link rel="stylesheet" href="style.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+      m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=114146146', 'ym');
+
+    ym(114146146, 'init', {webvisor:true, clickmap:true, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/114146146" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://chirkov-logistics.ru/index.html"}, {"@type": "ListItem", "position": 2, "name": "Расчёт таможенных платежей — Международная логистика", "item": "https://chirkov-logistics.ru/customs-calculation.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "Расчёт таможенных платежей — Международная логистика", "url": "https://chirkov-logistics.ru/customs-calculation.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://chirkov-logistics.ru/customs-calculation.html"}}
+</script>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="logo">Международная логистика <span>/ знания и практика</span></div>
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="incoterms.html">Инкотермс</a>
+        <a href="sea-freight.html">Морские перевозки</a>
+        <a href="rail-freight.html">Ж/д перевозки</a>
+        <a href="air-freight.html">Авиаперевозки</a>
+        <a href="road-freight.html">Автоперевозки</a>
+        <a href="dangerous-goods.html">Опасные грузы</a>
+        <a href="customs-clearance.html" class="active">Таможенное оформление</a>
+        <a href="ucp600.html">UCP-600</a>
+        <a href="vat-export-import.html">НДС (экспорт/импорт)</a>
+        <a href="glossary.html">Глоссарий</a>
+        <a href="about.html">О себе</a>
+        <a href="contact.html">Связаться</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <article>
+      <p class="breadcrumb">Главная → Таможенное оформление → Расчёт таможенных платежей</p>
+      <h1>Расчёт таможенных платежей</h1>
+
+      <p>Ниже — алгоритм расчёта таможенной пошлины и НДС при ввозе товаров на таможенную территорию РФ, с реальным примером.</p>
+
+      <h2>Алгоритм расчёта</h2>
+      <ol>
+        <li><strong>Определить таможенную стоимость (ТС)</strong> = стоимость товара + стоимость перевозки до границы ЕАЭС + страхование.</li>
+        <li><strong>Рассчитать ввозную пошлину</strong> = ТС × ставка пошлины (по коду ТН ВЭД).</li>
+        <li><strong>Рассчитать НДС</strong> = (ТС + пошлина) × ставка НДС (обычно 20%).</li>
+        <li><strong>Сумма платежей</strong> = пошлина + НДС (+ таможенные сборы за операции).</li>
+      </ol>
+
+      <div class="note">
+        <strong>Важный нюанс:</strong> в таможенную стоимость включается перевозка <strong>только до границы ЕАЭС</strong>. Перевозка внутри таможенной территории (например, Владивосток → Москва) в ТС <strong>не входит</strong>, если она выделена отдельно в документах и не входит в цену товара. Закладывать полный фрахт до конечного пункта в ТС — частая ошибка, ведущая к переплате НДС.
+      </div>
+
+      <h2>Реальный пример</h2>
+      <p><strong>Товар:</strong> инвертор Deye SUN-6K-SG05LP1-EU-SM2-P, гибридный солнечный, 6 кВт.</p>
+      <p><strong>Доставка:</strong> Шанхай → Москва, один контейнер 20 футов.</p>
+
+      <h3>Исходные данные</h3>
+      <table>
+        <thead><tr><th>Параметр</th><th>Значение</th></tr></thead>
+        <tbody>
+          <tr><td>Код ТН ВЭД</td><td><strong>8504 40 840 0</strong> (преобразователи статические ≤ 7,5 кВА)</td></tr>
+          <tr><td>Ставка ввозной пошлины</td><td><strong>0%</strong></td></tr>
+          <tr><td>Ставка НДС</td><td><strong>20%</strong></td></tr>
+          <tr><td>Стоимость товаров в контейнере</td><td>3 453 750 ₽</td></tr>
+          <tr><td>Фрахт Шанхай → Владивосток</td><td>3 500 USD</td></tr>
+          <tr><td>Курс ЦБ РФ (на дату расчёта)</td><td>82,9803 ₽/USD</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Шаг 1. Фрахт в рублях</h3>
+      <p>3 500 × 82,9803 = <strong>290 431,05 ₽</strong></p>
+
+      <h3>Шаг 2. Страховая премия</h3>
+      <p>База для страхования = фрахт + стоимость товара = 290 431,05 + 3 453 750 = <strong>3 744 181,05 ₽</strong>.</p>
+      <p>Страховая сумма = база × 110% = 3 744 181,05 × 1,10 = <strong>4 118 599,16 ₽</strong>.</p>
+      <p>Страховая премия = страховая сумма × 0,5% = 4 118 599,16 × 0,005 = <strong>20 593,00 ₽</strong>.</p>
+
+      <h3>Шаг 3. Таможенная стоимость</h3>
+      <p>ТС = товар + фрахт до границы + страхование = 3 453 750 + 290 431,05 + 20 593,00 = <strong>3 764 774,05 ₽</strong>.</p>
+
+      <h3>Шаг 4. Ввозная пошлина</h3>
+      <p>ТС × 0% = <strong>0 ₽</strong>.</p>
+
+      <h3>Шаг 5. НДС</h3>
+      <p>(ТС + пошлина) × 20% = 3 764 774,05 × 0,20 = <strong>752 954,81 ₽</strong>.</p>
+
+      <h3>Итог</h3>
+      <table>
+        <thead><tr><th>Платёж</th><th>Сумма</th></tr></thead>
+        <tbody>
+          <tr><td>Ввозная пошлина</td><td>0 ₽</td></tr>
+          <tr><td>НДС 20%</td><td>752 954,81 ₽</td></tr>
+          <tr><td><strong>Итого таможенные платежи</strong></td><td><strong>752 954,81 ₽</strong></td></tr>
+          <tr><td>Сбор за таможенные операции (справочно)</td><td>~7 500 ₽</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Полная стоимость для импортёра</strong> (товар + фрахт + страхование + НДС) ≈ <strong>4 517 729 ₽</strong> — без учёта перевозки Владивосток → Москва.</p>
+
+      <div class="note">
+        <strong>Примечание:</strong> расчёт приведён для учебных целей. Ставки, курсы валют и пороги могут меняться — перед поставкой сверяйте их по актуальным данным (ТН ВЭД ЕАЭС, Единый таможенный тариф, курс ЦБ РФ).
+      </div>
+    </article>
+  </main>
+  <footer>
+    © <span id="current-year"></span> Международная логистика и ВЭД · материалы для профессионалов отрасли
+    <br><a href="literature.html">Литература и источники</a> · <a href="disclaimer.html">Правовая информация</a>
+  </footer>
+  <script src="search-index.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
