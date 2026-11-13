@@ -1,31 +1,31 @@
 // Новости логистики и перевозок (автообновление GitHub Actions из RSS).
 // Ручная правка перезапишется при следующем автообновлении.
 window.NEWS = {
-  "updated": "12.11.2026",
+  "updated": "13.11.2026",
   "items": [
     {
-      "title": "Seanergy lines up four more bulkers in $855m fleet push",
-      "src": "Splash 247",
-      "date": "12.11.2026",
-      "url": "https://splash247.com/seanergy-lines-up-four-more-bulkers-in-855m-fleet-push/"
+      "title": "Прирост грузопотока по Каме может увеличиться на 4 млн тонн в год",
+      "src": "SeaNews",
+      "date": "13.11.2026",
+      "url": "https://seanews.ru/2026/11/13/ru-prirost-gruzopotoka-po-kame-mozhet-uvelichitsja-na-4-mln-tonn-v-god/"
     },
     {
-      "title": "CNBC: Huang’s exit from Nvidia raises critical questions about the future of AI",
-      "src": "The Loadstar",
-      "date": "12.11.2026",
-      "url": "https://theloadstar.com/cnbc-huangs-exit-from-nvidia-raises-critical-questions-about-the-future-of-ai/"
+      "title": "Правительство субсидирует программы льготного кредитования экспортеров",
+      "src": "SeaNews",
+      "date": "13.11.2026",
+      "url": "https://seanews.ru/2026/11/13/ru-pravitelstvo-subsidiruet-programmy-lgotnogo-kreditovanija-jeksporterov/"
     },
     {
-      "title": "Контейнерные перевозки на СвЖД за 10 месяцев сократились на 17,8%",
-      "src": "РЖД-Партнер",
-      "date": "12.11.2026",
-      "url": "https://www.rzd-partner.ru/zhd-transport/news/konteynernye-perevozki-na-svzhd-za-10-mesyatsev-sokratilis-na-17-8/"
+      "title": "FESCO запустила регулярный жд сервис между Новороссийском и Владивостоком",
+      "src": "SeaNews",
+      "date": "13.11.2026",
+      "url": "https://seanews.ru/2026/11/13/ru-fesco-zapustila-reguljarnyj-zhd-servis-mezhdu-novorossijskom-i-vladivostokom/"
     },
     {
-      "title": "В Якутске построят автомобильный мост за 500 млн рублей",
-      "src": "РЖД-Партнер",
-      "date": "12.11.2026",
-      "url": "https://www.rzd-partner.ru/logistics/news/v-yakutske-postroyat-avtomobilnyy-most-za-500-mln-rubley/"
+      "title": "Фрахтовый рынок Дальнего Востока, неделя 46, 2026",
+      "src": "SeaNews",
+      "date": "13.11.2026",
+      "url": "https://seanews.ru/2026/11/13/ru-frahtovyj-rynok-dalnego-vostoka-nedelja-46-2026/"
     }
   ]
 };
