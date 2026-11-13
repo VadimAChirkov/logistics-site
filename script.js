@@ -167,8 +167,10 @@ window.L10N = (function () {
   }
   var updEl = document.getElementById('market-updated');
   if (updEl) updEl.textContent = M.updated;
+})();
 
-  // Новости
+// Новости (данные из news-data.js)
+(function () {
   var newsBox = document.getElementById('news-widget');
   var newsData = window.NEWS;
   if (newsBox && newsData && newsData.items && newsData.items.length) {
