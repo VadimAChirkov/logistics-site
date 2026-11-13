@@ -1,7 +1,7 @@
 // Рыночные индексы (обновляются вручную еженедельно).
 // SCFI — sse.net.cn (пятница); Drewry WCI — drewry.co.uk (четверг); BDI — balticexchange.com (ежедневно).
 window.MARKET = {
-  updated: "11.11.2026",
+  updated: "13.11.2026",
   indices: [
     {
       name: "SCFI",
@@ -16,22 +16,22 @@ window.MARKET = {
     {
       name: "Drewry WCI",
       full: "World Container Index",
-      value: "$4 389",
+      value: "$4 305",
       unit: "USD / 40ft",
-      change: "−1% к пред. неделе",
-      shortChange: "−1%",
+      change: "−2% к пред. неделе",
+      shortChange: "−2%",
       down: true,
-      date: "05.11.2026"
+      date: "12.11.2026"
     },
     {
       name: "BDI",
       full: "Baltic Exchange Dry Index",
-      value: "2 862",
+      value: "3 020",
       unit: "пункты",
-      change: "+0.28%",
-      shortChange: "+0.28%",
+      change: "+2.06%",
+      shortChange: "+2.06%",
       down: false,
-      date: "10.11.2026"
+      date: "12.11.2026"
     }
   ]
 };
