@@ -6,12 +6,12 @@ window.MARKET = {
     {
       name: "SCFI",
       full: "Shanghai Containerized Freight Index",
-      value: "3633.45",
+      value: "3572.33",
       unit: "пункты",
-      change: "−53.90 (−1.46%)",
-      shortChange: "−1.46%",
+      change: "−61.12 (−1.68%)",
+      shortChange: "−1.68%",
       down: true,
-      date: "06.11.2026"
+      date: "13.11.2026"
     },
     {
       name: "Drewry WCI",
