@@ -4,6 +4,24 @@ window.NEWS = {
   "updated": "14.11.2026",
   "items": [
     {
+      "title": "Три недели вниз: Drewry фиксирует падение ставок, перевозчики отвечают отменами рейсов",
+      "src": "Logirus",
+      "date": "14.11.2026",
+      "url": "https://logirus.ru/news/global_logistics/tri_nedeli_vniz_drewry_fiksiruet_padenie_stavok_perevozchiki_otvechayut_otmenami_reysov.html"
+    },
+    {
+      "title": "Линии намерены добирать грузы в Турции на сервисах Китай — Санкт-Петербург из-за высокой ставки",
+      "src": "PortNews",
+      "date": "14.11.2026",
+      "url": "https://portnews.ru/news/399608/"
+    },
+    {
+      "title": "Военные риски меняют рынок логистических складов в России",
+      "src": "PortNews",
+      "date": "14.11.2026",
+      "url": "https://portnews.ru/news/399607/"
+    },
+    {
       "title": "‘Miracle on the Mississippi’: All Accounted For After Tanker Capsizes Cruise Ship in New Orleans",
       "src": "gCaptain",
       "date": "14.11.2026",
@@ -34,18 +52,6 @@ window.NEWS = {
       "url": "https://gcaptain.com/tanker-strikes-docked-paddlewheeler-on-mississippi-river-causing-it-to-capsize/"
     },
     {
-      "title": "Контейнерный дождь Балтики",
-      "src": "PortNews",
-      "date": "13.11.2026",
-      "url": "https://portnews.ru/comments/3699/"
-    },
-    {
-      "title": "Опубликована программа делового форума Союзного государства «Интеграция»",
-      "src": "PortNews",
-      "date": "13.11.2026",
-      "url": "https://portnews.ru/news/399578/"
-    },
-    {
       "title": "В Госдуму внесли законопроект о регулировании беспилотного транспорта",
       "src": "РЖД-Партнер",
       "date": "13.11.2026",
@@ -56,6 +62,12 @@ window.NEWS = {
       "src": "РЖД-Партнер",
       "date": "13.11.2026",
       "url": "https://www.rzd-partner.ru/aviation/news/aeroport-nizhnevartovska-poluchit-modernizirovannuyu-vzletno-posadochnuyu-polosu/"
+    },
+    {
+      "title": "Ввоз через Казахстан и Турцию перестал быть безопасной схемой: таможня начисляет антидемпинг на товары",
+      "src": "Logirus",
+      "date": "13.11.2026",
+      "url": "https://logirus.ru/news/custom_and_ved/vvoz_cherez_kazakhstan_i_turtsiyu_perestal_byt_bezopasnoy_skhemoy_tamozhnya_nachislyaet_antidemping.html"
     },
     {
       "title": "Blanked sailings on the rise, with container spot rates on a gentle decline",
@@ -86,18 +98,6 @@ window.NEWS = {
       "src": "InfraNews",
       "date": "13.11.2026",
       "url": "https://www.infranews.ru/novosti/72106-hamina-kotka-tranzitnaya-perevalka-stremitsya-k-nulyu/"
-    },
-    {
-      "title": "From ocean liner to artificial reef: A warning for container shipping",
-      "src": "Splash 247",
-      "date": "13.11.2026",
-      "url": "https://splash247.com/from-ocean-liner-to-artificial-reef-a-warning-for-container-shipping/"
-    },
-    {
-      "title": "Фрахтовый рынок Черного моря, 46 неделя, 2026",
-      "src": "SeaNews",
-      "date": "13.11.2026",
-      "url": "https://seanews.ru/2026/11/13/ru-frahtovyj-rynok-chernogo-morja-46-nedelja-2026/"
     }
   ]
 };
