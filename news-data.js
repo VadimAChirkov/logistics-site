@@ -4,34 +4,34 @@ window.NEWS = {
   "updated": "14.11.2026",
   "items": [
     {
+      "title": "MSC Nears Deal To Buy Majority Stake In German Shipyard Meyer Werft",
+      "src": "gCaptain",
+      "date": "14.11.2026",
+      "url": "https://gcaptain.com/msc-nears-deal-to-buy-majority-stake-in-german-shipyard-meyer-werft/"
+    },
+    {
+      "title": "Oil Tanker On Fire After Hitting Mine In Hormuz",
+      "src": "gCaptain",
+      "date": "14.11.2026",
+      "url": "https://gcaptain.com/oil-tanker-on-fire-after-hitting-mine-in-hormuz/"
+    },
+    {
+      "title": "Михаил Мишустин назначил кураторов госпрограмм из числа заместителей",
+      "src": "PortNews",
+      "date": "14.11.2026",
+      "url": "https://portnews.ru/news/399610/"
+    },
+    {
+      "title": "Правительство расширило перечень грузов для приоритетных поставок в районы Крайнего Севера",
+      "src": "PortNews",
+      "date": "14.11.2026",
+      "url": "https://portnews.ru/news/399609/"
+    },
+    {
       "title": "Три недели вниз: Drewry фиксирует падение ставок, перевозчики отвечают отменами рейсов",
       "src": "Logirus",
       "date": "14.11.2026",
       "url": "https://logirus.ru/news/global_logistics/tri_nedeli_vniz_drewry_fiksiruet_padenie_stavok_perevozchiki_otvechayut_otmenami_reysov.html"
-    },
-    {
-      "title": "Линии намерены добирать грузы в Турции на сервисах Китай — Санкт-Петербург из-за высокой ставки",
-      "src": "PortNews",
-      "date": "14.11.2026",
-      "url": "https://portnews.ru/news/399608/"
-    },
-    {
-      "title": "Военные риски меняют рынок логистических складов в России",
-      "src": "PortNews",
-      "date": "14.11.2026",
-      "url": "https://portnews.ru/news/399607/"
-    },
-    {
-      "title": "‘Miracle on the Mississippi’: All Accounted For After Tanker Capsizes Cruise Ship in New Orleans",
-      "src": "gCaptain",
-      "date": "14.11.2026",
-      "url": "https://gcaptain.com/miracle-on-the-mississippi-all-accounted-for-after-tanker-capsizes-cruise-ship-in-new-orleans/"
-    },
-    {
-      "title": "Tanker sinks river cruise ship in New Orleans collision",
-      "src": "Splash 247",
-      "date": "14.11.2026",
-      "url": "https://splash247.com/tanker-sinks-river-cruise-ship-in-new-orleans-collision/"
     },
     {
       "title": "Denial of funds to NY over non domiciled CDLs overturned: appellate court",
@@ -44,12 +44,6 @@ window.NEWS = {
       "src": "FreightWaves",
       "date": "13.11.2026",
       "url": "https://www.freightwaves.com/news/tanker-strikes-cruise-riverboat-in-new-orleans"
-    },
-    {
-      "title": "Tanker Strikes Docked Paddlewheeler on Mississippi River, Causing It to Capsize",
-      "src": "gCaptain",
-      "date": "13.11.2026",
-      "url": "https://gcaptain.com/tanker-strikes-docked-paddlewheeler-on-mississippi-river-causing-it-to-capsize/"
     },
     {
       "title": "В Госдуму внесли законопроект о регулировании беспилотного транспорта",
@@ -98,6 +92,12 @@ window.NEWS = {
       "src": "InfraNews",
       "date": "13.11.2026",
       "url": "https://www.infranews.ru/novosti/72106-hamina-kotka-tranzitnaya-perevalka-stremitsya-k-nulyu/"
+    },
+    {
+      "title": "Фрахтовый рынок Черного моря, 46 неделя, 2026",
+      "src": "SeaNews",
+      "date": "13.11.2026",
+      "url": "https://seanews.ru/2026/11/13/ru-frahtovyj-rynok-chernogo-morja-46-nedelja-2026/"
     }
   ]
 };
