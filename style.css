@@ -129,6 +129,10 @@ th { background: var(--accent); color: #fff; font-weight: 600; }
 tr:last-child td { border-bottom: none; }
 tbody tr:hover { background: #f0f6fa; }
 
+/* Рост/изменение таможенных сборов */
+td.fee-up { color: #c0392b; font-weight: 600; }
+td.fee-flat { color: #27ae60; font-weight: 600; }
+
 .breadcrumb { font-size: 0.9rem; color: var(--muted); margin-bottom: 6px; }
 
 /* Фото автора на странице «О себе» */
