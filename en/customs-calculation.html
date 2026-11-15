@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculation of customs payments — International Logistics</title>
-  <meta name="description" content="Calculation of customs payments: the algorithm for calculating import duty and VAT on import into Russia + a real example on a Deye SUN-6K inverter (TN VED 8504 40 840 0), a 20-foot container from Shanghai.">
+  <meta name="description" content="Calculation of customs payments: the algorithm for calculating import duty and VAT on import into Russia + a real example on a Deye SUN-6K inverter (TN VED 8504 40 850 0), a 20-foot container from Shanghai.">
   <link rel="canonical" href="https://chirkov-logistics.ru/en/customs-calculation.html">
   <meta property="og:site_name" content="International Logistics and Foreign Trade">
   <meta property="og:title" content="Calculation of customs payments — International Logistics">
@@ -73,11 +73,12 @@
 
       <h2>Calculation algorithm</h2>
       <ol>
-        <li><strong>Determine the customs value (CV)</strong> = value of the goods + cost of carriage to the EAEU border + insurance.</li>
+        <li><strong>Determine the customs value (CV)</strong> = price of the goods + cost of carriage to the EAEU border + insurance + <strong>other costs directly related to the goods before crossing the border</strong> (packaging, containers, commissions, licence fees, etc., where not included in the price).</li>
         <li><strong>Calculate the import duty</strong> = CV × duty rate (by TN VED code).</li>
-        <li><strong>Calculate VAT</strong> = (CV + duty) × VAT rate (usually 20%).</li>
+        <li><strong>Calculate VAT</strong> = (CV + duty) × VAT rate (at the current rate).</li>
         <li><strong>Total payments</strong> = duty + VAT (+ customs fees for operations).</li>
       </ol>
+      <p>The procedure for determining the customs value is set out in <a href="https://www.consultant.ru/document/cons_doc_LAW_304093/" target="_blank" rel="noopener noreferrer">Chapter 5 of Federal Law No. 289-FZ of 03.08.2018 "On Customs Regulation in the Russian Federation"</a> (taking into account Chapter 5 of the EAEU Customs Code).</p>
 
       <div class="note">
         <strong>An important nuance:</strong> the customs value includes carriage <strong>only up to the EAEU border</strong>. Carriage within the customs territory (for example, Vladivostok → Moscow) is <strong>not</strong> included in the CV where it is itemised separately in the documents and not included in the price of the goods. Including the full freight to the final destination in the CV is a frequent mistake leading to overpayment of VAT.
@@ -91,9 +92,9 @@
       <table>
         <thead><tr><th>Parameter</th><th>Value</th></tr></thead>
         <tbody>
-          <tr><td>TN VED code</td><td><strong>8504 40 840 0</strong> (static converters ≤ 7.5 kVA)</td></tr>
+          <tr><td>TN VED code</td><td><strong>8504 40 850 0</strong> (inverter)</td></tr>
           <tr><td>Import duty rate</td><td><strong>0%</strong></td></tr>
-          <tr><td>VAT rate</td><td><strong>20%</strong></td></tr>
+          <tr><td>VAT rate</td><td><strong>22%</strong></td></tr>
           <tr><td>Value of the goods in the container</td><td>RUB 3,453,750</td></tr>
           <tr><td>Freight Shanghai → Vladivostok</td><td>USD 3,500</td></tr>
           <tr><td>CBR exchange rate (on the settlement date)</td><td>82.9803 RUB/USD</td></tr>
@@ -104,30 +105,34 @@
       <p>3,500 × 82.9803 = <strong>RUB 290,431.05</strong></p>
 
       <h3>Step 2. Insurance premium</h3>
-      <p>Insurance base = freight + value of the goods = 290,431.05 + 3,453,750 = <strong>RUB 3,744,181.05</strong>.</p>
-      <p>Insured amount = base × 110% = 3,744,181.05 × 1.10 = <strong>RUB 4,118,599.16</strong>.</p>
-      <p>Insurance premium = insured amount × 0.5% = 4,118,599.16 × 0.005 = <strong>RUB 20,593.00</strong>.</p>
+      <p>It is the goods that are insured, not the transport service: the cost of carriage is not included in insurance where the transport services are itemised separately in the documents. Therefore the insurance base = value of the goods = <strong>RUB 3,453,750</strong>.</p>
+      <p>Insured amount = base × 110% = 3,453,750 × 1.10 = <strong>RUB 3,799,125</strong>.</p>
+      <p>Insurance premium = insured amount × 0.5% = 3,799,125 × 0.005 = <strong>RUB 18,995.63</strong>.</p>
 
       <h3>Step 3. Customs value</h3>
-      <p>CV = goods + freight to the border + insurance = 3,453,750 + 290,431.05 + 20,593.00 = <strong>RUB 3,764,774.05</strong>.</p>
+      <p>CV = goods + freight to the border + insurance = 3,453,750 + 290,431.05 + 18,995.63 = <strong>RUB 3,763,176.68</strong>.</p>
 
       <h3>Step 4. Import duty</h3>
       <p>CV × 0% = <strong>RUB 0</strong>.</p>
 
       <h3>Step 5. VAT</h3>
-      <p>(CV + duty) × 20% = 3,764,774.05 × 0.20 = <strong>RUB 752,954.81</strong>.</p>
+      <p>(CV + duty) × 22% = 3,763,176.68 × 0.22 = <strong>RUB 827,898.87</strong>.</p>
 
       <h3>Result</h3>
       <table>
         <thead><tr><th>Payment</th><th>Amount</th></tr></thead>
         <tbody>
           <tr><td>Import duty</td><td>RUB 0</td></tr>
-          <tr><td>VAT 20%</td><td>RUB 752,954.81</td></tr>
-          <tr><td><strong>Total customs payments</strong></td><td><strong>RUB 752,954.81</strong></td></tr>
-          <tr><td>Customs operations fee (for reference)</td><td>~RUB 7,500</td></tr>
+          <tr><td>VAT 22%</td><td>RUB 827,898.87</td></tr>
+          <tr><td>Customs operations fee</td><td>RUB 18,465</td></tr>
+          <tr><td><strong>Total customs payments</strong></td><td><strong>RUB 846,363.87</strong></td></tr>
         </tbody>
       </table>
-      <p><strong>The importer's full cost</strong> (goods + freight + insurance + VAT) ≈ <strong>RUB 4,517,729</strong> — excluding the Vladivostok → Moscow carriage.</p>
+      <figure class="infographic">
+        <img src="../customs-fees-2026.png" alt="Customs operations fee rates (before and after 1 January 2026)" loading="lazy">
+        <figcaption>Customs operations fee rates (before and after 1 January 2026)</figcaption>
+      </figure>
+      <p><strong>The importer's full cost</strong> (goods + freight + insurance + VAT + customs fees) ≈ <strong>RUB 4,609,541</strong> — excluding the Vladivostok → Moscow carriage.</p>
 
       <div class="note">
         <strong>Note:</strong> the calculation is given for educational purposes. Rates, exchange rates and thresholds may change — before a shipment, verify them against current data (EAEU TN VED, the Common Customs Tariff, the CBR exchange rate).
