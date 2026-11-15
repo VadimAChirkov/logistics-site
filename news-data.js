@@ -1,19 +1,31 @@
 // Новости рынка логистики и перевозок (автообновление GitHub Actions из RSS).
 // Ручная правка перезапишется при следующем автообновлении.
 window.NEWS = {
-  "updated": "14.11.2026",
+  "updated": "15.11.2026",
   "items": [
     {
-      "title": "MSC Nears Deal To Buy Majority Stake In German Shipyard Meyer Werft",
+      "title": "South Africa’s Auto Industry Threatened By Worsening Port Delays",
       "src": "gCaptain",
-      "date": "14.11.2026",
-      "url": "https://gcaptain.com/msc-nears-deal-to-buy-majority-stake-in-german-shipyard-meyer-werft/"
+      "date": "15.11.2026",
+      "url": "https://gcaptain.com/south-africas-auto-industry-threatened-by-worsening-port-delays/"
     },
     {
-      "title": "Oil Tanker On Fire After Hitting Mine In Hormuz",
+      "title": "Spot rates jump ahead of holidays",
+      "src": "FreightWaves",
+      "date": "15.11.2026",
+      "url": "https://www.freightwaves.com/news/spot-rates-jump-ahead-of-holidays"
+    },
+    {
+      "title": "US court orders arrest of tanker after New Orleans cruise ship collision",
+      "src": "Splash 247",
+      "date": "15.11.2026",
+      "url": "https://splash247.com/us-court-orders-arrest-of-tanker-after-new-orleans-cruise-ship-collision/"
+    },
+    {
+      "title": "Trump To Extend Shipping Waiver For Oil, Fertilizer For 90 Days",
       "src": "gCaptain",
       "date": "14.11.2026",
-      "url": "https://gcaptain.com/oil-tanker-on-fire-after-hitting-mine-in-hormuz/"
+      "url": "https://gcaptain.com/trump-to-extend-shipping-waiver-for-oil-fertilizer-for-90-days/"
     },
     {
       "title": "Михаил Мишустин назначил кураторов госпрограмм из числа заместителей",
@@ -34,16 +46,16 @@ window.NEWS = {
       "url": "https://logirus.ru/news/global_logistics/tri_nedeli_vniz_drewry_fiksiruet_padenie_stavok_perevozchiki_otvechayut_otmenami_reysov.html"
     },
     {
+      "title": "Tanker sinks river cruise ship in New Orleans collision",
+      "src": "Splash 247",
+      "date": "14.11.2026",
+      "url": "https://splash247.com/tanker-sinks-river-cruise-ship-in-new-orleans-collision/"
+    },
+    {
       "title": "Denial of funds to NY over non domiciled CDLs overturned: appellate court",
       "src": "FreightWaves",
       "date": "13.11.2026",
       "url": "https://www.freightwaves.com/news/denial-of-funds-to-ny-over-non-domiciled-cdls-overturned-appellate-court"
-    },
-    {
-      "title": "Tanker strikes cruise riverboat in New Orleans",
-      "src": "FreightWaves",
-      "date": "13.11.2026",
-      "url": "https://www.freightwaves.com/news/tanker-strikes-cruise-riverboat-in-new-orleans"
     },
     {
       "title": "В Госдуму внесли законопроект о регулировании беспилотного транспорта",
@@ -86,18 +98,6 @@ window.NEWS = {
       "src": "The Loadstar",
       "date": "13.11.2026",
       "url": "https://theloadstar.com/pinglu-canal-fuels-nanning-ambition-to-be-an-asean-logistics-hub/"
-    },
-    {
-      "title": "Хамина-Котка: Транзитная перевалка стремится к нулю",
-      "src": "InfraNews",
-      "date": "13.11.2026",
-      "url": "https://www.infranews.ru/novosti/72106-hamina-kotka-tranzitnaya-perevalka-stremitsya-k-nulyu/"
-    },
-    {
-      "title": "Фрахтовый рынок Черного моря, 46 неделя, 2026",
-      "src": "SeaNews",
-      "date": "13.11.2026",
-      "url": "https://seanews.ru/2026/11/13/ru-frahtovyj-rynok-chernogo-morja-46-nedelja-2026/"
     }
   ]
 };
