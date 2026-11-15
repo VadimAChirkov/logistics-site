@@ -4,6 +4,42 @@ window.NEWS = {
   "updated": "15.11.2026",
   "items": [
     {
+      "title": "Минус 14,6% за год: строящиеся склады в регионах сбросили ценник",
+      "src": "Logirus",
+      "date": "16.11.2026",
+      "url": "https://logirus.ru/news/infrastructure/minus_14-6_za_god_stroyashchiesya_sklady_v_regionakh_sbrosili_tsennik.html"
+    },
+    {
+      "title": "Hong Kong’s five-year clock",
+      "src": "Splash 247",
+      "date": "15.11.2026",
+      "url": "https://splash247.com/hong-kongs-five-year-clock/"
+    },
+    {
+      "title": "US extends Jones Act waiver into February",
+      "src": "Splash 247",
+      "date": "15.11.2026",
+      "url": "https://splash247.com/us-extends-jones-act-waiver-into-february/"
+    },
+    {
+      "title": "Three Ships Struck By Drones In Black Sea Near Romanian Shipping Canal",
+      "src": "gCaptain",
+      "date": "15.11.2026",
+      "url": "https://gcaptain.com/three-ships-struck-by-drones-in-black-sea-near-romanian-shipping-canal/"
+    },
+    {
+      "title": "News in Brief week 45 | Customs enforcement and airfreight squeeze",
+      "src": "The Loadstar",
+      "date": "15.11.2026",
+      "url": "https://theloadstar.com/news-in-brief-week-49-customs-enforcement-and-airfreight-squeeze/"
+    },
+    {
+      "title": "American Heritage Captain, Crew and Tug Operators Hailed as Heroes After Mississippi River Capsizing",
+      "src": "gCaptain",
+      "date": "15.11.2026",
+      "url": "https://gcaptain.com/american-heritage-captain-crew-and-tug-operators-hailed-as-heroes-after-mississippi-river-capsizing/"
+    },
+    {
       "title": "Borderlands Mexico: Texas cross-border traffic rises by 400 trucks through Saturday pilot",
       "src": "FreightWaves",
       "date": "15.11.2026",
@@ -22,40 +58,16 @@ window.NEWS = {
       "url": "https://portnews.ru/news/399616/"
     },
     {
-      "title": "South Africa’s Auto Industry Threatened By Worsening Port Delays",
-      "src": "gCaptain",
-      "date": "15.11.2026",
-      "url": "https://gcaptain.com/south-africas-auto-industry-threatened-by-worsening-port-delays/"
-    },
-    {
       "title": "Spot rates jump ahead of holidays",
       "src": "FreightWaves",
       "date": "15.11.2026",
       "url": "https://www.freightwaves.com/news/spot-rates-jump-ahead-of-holidays"
     },
     {
-      "title": "US court orders arrest of tanker after New Orleans cruise ship collision",
-      "src": "Splash 247",
-      "date": "15.11.2026",
-      "url": "https://splash247.com/us-court-orders-arrest-of-tanker-after-new-orleans-cruise-ship-collision/"
-    },
-    {
-      "title": "Trump To Extend Shipping Waiver For Oil, Fertilizer For 90 Days",
-      "src": "gCaptain",
-      "date": "14.11.2026",
-      "url": "https://gcaptain.com/trump-to-extend-shipping-waiver-for-oil-fertilizer-for-90-days/"
-    },
-    {
       "title": "Три недели вниз: Drewry фиксирует падение ставок, перевозчики отвечают отменами рейсов",
       "src": "Logirus",
       "date": "14.11.2026",
       "url": "https://logirus.ru/news/global_logistics/tri_nedeli_vniz_drewry_fiksiruet_padenie_stavok_perevozchiki_otvechayut_otmenami_reysov.html"
-    },
-    {
-      "title": "Tanker sinks river cruise ship in New Orleans collision",
-      "src": "Splash 247",
-      "date": "14.11.2026",
-      "url": "https://splash247.com/tanker-sinks-river-cruise-ship-in-new-orleans-collision/"
     },
     {
       "title": "В Госдуму внесли законопроект о регулировании беспилотного транспорта",
@@ -68,12 +80,6 @@ window.NEWS = {
       "src": "РЖД-Партнер",
       "date": "13.11.2026",
       "url": "https://www.rzd-partner.ru/aviation/news/aeroport-nizhnevartovska-poluchit-modernizirovannuyu-vzletno-posadochnuyu-polosu/"
-    },
-    {
-      "title": "Ввоз через Казахстан и Турцию перестал быть безопасной схемой: таможня начисляет антидемпинг на товары",
-      "src": "Logirus",
-      "date": "13.11.2026",
-      "url": "https://logirus.ru/news/custom_and_ved/vvoz_cherez_kazakhstan_i_turtsiyu_perestal_byt_bezopasnoy_skhemoy_tamozhnya_nachislyaet_antidemping.html"
     },
     {
       "title": "Blanked sailings on the rise, with container spot rates on a gentle decline",
@@ -92,12 +98,6 @@ window.NEWS = {
       "src": "SeaNews",
       "date": "13.11.2026",
       "url": "https://seanews.ru/2026/11/13/ru-viii-mezhdunarodnaja-konferencija-transkont-2026/"
-    },
-    {
-      "title": "Pinglu Canal fuels Nanning ambition to be an ASEAN logistics hub",
-      "src": "The Loadstar",
-      "date": "13.11.2026",
-      "url": "https://theloadstar.com/pinglu-canal-fuels-nanning-ambition-to-be-an-asean-logistics-hub/"
     }
   ]
 };
