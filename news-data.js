@@ -4,6 +4,24 @@ window.NEWS = {
   "updated": "15.11.2026",
   "items": [
     {
+      "title": "Borderlands Mexico: Texas cross-border traffic rises by 400 trucks through Saturday pilot",
+      "src": "FreightWaves",
+      "date": "15.11.2026",
+      "url": "https://www.freightwaves.com/news/borderlands-mexico-texas-cross-border-traffic-rises-by-400-trucks-through-saturday-pilot"
+    },
+    {
+      "title": "Завершен завоз техники и материалов на строительную площадку порта Найба",
+      "src": "PortNews",
+      "date": "15.11.2026",
+      "url": "https://portnews.ru/news/399617/"
+    },
+    {
+      "title": "АО «Транснефть — Западная Сибирь» перевезло свыше 6 тыс. тонн грузов в навигацию 2026 года",
+      "src": "PortNews",
+      "date": "15.11.2026",
+      "url": "https://portnews.ru/news/399616/"
+    },
+    {
       "title": "South Africa’s Auto Industry Threatened By Worsening Port Delays",
       "src": "gCaptain",
       "date": "15.11.2026",
@@ -28,18 +46,6 @@ window.NEWS = {
       "url": "https://gcaptain.com/trump-to-extend-shipping-waiver-for-oil-fertilizer-for-90-days/"
     },
     {
-      "title": "Михаил Мишустин назначил кураторов госпрограмм из числа заместителей",
-      "src": "PortNews",
-      "date": "14.11.2026",
-      "url": "https://portnews.ru/news/399610/"
-    },
-    {
-      "title": "Правительство расширило перечень грузов для приоритетных поставок в районы Крайнего Севера",
-      "src": "PortNews",
-      "date": "14.11.2026",
-      "url": "https://portnews.ru/news/399609/"
-    },
-    {
       "title": "Три недели вниз: Drewry фиксирует падение ставок, перевозчики отвечают отменами рейсов",
       "src": "Logirus",
       "date": "14.11.2026",
@@ -50,12 +56,6 @@ window.NEWS = {
       "src": "Splash 247",
       "date": "14.11.2026",
       "url": "https://splash247.com/tanker-sinks-river-cruise-ship-in-new-orleans-collision/"
-    },
-    {
-      "title": "Denial of funds to NY over non domiciled CDLs overturned: appellate court",
-      "src": "FreightWaves",
-      "date": "13.11.2026",
-      "url": "https://www.freightwaves.com/news/denial-of-funds-to-ny-over-non-domiciled-cdls-overturned-appellate-court"
     },
     {
       "title": "В Госдуму внесли законопроект о регулировании беспилотного транспорта",
