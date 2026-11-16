@@ -1,13 +1,43 @@
 // Новости рынка логистики и перевозок (автообновление GitHub Actions из RSS).
 // Ручная правка перезапишется при следующем автообновлении.
 window.NEWS = {
-  "updated": "15.11.2026",
+  "updated": "16.11.2026",
   "items": [
+    {
+      "title": "Расширен перечень грузов для приоритетных поставок в рамках Северного завоза",
+      "src": "SeaNews",
+      "date": "16.11.2026",
+      "url": "https://seanews.ru/2026/11/16/ru-rasshiren-perechen-gruzov-dlja-prioritetnyh-postavok-v-ramkah-severnogo-zavoza/"
+    },
+    {
+      "title": "Более полумиллиона тонн импортных плодов и овощей",
+      "src": "SeaNews",
+      "date": "16.11.2026",
+      "url": "https://seanews.ru/2026/11/16/ru-bolee-polumilliona-tonn-importnyh-plodov-i-ovoshhej/"
+    },
+    {
+      "title": "Нарушения при содержании ВВП в Волгоградской области устранены по поручению генпрокурора",
+      "src": "PortNews",
+      "date": "16.11.2026",
+      "url": "https://portnews.ru/news/399620/"
+    },
+    {
+      "title": "Steering Problem On Tanker Caused Collision In New Orleans",
+      "src": "gCaptain",
+      "date": "16.11.2026",
+      "url": "https://gcaptain.com/steering-problem-on-tanker-caused-collision-in-new-orleans/"
+    },
     {
       "title": "Минус 14,6% за год: строящиеся склады в регионах сбросили ценник",
       "src": "Logirus",
       "date": "16.11.2026",
       "url": "https://logirus.ru/news/infrastructure/minus_14-6_za_god_stroyashchiesya_sklady_v_regionakh_sbrosili_tsennik.html"
+    },
+    {
+      "title": "Imported Goods Keep Surging Through Southern California Ports",
+      "src": "gCaptain",
+      "date": "15.11.2026",
+      "url": "https://gcaptain.com/imported-goods-keep-surging-through-southern-california-ports/"
     },
     {
       "title": "Hong Kong’s five-year clock",
@@ -22,22 +52,10 @@ window.NEWS = {
       "url": "https://splash247.com/us-extends-jones-act-waiver-into-february/"
     },
     {
-      "title": "Three Ships Struck By Drones In Black Sea Near Romanian Shipping Canal",
-      "src": "gCaptain",
-      "date": "15.11.2026",
-      "url": "https://gcaptain.com/three-ships-struck-by-drones-in-black-sea-near-romanian-shipping-canal/"
-    },
-    {
       "title": "News in Brief week 45 | Customs enforcement and airfreight squeeze",
       "src": "The Loadstar",
       "date": "15.11.2026",
       "url": "https://theloadstar.com/news-in-brief-week-49-customs-enforcement-and-airfreight-squeeze/"
-    },
-    {
-      "title": "American Heritage Captain, Crew and Tug Operators Hailed as Heroes After Mississippi River Capsizing",
-      "src": "gCaptain",
-      "date": "15.11.2026",
-      "url": "https://gcaptain.com/american-heritage-captain-crew-and-tug-operators-hailed-as-heroes-after-mississippi-river-capsizing/"
     },
     {
       "title": "Borderlands Mexico: Texas cross-border traffic rises by 400 trucks through Saturday pilot",
@@ -50,12 +68,6 @@ window.NEWS = {
       "src": "PortNews",
       "date": "15.11.2026",
       "url": "https://portnews.ru/news/399617/"
-    },
-    {
-      "title": "АО «Транснефть — Западная Сибирь» перевезло свыше 6 тыс. тонн грузов в навигацию 2026 года",
-      "src": "PortNews",
-      "date": "15.11.2026",
-      "url": "https://portnews.ru/news/399616/"
     },
     {
       "title": "Spot rates jump ahead of holidays",
@@ -86,18 +98,6 @@ window.NEWS = {
       "src": "The Loadstar",
       "date": "13.11.2026",
       "url": "https://theloadstar.com/blanked-sailings-on-the-rise-with-container-spot-rates-on-a-gentle-decline/"
-    },
-    {
-      "title": "Правительство обсудило развитие пяти международных транспортных коридоров",
-      "src": "InfraNews",
-      "date": "13.11.2026",
-      "url": "https://www.infranews.ru/novosti/72108-pravitelstvo-obsudilo-razvitie-pyati-mezhdunarodnyh-transportnyh-koridorov/"
-    },
-    {
-      "title": "VIII Международная конференция «ТрансКонт 2026»",
-      "src": "SeaNews",
-      "date": "13.11.2026",
-      "url": "https://seanews.ru/2026/11/13/ru-viii-mezhdunarodnaja-konferencija-transkont-2026/"
     }
   ]
 };
