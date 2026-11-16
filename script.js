@@ -26,6 +26,39 @@ window.L10N = (function () {
   };
 })();
 
+// Мобильное бургер-меню (гамбургер + выпадающий список)
+(function () {
+  document.documentElement.classList.add('has-js');
+  var headerInner = document.querySelector('.header-inner');
+  var nav = headerInner ? headerInner.querySelector('nav') : null;
+  if (!headerInner || !nav) return;
+
+  var label = (document.documentElement.lang === 'en') ? 'Menu' : 'Меню';
+
+  var btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'nav-toggle';
+  btn.setAttribute('aria-label', label);
+  btn.setAttribute('aria-expanded', 'false');
+  btn.innerHTML = '<span></span><span></span><span></span>';
+  headerInner.insertBefore(btn, nav);
+
+  btn.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    btn.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  // Закрывать меню после перехода по ссылке
+  nav.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      nav.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+})();
+
 // Автообновление года в футере
 (function () {
   var els = document.querySelectorAll('#current-year');

@@ -340,3 +340,47 @@ article pre code {
 .index-notes { margin-top: 18px; }
 .index-notes h3 { font-size: 1.02rem; margin: 16px 0 4px; color: var(--text); }
 .index-notes p { color: var(--muted); font-size: 0.92rem; margin-bottom: 6px; }
+
+/* Кнопка бургер-меню (только мобильная) */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 40px;
+  padding: 8px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.nav-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle.open span:nth-child(2) { opacity: 0; }
+.nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+  header { position: static; padding: 12px 16px; }
+  .header-inner { gap: 10px; }
+  .logo { font-size: 1.05rem; }
+  .lang-switch { order: 1; margin-left: auto; }
+  .nav-toggle { display: flex; order: 2; }
+  .has-js nav { display: none; order: 5; flex-basis: 100%; flex-direction: column; gap: 0; border-top: 1px solid var(--border); padding-top: 8px; margin-top: 4px; }
+  .has-js nav.open { display: flex; }
+  .has-js nav a { padding: 10px 2px; font-size: 1rem; border-bottom: 1px solid var(--border); }
+  .has-js nav a:last-child { border-bottom: none; }
+  main { padding: 20px 16px 48px; }
+  article h1 { font-size: 1.5rem; }
+  .grid { grid-template-columns: 1fr; gap: 14px; }
+  .card h3 { font-size: 1.05rem; }
+  table { font-size: 0.85rem; }
+}
