@@ -1,49 +1,67 @@
 // Новости рынка логистики и перевозок (автообновление GitHub Actions из RSS).
 // Ручная правка перезапишется при следующем автообновлении.
 window.NEWS = {
-  "updated": "16.11.2026",
+  "updated": "17.11.2026",
   "items": [
     {
-      "title": "На Северном морском пути работают восемь атомных ледоколов",
-      "src": "РЖД-Партнер",
+      "title": "EU Targets Shadow Fleet Shipowners, Managers and Insurers in New Russia Sanctions",
+      "src": "gCaptain",
       "date": "16.11.2026",
-      "url": "https://www.rzd-partner.ru/wate-transport/news/na-severnom-morskom-puti-rabotayut-vosem-atomnykh-ledokolov/"
+      "url": "https://gcaptain.com/eu-targets-shadow-fleet-shipowners-managers-and-insurers-in-new-russia-sanctions/"
     },
     {
-      "title": "Контейнерный перевозчик ONE возобновил рейсы через Суэцкий канал",
-      "src": "PortNews",
-      "date": "16.11.2026",
-      "url": "https://portnews.ru/news/399677/"
-    },
-    {
-      "title": "Несырьевой экспорт в дружественные страны за восемь месяцев 2026 года приблизился к 8 трлн рублей",
-      "src": "PortNews",
-      "date": "16.11.2026",
-      "url": "https://portnews.ru/news/399678/"
-    },
-    {
-      "title": "U.S. container imports hit record 2.67 million TEUs in October as port delays rise",
+      "title": "Police recover $4.5 million in stolen vehicles bound for West Africa, arrest 12",
       "src": "FreightWaves",
       "date": "16.11.2026",
-      "url": "https://www.freightwaves.com/news/u-s-container-imports-hit-record-2-67-million-teus-in-october-as-port-delays-rise"
+      "url": "https://www.freightwaves.com/news/police-recover-4-5-million-in-stolen-vehicles-bound-for-west-africa-arrest-12"
     },
     {
-      "title": "В России с начала года оформили 109 млн электронных перевозочных документов",
-      "src": "РЖД-Партнер",
-      "date": "16.11.2026",
-      "url": "https://www.rzd-partner.ru/logistics/news/v-rossii-s-nachala-goda-oformili-109-mln-elektronnykh-perevozochnykh-dokumentov/"
-    },
-    {
-      "title": "South Korean Container Ship Considered Abandoning Arctic Trial Voyage Due to Ice as Owner Plans Sale",
+      "title": "UKMTO Reports Two Tanker Attacks in Strait of Hormuz",
       "src": "gCaptain",
       "date": "16.11.2026",
-      "url": "https://gcaptain.com/south-korean-container-ship-considered-abandoning-arctic-trial-voyage-due-to-ice-as-owner-considers-sale/"
+      "url": "https://gcaptain.com/ukmto-reports-two-tanker-attacks-in-strait-of-hormuz/"
     },
     {
-      "title": "Guinea Says $1.9 billion Deep-Water Port Plan Draws US, Chinese Interest",
-      "src": "gCaptain",
+      "title": "Meta pays Nevoya to put 25 electric trucks on I-10",
+      "src": "FreightWaves",
       "date": "16.11.2026",
-      "url": "https://gcaptain.com/guinea-says-1-9-billion-deep-water-port-plan-draws-us-chinese-interest/"
+      "url": "https://www.freightwaves.com/news/meta-nevoya-electric-trucks-i-10"
+    },
+    {
+      "title": "Курьер с рецептом: ePharma разгоняется до 339 млн заказов к концу года",
+      "src": "Logirus",
+      "date": "17.11.2026",
+      "url": "https://logirus.ru/news/e-commerce/kurer_s_retseptom_epharma_razgonyaetsya_do_339_mln_zakazov_k_kontsu_goda.html"
+    },
+    {
+      "title": "Hong Kong’s shipowner dynasties face the succession test",
+      "src": "Splash 247",
+      "date": "16.11.2026",
+      "url": "https://splash247.com/hong-kongs-shipowner-dynasties-face-the-succession-test/"
+    },
+    {
+      "title": "The East India company without a charter",
+      "src": "Splash 247",
+      "date": "16.11.2026",
+      "url": "https://splash247.com/the-east-india-company-without-a-charter/"
+    },
+    {
+      "title": "Строительство двух паромов для переправы Усть-Луга — Балтийск обойдется в 46,95 млрд рублей",
+      "src": "PortNews",
+      "date": "16.11.2026",
+      "url": "https://portnews.ru/news/399682/"
+    },
+    {
+      "title": "Срочно, но все менее страшно: экспресс-доставка дорожает, а ее страховка дешевеет",
+      "src": "Logirus",
+      "date": "16.11.2026",
+      "url": "https://logirus.ru/news/transport/srochno_no_vse_menee_strashno_ekspress-dostavka_dorozhaet_a_ee_strakhovka_desheveet.html"
+    },
+    {
+      "title": "Первой остановкой НЭС «Академик Федоров» на пути в Антарктику станет Кейптаун",
+      "src": "PortNews",
+      "date": "16.11.2026",
+      "url": "https://portnews.ru/news/399680/"
     },
     {
       "title": "CMA CGM shipping profit boom exposes logistics earnings gap",
@@ -56,12 +74,6 @@ window.NEWS = {
       "src": "The Loadstar",
       "date": "16.11.2026",
       "url": "https://theloadstar.com/how-reliable-in-predicting-spot-prices-is-box-ship-utilisation/"
-    },
-    {
-      "title": "Xylas wins second term at Intercargo",
-      "src": "Splash 247",
-      "date": "16.11.2026",
-      "url": "https://splash247.com/xylas-wins-second-term-at-intercargo/"
     },
     {
       "title": "CMA CGM увеличила выручку в третьем квартале 2026",
@@ -82,22 +94,10 @@ window.NEWS = {
       "url": "https://www.infranews.ru/novosti/72116-murmanskij-morskoj-torgovyj-port-narastil-perevalku-v-oktyabre-v-3-3-raza/"
     },
     {
-      "title": "JFE Engineering wins offshore wind maintenance contract",
-      "src": "Splash 247",
-      "date": "16.11.2026",
-      "url": "https://splash247.com/jfe-engineering-wins-offshore-wind-maintenance-contract/"
-    },
-    {
       "title": "Прогноз по складскому рынку Петербурга и Ленобласти",
       "src": "SeaNews",
       "date": "16.11.2026",
       "url": "https://seanews.ru/2026/11/16/ru-prognoz-po-skladskomu-rynku-peterburga-i-lenoblasti/"
-    },
-    {
-      "title": "Borderlands Mexico: Texas cross-border traffic rises by 400 trucks through Saturday pilot",
-      "src": "FreightWaves",
-      "date": "15.11.2026",
-      "url": "https://www.freightwaves.com/news/borderlands-mexico-texas-cross-border-traffic-rises-by-400-trucks-through-saturday-pilot"
     }
   ]
 };
