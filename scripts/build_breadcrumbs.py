@@ -16,7 +16,7 @@ PARENTS = {
     # верхний уровень
     'incoterms': None, 'sea-freight': None, 'rail-freight': None, 'air-freight': None,
     'road-freight': None, 'dangerous-goods': None, 'customs-clearance': None,
-    'ucp600': None, 'vat-export-import': None, 'glossary': None, 'news': None,
+    'ucp600': None, 'vat-export-import': None, 'export-support': None, 'glossary': None, 'news': None,
     'admin-news': None, 'about': None, 'contact': None, 'literature': None,
     'disclaimer': None, 'contributors': None,
     # sea-freight
@@ -50,7 +50,7 @@ LABELS_RU = {
     'rail-freight': 'Железнодорожные перевозки', 'air-freight': 'Авиаперевозки',
     'road-freight': 'Автоперевозки', 'dangerous-goods': 'Опасные грузы',
     'customs-clearance': 'Таможенное оформление', 'ucp600': 'UCP-600',
-    'vat-export-import': 'НДС при экспорте и импорте', 'glossary': 'Глоссарий',
+    'vat-export-import': 'НДС при экспорте и импорте', 'export-support': 'Поддержка экспорта из РФ', 'glossary': 'Глоссарий',
     'news': 'Новости рынка', 'admin-news': 'Информация от администратора',
     'about': 'О себе', 'contact': 'Связаться', 'literature': 'Литература и источники',
     'disclaimer': 'Правовая информация', 'contributors': 'Рецензенты и материалы',
@@ -83,7 +83,7 @@ LABELS_EN = {
     'rail-freight': 'Rail freight', 'air-freight': 'Air freight',
     'road-freight': 'Road freight', 'dangerous-goods': 'Dangerous goods',
     'customs-clearance': 'Customs clearance', 'ucp600': 'UCP-600',
-    'vat-export-import': 'VAT on export and import', 'glossary': 'Glossary',
+    'vat-export-import': 'VAT on export and import', 'export-support': 'Export support', 'glossary': 'Glossary',
     'news': 'Market news', 'admin-news': 'Information from the administrator',
     'about': 'About', 'contact': 'Contact', 'literature': 'References and sources',
     'disclaimer': 'Legal information', 'contributors': 'Reviewers and contributions',
