@@ -4,100 +4,88 @@ window.NEWS = {
   "updated": "17.11.2026",
   "items": [
     {
+      "title": "АО «Флот РТ» проводит ходовые испытания судна на воздушной подушке «Парма»",
+      "src": "PortNews",
+      "date": "17.11.2026",
+      "url": "https://portnews.ru/news/399739/"
+    },
+    {
+      "title": "StealthGas crew airlifted from stricken LPG carrier off Bulgaria",
+      "src": "Splash 247",
+      "date": "17.11.2026",
+      "url": "https://splash247.com/stealthgas-crew-airlifted-from-stricken-lpg-carrier-off-bulgaria/"
+    },
+    {
+      "title": "ФГУП «Росморпорт» разрабатывает сервис обработки заявок на услуги осмотра судов в морских портах РФ",
+      "src": "PortNews",
+      "date": "17.11.2026",
+      "url": "https://portnews.ru/news/399741/"
+    },
+    {
+      "title": "Truck Parking Club hands CPC 7 drop yards in two months",
+      "src": "FreightWaves",
+      "date": "17.11.2026",
+      "url": "https://www.freightwaves.com/news/truck-parking-club-cpc-drop-yards"
+    },
+    {
+      "title": "Рабочий парк грузовых вагонов на сети РЖД сократился до уровня мая 2023 года",
+      "src": "InfraNews",
+      "date": "17.11.2026",
+      "url": "https://www.infranews.ru/logistika/72136-rabochij-park-gruzovyh-vagonov-na-seti-rzhd-sokratilsya-do-urovnya-maya-2023-goda/"
+    },
+    {
+      "title": "Shippers Are Finally Ready to Fix the Supply Chain Behind the Freight Bill",
+      "src": "FreightWaves",
+      "date": "17.11.2026",
+      "url": "https://www.freightwaves.com/news/shippers-are-finally-ready-to-fix-the-supply-chain-behind-the-freight-bill"
+    },
+    {
+      "title": "LPG Tanker Reported to Have Sunk Off Bulgaria’s Black Sea Coast",
+      "src": "gCaptain",
+      "date": "17.11.2026",
+      "url": "https://gcaptain.com/lpg-tanker-reported-to-have-sunk-off-bulgarias-black-sea-coast/"
+    },
+    {
+      "title": "Показатель оборачиваемости грузового вагона на сети РЖД за январь-сентябрь улучшился на 5,7%",
+      "src": "InfraNews",
+      "date": "17.11.2026",
+      "url": "https://www.infranews.ru/logistika/72134-pokazatel-oborachivaemosti-gruzovogo-vagona-na-seti-rzhd-za-yanvar-sentyabr-uluchshilsya-na-5-7/"
+    },
+    {
+      "title": "Gemini carriers target complete return to Suez transits by mid-January",
+      "src": "The Loadstar",
+      "date": "17.11.2026",
+      "url": "https://theloadstar.com/gemini-carriers-target-complete-return-to-suez-transits-by-mid-january/"
+    },
+    {
+      "title": "Semco Maritime and PTSC bag Taiwan offshore wind deal",
+      "src": "Splash 247",
+      "date": "17.11.2026",
+      "url": "https://splash247.com/semco-maritime-and-ptsc-bag-taiwan-offshore-wind-deal/"
+    },
+    {
+      "title": "Korean Air maximises Americas capacity as AI cargo adds to peak pressure",
+      "src": "The Loadstar",
+      "date": "17.11.2026",
+      "url": "https://theloadstar.com/korean-air-maximises-americas-capacity-as-ai-cargo-adds-to-peak-pressure/"
+    },
+    {
+      "title": "Бум заказов на контейнеровозы продолжается",
+      "src": "SeaNews",
+      "date": "17.11.2026",
+      "url": "https://seanews.ru/2026/11/17/ru-bum-zakazov-na-kontejnerovozy-prodolzhaetsja/"
+    },
+    {
+      "title": "Обновлен сервис FREIGHTMarket",
+      "src": "SeaNews",
+      "date": "17.11.2026",
+      "url": "https://seanews.ru/2026/11/17/ru-obnovlen-servis-freightmarket-41/"
+    },
+    {
       "title": "EU Targets Shadow Fleet Shipowners, Managers and Insurers in New Russia Sanctions",
       "src": "gCaptain",
       "date": "16.11.2026",
       "url": "https://gcaptain.com/eu-targets-shadow-fleet-shipowners-managers-and-insurers-in-new-russia-sanctions/"
-    },
-    {
-      "title": "Police recover $4.5 million in stolen vehicles bound for West Africa, arrest 12",
-      "src": "FreightWaves",
-      "date": "16.11.2026",
-      "url": "https://www.freightwaves.com/news/police-recover-4-5-million-in-stolen-vehicles-bound-for-west-africa-arrest-12"
-    },
-    {
-      "title": "UKMTO Reports Two Tanker Attacks in Strait of Hormuz",
-      "src": "gCaptain",
-      "date": "16.11.2026",
-      "url": "https://gcaptain.com/ukmto-reports-two-tanker-attacks-in-strait-of-hormuz/"
-    },
-    {
-      "title": "Meta pays Nevoya to put 25 electric trucks on I-10",
-      "src": "FreightWaves",
-      "date": "16.11.2026",
-      "url": "https://www.freightwaves.com/news/meta-nevoya-electric-trucks-i-10"
-    },
-    {
-      "title": "Курьер с рецептом: ePharma разгоняется до 339 млн заказов к концу года",
-      "src": "Logirus",
-      "date": "17.11.2026",
-      "url": "https://logirus.ru/news/e-commerce/kurer_s_retseptom_epharma_razgonyaetsya_do_339_mln_zakazov_k_kontsu_goda.html"
-    },
-    {
-      "title": "Hong Kong’s shipowner dynasties face the succession test",
-      "src": "Splash 247",
-      "date": "16.11.2026",
-      "url": "https://splash247.com/hong-kongs-shipowner-dynasties-face-the-succession-test/"
-    },
-    {
-      "title": "The East India company without a charter",
-      "src": "Splash 247",
-      "date": "16.11.2026",
-      "url": "https://splash247.com/the-east-india-company-without-a-charter/"
-    },
-    {
-      "title": "Строительство двух паромов для переправы Усть-Луга — Балтийск обойдется в 46,95 млрд рублей",
-      "src": "PortNews",
-      "date": "16.11.2026",
-      "url": "https://portnews.ru/news/399682/"
-    },
-    {
-      "title": "Срочно, но все менее страшно: экспресс-доставка дорожает, а ее страховка дешевеет",
-      "src": "Logirus",
-      "date": "16.11.2026",
-      "url": "https://logirus.ru/news/transport/srochno_no_vse_menee_strashno_ekspress-dostavka_dorozhaet_a_ee_strakhovka_desheveet.html"
-    },
-    {
-      "title": "Первой остановкой НЭС «Академик Федоров» на пути в Антарктику станет Кейптаун",
-      "src": "PortNews",
-      "date": "16.11.2026",
-      "url": "https://portnews.ru/news/399680/"
-    },
-    {
-      "title": "CMA CGM shipping profit boom exposes logistics earnings gap",
-      "src": "The Loadstar",
-      "date": "16.11.2026",
-      "url": "https://theloadstar.com/cma-cgm-shipping-profit-boom-exposes-logistics-earnings-gap/"
-    },
-    {
-      "title": "How reliable in predicting spot prices is box ship utilisation?",
-      "src": "The Loadstar",
-      "date": "16.11.2026",
-      "url": "https://theloadstar.com/how-reliable-in-predicting-spot-prices-is-box-ship-utilisation/"
-    },
-    {
-      "title": "CMA CGM увеличила выручку в третьем квартале 2026",
-      "src": "SeaNews",
-      "date": "16.11.2026",
-      "url": "https://seanews.ru/2026/11/16/ru-cma-cgm-uvelichila-vyruchku-v-tretem-kvartale-2026/"
-    },
-    {
-      "title": "«Моби Дик» осваивает новые экспортные грузы",
-      "src": "InfraNews",
-      "date": "16.11.2026",
-      "url": "https://www.infranews.ru/novosti/72118-mobi-dik-osvaivaet-novye-eksportnye-gruzy/"
-    },
-    {
-      "title": "«Мурманский морской торговый порт» нарастил перевалку в октябре в 3,3 раза",
-      "src": "InfraNews",
-      "date": "16.11.2026",
-      "url": "https://www.infranews.ru/novosti/72116-murmanskij-morskoj-torgovyj-port-narastil-perevalku-v-oktyabre-v-3-3-raza/"
-    },
-    {
-      "title": "Прогноз по складскому рынку Петербурга и Ленобласти",
-      "src": "SeaNews",
-      "date": "16.11.2026",
-      "url": "https://seanews.ru/2026/11/16/ru-prognoz-po-skladskomu-rynku-peterburga-i-lenoblasti/"
     }
   ]
 };
