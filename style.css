@@ -64,11 +64,11 @@ main { max-width: 1080px; margin: 0 auto; padding: 28px 24px 60px; }
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   color: #fff;
   border-radius: var(--radius);
-  padding: 40px 32px;
+  padding: 20px 32px;
   margin-bottom: 28px;
 }
-.hero h1 { font-size: 2rem; margin-bottom: 10px; line-height: 1.25; }
-.hero p { font-size: 1.1rem; opacity: 0.95; max-width: 720px; }
+.hero h1 { font-size: 2rem; margin-bottom: 10px; line-height: 1.25; text-align: center; }
+.hero p { font-size: 1.1rem; opacity: 0.95; }
 
 /* Карточки тем */
 .grid {
