@@ -274,3 +274,24 @@ window.L10N = (function () {
       });
   });
 })();
+
+// Кнопка «наверх»
+(function () {
+  var btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'scroll-top';
+  btn.setAttribute('aria-label', 'Наверх');
+  btn.setAttribute('title', 'Наверх');
+  btn.innerHTML = '&#8593;';
+  document.body.appendChild(btn);
+
+  function onScroll() {
+    if (window.scrollY > 400) { btn.classList.add('visible'); }
+    else { btn.classList.remove('visible'); }
+  }
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
