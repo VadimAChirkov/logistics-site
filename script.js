@@ -67,11 +67,40 @@ window.L10N = (function () {
   for (var i = 0; i < els.length; i++) els[i].textContent = year;
 })();
 
-// Поиск по сайту (полнотекстовый, по индексу search-index.js)
+// Поиск по сайту (полнотекстовый, по индексу search-index.js; ленивая загрузка)
 (function () {
-  var INDEX = (window.SEARCH_INDEX || []).map(function (e) {
-    return { t: e.t, u: e.u, k: e.text };
-  });
+  var INDEX = null;
+  var loading = false;
+  var pendingCb = null;
+
+  function mapIndex() {
+    return (window.SEARCH_INDEX || []).map(function (e) {
+      return { t: e.t, u: e.u, k: e.text };
+    });
+  }
+
+  function ensureIndex(cb) {
+    if (INDEX) { cb(); return; }
+    if (window.SEARCH_INDEX) { INDEX = mapIndex(); cb(); return; }
+    if (loading) { pendingCb = cb; return; }
+    loading = true;
+    var s = document.createElement('script');
+    // относительный путь: в корне → search-index.js (RU), в en/ → en/search-index.js (EN)
+    s.src = 'search-index.js';
+    s.async = true;
+    s.onload = function () {
+      INDEX = mapIndex();
+      loading = false;
+      var p = pendingCb; pendingCb = null;
+      if (p) p();
+    };
+    s.onerror = function () {
+      loading = false;
+      var p = pendingCb; pendingCb = null;
+      if (p) p();
+    };
+    document.body.appendChild(s);
+  }
 
   var header = document.querySelector('.header-inner');
   if (!header) return;
@@ -92,14 +121,6 @@ window.L10N = (function () {
   if (!input || !results) return;
 
   function norm(s) { return (s || '').toLowerCase(); }
-
-  function snippet(text, q) {
-    var idx = text.toLowerCase().indexOf(q.toLowerCase());
-    if (idx < 0) return text.slice(0, 140) + '…';
-    var start = Math.max(0, idx - 40);
-    var end = Math.min(text.length, idx + q.length + 100);
-    return (start > 0 ? '…' : '') + text.slice(start, end) + (end < text.length ? '…' : '');
-  }
 
   function render(q) {
     q = norm(q).trim();
@@ -126,8 +147,8 @@ window.L10N = (function () {
     results.hidden = false;
   }
 
-  input.addEventListener('input', function () { render(input.value); });
-  input.addEventListener('focus', function () { if (input.value) render(input.value); });
+  input.addEventListener('input', function () { ensureIndex(function () { render(input.value); }); });
+  input.addEventListener('focus', function () { if (input.value) ensureIndex(function () { render(input.value); }); });
   document.addEventListener('click', function (e) {
     if (!wrap.contains(e.target)) results.hidden = true;
   });
@@ -144,7 +165,7 @@ window.L10N = (function () {
     rec.maxAlternatives = 1;
     rec.onresult = function (e) {
       var text = e.results[0][0].transcript;
-      if (text) { input.value = text; render(text); }
+      if (text) { input.value = text; ensureIndex(function () { render(text); }); }
     };
     rec.onerror = function () { mic.classList.remove('listening'); };
     rec.onend = function () { mic.classList.remove('listening'); };
