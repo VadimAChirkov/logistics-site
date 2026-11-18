@@ -4,10 +4,52 @@ window.NEWS = {
   "updated": "18.11.2026",
   "items": [
     {
-      "title": "Перевозки нефти через Ормузский пролив на танкерах Suezmax и Aframax превысили 2 млн баррелей в сутки",
+      "title": "LA-Long Beach port strike risk grows as employers say ILWU talks stalled",
+      "src": "FreightWaves",
+      "date": "18.11.2026",
+      "url": "https://www.freightwaves.com/news/la-long-beach-port-strike-risk-grows-as-employers-say-ilwu-talks-stalled"
+    },
+    {
+      "title": "Shipping Industry Presses for Global IMO Climate Deal as Divisions Over Rules Persist",
+      "src": "gCaptain",
+      "date": "18.11.2026",
+      "url": "https://gcaptain.com/shipping-industry-presses-for-global-imo-climate-deal-as-divisions-over-rules-persist/"
+    },
+    {
+      "title": "Geneva Dry: TCC’s Emily Koo on the disconnect between dry bulk rates and asset prices",
+      "src": "Splash 247",
+      "date": "18.11.2026",
+      "url": "https://splash247.com/geneva-dry-tccs-emily-koo-on-the-disconnect-between-dry-bulk-rates-and-asset-prices/"
+    },
+    {
+      "title": "From more footage to more focus: Find your fleet’s videosafety stage",
+      "src": "FreightWaves",
+      "date": "18.11.2026",
+      "url": "https://www.freightwaves.com/news/from-more-footage-to-more-focus-find-your-fleets-videosafety-stage"
+    },
+    {
+      "title": "The missing middle in Hong Kong’s maritime workforce",
+      "src": "Splash 247",
+      "date": "18.11.2026",
+      "url": "https://splash247.com/the-missing-middle-in-hong-kongs-maritime-workforce/"
+    },
+    {
+      "title": "TARA GAS Burning Off Oman as Another Tanker Attack Leaves 11 Injured",
+      "src": "gCaptain",
+      "date": "18.11.2026",
+      "url": "https://gcaptain.com/tara-gas-burning-off-oman-as-another-tanker-attack-leaves-11-injured/"
+    },
+    {
+      "title": "Университетские команды приступили к разработке предложений для грантовой программы имени Артура Чилингарова",
       "src": "PortNews",
       "date": "18.11.2026",
-      "url": "https://portnews.ru/news/399796/"
+      "url": "https://portnews.ru/news/399801/"
+    },
+    {
+      "title": "Более 650 тонн мусора собрал коммунальный флот ГУП «Мосводосток» за летнюю навигацию 2026 года",
+      "src": "PortNews",
+      "date": "18.11.2026",
+      "url": "https://portnews.ru/news/399805/"
     },
     {
       "title": "Строительство морского терминала Найба в Якутии начнется в 2027 году",
@@ -22,34 +64,10 @@ window.NEWS = {
       "url": "https://www.infranews.ru/novosti/72157-gruzoperevozki-po-vnutrennim-vodnym-putyam-rossii-v-2026-godu-ozhidayutsya-na-urovne-72-mln-tonn/"
     },
     {
-      "title": "Гонконгская CA Shipping получит контракты на два контейнеровоза стоимостью $122,8 млн",
-      "src": "PortNews",
-      "date": "18.11.2026",
-      "url": "https://portnews.ru/news/399787/"
-    },
-    {
       "title": "Контейнерные перевозки на ЗСЖД выросли на 5,7% за 10 месяцев",
       "src": "РЖД-Партнер",
       "date": "18.11.2026",
       "url": "https://www.rzd-partner.ru/zhd-transport/news/konteynernye-perevozki-na-zszhd-vyrosli-na-5-7-za-10-mesyatsev/"
-    },
-    {
-      "title": "J.B. Hunt sees cost pressures ease, touts dedicated wins",
-      "src": "FreightWaves",
-      "date": "18.11.2026",
-      "url": "https://www.freightwaves.com/news/j-b-hunt-sees-cost-pressures-ease-touts-dedicated-wins"
-    },
-    {
-      "title": "Expeditors: ‘Built to outperform through any cycle’",
-      "src": "The Loadstar",
-      "date": "18.11.2026",
-      "url": "https://theloadstar.com/expeditors-built-to-outperform-through-any-cycle/"
-    },
-    {
-      "title": "The Lag Effect: Trucking Capacity Declines as Rates Recover",
-      "src": "FreightWaves",
-      "date": "18.11.2026",
-      "url": "https://www.freightwaves.com/news/the-lag-effect-trucking-capacity-declines-as-rates-recover"
     },
     {
       "title": "Глава «Дальрефтранса» Андрей Гречкин: решения для развития и повышения эффективности рефконтейнерых перевозок",
@@ -64,40 +82,22 @@ window.NEWS = {
       "url": "https://theloadstar.com/transatlantic-airfreight-rates-at-highest-level-for-four-years/"
     },
     {
+      "title": "MSC plans to triple capacity at its Aysaport transhipment hub",
+      "src": "The Loadstar",
+      "date": "18.11.2026",
+      "url": "https://theloadstar.com/msc-plans-to-triple-capacity-at-its-aysaport-transhipment-hub/"
+    },
+    {
       "title": "Стоимость морской логистики: ставки выросли на 50% к январю",
       "src": "SeaNews",
       "date": "18.11.2026",
       "url": "https://seanews.ru/2026/11/18/ru-stoimost-morskoj-logistiki-stavki-vyrosli-na-50-k-janvarju/"
     },
     {
-      "title": "Neo Next+ snaps up EnQuest’s North Sea business in $960m deal",
-      "src": "Splash 247",
-      "date": "18.11.2026",
-      "url": "https://splash247.com/neo-next-snaps-up-enquests-north-sea-business-in-960m-deal/"
-    },
-    {
       "title": "Почти 74 трлн рублей потребуется транспортной отрасли до 2050 года",
       "src": "SeaNews",
       "date": "18.11.2026",
       "url": "https://seanews.ru/2026/11/18/ru-pochti-74-trln-rublej-potrebuetsja-transportnoj-otrasli-do-2050-goda/"
-    },
-    {
-      "title": "Eiffage secures offshore converter platform contract in Germany",
-      "src": "Splash 247",
-      "date": "18.11.2026",
-      "url": "https://splash247.com/eiffage-secures-offshore-converter-platform-contract-in-germany/"
-    },
-    {
-      "title": "QR-код на 50 отправлений: СПОТ замедлил сборные грузы на 20%",
-      "src": "Logirus",
-      "date": "18.11.2026",
-      "url": "https://logirus.ru/news/transport/qr-kod_na_50_otpravleniy_spot_zamedlil_sbornye_gruzy_na_20.html"
-    },
-    {
-      "title": "USCG Icebreaker ‘Healy’ Suffered Catastrophic Engine Overspeed Failure, Procurement Records Reveal",
-      "src": "gCaptain",
-      "date": "18.11.2026",
-      "url": "https://gcaptain.com/uscg-icebreaker-healy-suffered-catastrophic-engine-overspeed-failure-procurement-records-reveal/"
     }
   ]
 };
