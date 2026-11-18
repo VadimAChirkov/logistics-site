@@ -1,13 +1,49 @@
 // Новости рынка логистики и перевозок (автообновление GitHub Actions из RSS).
 // Ручная правка перезапишется при следующем автообновлении.
 window.NEWS = {
-  "updated": "17.11.2026",
+  "updated": "18.11.2026",
   "items": [
     {
-      "title": "АО «Флот РТ» проводит ходовые испытания судна на воздушной подушке «Парма»",
+      "title": "Nasdaq gives Hub Group more time to produce delayed financial filings",
+      "src": "FreightWaves",
+      "date": "17.11.2026",
+      "url": "https://www.freightwaves.com/news/nasdaq-gives-hub-group-more-time-to-produce-delayed-financial-filings"
+    },
+    {
+      "title": "UPS to acquire Australian healthcare specialist Smartway Logistics",
+      "src": "FreightWaves",
+      "date": "17.11.2026",
+      "url": "https://www.freightwaves.com/news/ups-to-acquire-australian-healthcare-specialist-smartway-logistics"
+    },
+    {
+      "title": "U.S. Coast Guard Icebreaker Returns From 133-Day Arctic Patrol Monitoring Chinese Research Vessels",
+      "src": "gCaptain",
+      "date": "17.11.2026",
+      "url": "https://gcaptain.com/u-s-coast-guard-icebreaker-returns-from-133-day-arctic-patrol-monitoring-chinese-research-vessels/"
+    },
+    {
+      "title": "U.S. Military Strikes Iranian Missile Site Near Strait of Hormuz",
+      "src": "gCaptain",
+      "date": "17.11.2026",
+      "url": "https://gcaptain.com/u-s-military-strikes-iranian-missile-site-near-strait-of-hormuz/"
+    },
+    {
+      "title": "How the Hormuz crisis handed America a lasting export advantage",
+      "src": "Splash 247",
+      "date": "17.11.2026",
+      "url": "https://splash247.com/how-the-hormuz-crisis-handed-america-a-lasting-export-advantage/"
+    },
+    {
+      "title": "Курсанты Макаровки изучат китайский опыт разработки и внедрения технологий автономного судовождения",
       "src": "PortNews",
       "date": "17.11.2026",
-      "url": "https://portnews.ru/news/399739/"
+      "url": "https://portnews.ru/news/399748/"
+    },
+    {
+      "title": "Более 540 компаний из России и зарубежья представили решения для металлургии на выставке «Металл-Экспо’2026»",
+      "src": "PortNews",
+      "date": "17.11.2026",
+      "url": "https://portnews.ru/news/399721/"
     },
     {
       "title": "StealthGas crew airlifted from stricken LPG carrier off Bulgaria",
@@ -16,34 +52,10 @@ window.NEWS = {
       "url": "https://splash247.com/stealthgas-crew-airlifted-from-stricken-lpg-carrier-off-bulgaria/"
     },
     {
-      "title": "ФГУП «Росморпорт» разрабатывает сервис обработки заявок на услуги осмотра судов в морских портах РФ",
-      "src": "PortNews",
-      "date": "17.11.2026",
-      "url": "https://portnews.ru/news/399741/"
-    },
-    {
-      "title": "Truck Parking Club hands CPC 7 drop yards in two months",
-      "src": "FreightWaves",
-      "date": "17.11.2026",
-      "url": "https://www.freightwaves.com/news/truck-parking-club-cpc-drop-yards"
-    },
-    {
       "title": "Рабочий парк грузовых вагонов на сети РЖД сократился до уровня мая 2023 года",
       "src": "InfraNews",
       "date": "17.11.2026",
       "url": "https://www.infranews.ru/logistika/72136-rabochij-park-gruzovyh-vagonov-na-seti-rzhd-sokratilsya-do-urovnya-maya-2023-goda/"
-    },
-    {
-      "title": "Shippers Are Finally Ready to Fix the Supply Chain Behind the Freight Bill",
-      "src": "FreightWaves",
-      "date": "17.11.2026",
-      "url": "https://www.freightwaves.com/news/shippers-are-finally-ready-to-fix-the-supply-chain-behind-the-freight-bill"
-    },
-    {
-      "title": "LPG Tanker Reported to Have Sunk Off Bulgaria’s Black Sea Coast",
-      "src": "gCaptain",
-      "date": "17.11.2026",
-      "url": "https://gcaptain.com/lpg-tanker-reported-to-have-sunk-off-bulgarias-black-sea-coast/"
     },
     {
       "title": "Показатель оборачиваемости грузового вагона на сети РЖД за январь-сентябрь улучшился на 5,7%",
@@ -56,12 +68,6 @@ window.NEWS = {
       "src": "The Loadstar",
       "date": "17.11.2026",
       "url": "https://theloadstar.com/gemini-carriers-target-complete-return-to-suez-transits-by-mid-january/"
-    },
-    {
-      "title": "Semco Maritime and PTSC bag Taiwan offshore wind deal",
-      "src": "Splash 247",
-      "date": "17.11.2026",
-      "url": "https://splash247.com/semco-maritime-and-ptsc-bag-taiwan-offshore-wind-deal/"
     },
     {
       "title": "Korean Air maximises Americas capacity as AI cargo adds to peak pressure",
@@ -80,12 +86,6 @@ window.NEWS = {
       "src": "SeaNews",
       "date": "17.11.2026",
       "url": "https://seanews.ru/2026/11/17/ru-obnovlen-servis-freightmarket-41/"
-    },
-    {
-      "title": "EU Targets Shadow Fleet Shipowners, Managers and Insurers in New Russia Sanctions",
-      "src": "gCaptain",
-      "date": "16.11.2026",
-      "url": "https://gcaptain.com/eu-targets-shadow-fleet-shipowners-managers-and-insurers-in-new-russia-sanctions/"
     }
   ]
 };
