@@ -384,3 +384,6 @@ article pre code {
   .card h3 { font-size: 1.05rem; }
   table { font-size: 0.85rem; }
 }
+
+.glossary-group td { background: #eef2f7; font-weight: 700; letter-spacing: .02em; }
+.glossary-en { color: #7a8699; font-weight: 400; }
