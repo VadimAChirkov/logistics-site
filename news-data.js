@@ -1,8 +1,56 @@
 // Новости рынка логистики и перевозок (автообновление GitHub Actions из RSS).
 // Ручная правка перезапишется при следующем автообновлении.
 window.NEWS = {
-  "updated": "18.11.2026",
+  "updated": "19.11.2026",
   "items": [
+    {
+      "title": "Почти половина отправляемых на ДВЖД контейнеров уходит в полувагонах",
+      "src": "РЖД-Партнер",
+      "date": "19.11.2026",
+      "url": "https://www.rzd-partner.ru/zhd-transport/news/pochti-polovina-otpravlyaemykh-na-dvzhd-konteynerov-ukhodit-v-poluvagonakh/"
+    },
+    {
+      "title": "К 2035 году пассажирские жд-перевозки до 500 км могут вырасти на 50%",
+      "src": "РЖД-Партнер",
+      "date": "19.11.2026",
+      "url": "https://www.rzd-partner.ru/zhd-transport/news/k-2035-godu-passazhirskie-zhd-perevozki-do-500-km-mogut-vyrasti-na-50/"
+    },
+    {
+      "title": "В порту Корсаков (Сахалин) завершена реконструкция пяти причалов Рыбного порта",
+      "src": "PortNews",
+      "date": "19.11.2026",
+      "url": "https://portnews.ru/news/399828/"
+    },
+    {
+      "title": "Новый катер-торпедолов ТЛ-2202 вошел в состав Северного флота",
+      "src": "PortNews",
+      "date": "19.11.2026",
+      "url": "https://portnews.ru/news/399826/"
+    },
+    {
+      "title": "Мурманский балкерный терминал обновляет конвейерную ленту",
+      "src": "SeaNews",
+      "date": "19.11.2026",
+      "url": "https://seanews.ru/2026/11/19/ru-murmanskij-balkernyj-terminal-obnovljaet-konvejernuju-lentu/"
+    },
+    {
+      "title": "Фрахтовый рынок Азовского и Каспийского моря, 47 неделя, 2026",
+      "src": "SeaNews",
+      "date": "19.11.2026",
+      "url": "https://seanews.ru/2026/11/19/ru-frahtovyj-rynok-azovskogo-i-kaspijskogo-morja-47-nedelja-2026/"
+    },
+    {
+      "title": "Geneva Dry: TCC’s Emily Koo on the disconnect between dry bulk rates and asset prices",
+      "src": "Splash 247",
+      "date": "19.11.2026",
+      "url": "https://splash247.com/geneva-dry-tccs-emily-koo-on-the-disconnect-between-dry-bulk-rates-and-asset-prices/"
+    },
+    {
+      "title": "Watch the finals of The Captain’s Table live on Splash",
+      "src": "Splash 247",
+      "date": "19.11.2026",
+      "url": "https://splash247.com/watch-the-finals-of-the-captains-table-live-on-splash-3/"
+    },
     {
       "title": "LA-Long Beach port strike risk grows as employers say ILWU talks stalled",
       "src": "FreightWaves",
@@ -16,22 +64,10 @@ window.NEWS = {
       "url": "https://gcaptain.com/shipping-industry-presses-for-global-imo-climate-deal-as-divisions-over-rules-persist/"
     },
     {
-      "title": "Geneva Dry: TCC’s Emily Koo on the disconnect between dry bulk rates and asset prices",
-      "src": "Splash 247",
-      "date": "18.11.2026",
-      "url": "https://splash247.com/geneva-dry-tccs-emily-koo-on-the-disconnect-between-dry-bulk-rates-and-asset-prices/"
-    },
-    {
       "title": "From more footage to more focus: Find your fleet’s videosafety stage",
       "src": "FreightWaves",
       "date": "18.11.2026",
       "url": "https://www.freightwaves.com/news/from-more-footage-to-more-focus-find-your-fleets-videosafety-stage"
-    },
-    {
-      "title": "The missing middle in Hong Kong’s maritime workforce",
-      "src": "Splash 247",
-      "date": "18.11.2026",
-      "url": "https://splash247.com/the-missing-middle-in-hong-kongs-maritime-workforce/"
     },
     {
       "title": "TARA GAS Burning Off Oman as Another Tanker Attack Leaves 11 Injured",
@@ -40,34 +76,10 @@ window.NEWS = {
       "url": "https://gcaptain.com/tara-gas-burning-off-oman-as-another-tanker-attack-leaves-11-injured/"
     },
     {
-      "title": "Университетские команды приступили к разработке предложений для грантовой программы имени Артура Чилингарова",
-      "src": "PortNews",
-      "date": "18.11.2026",
-      "url": "https://portnews.ru/news/399801/"
-    },
-    {
-      "title": "Более 650 тонн мусора собрал коммунальный флот ГУП «Мосводосток» за летнюю навигацию 2026 года",
-      "src": "PortNews",
-      "date": "18.11.2026",
-      "url": "https://portnews.ru/news/399805/"
-    },
-    {
-      "title": "Строительство морского терминала Найба в Якутии начнется в 2027 году",
-      "src": "РЖД-Партнер",
-      "date": "18.11.2026",
-      "url": "https://www.rzd-partner.ru/wate-transport/news/stroitelstvo-morskogo-terminala-nayba-v-yakutii-nachnetsya-v-2027-godu/"
-    },
-    {
       "title": "Грузоперевозки по внутренним водным путям России в 2026 году ожидаются на уровне 72 млн тонн",
       "src": "InfraNews",
       "date": "18.11.2026",
       "url": "https://www.infranews.ru/novosti/72157-gruzoperevozki-po-vnutrennim-vodnym-putyam-rossii-v-2026-godu-ozhidayutsya-na-urovne-72-mln-tonn/"
-    },
-    {
-      "title": "Контейнерные перевозки на ЗСЖД выросли на 5,7% за 10 месяцев",
-      "src": "РЖД-Партнер",
-      "date": "18.11.2026",
-      "url": "https://www.rzd-partner.ru/zhd-transport/news/konteynernye-perevozki-na-zszhd-vyrosli-na-5-7-za-10-mesyatsev/"
     },
     {
       "title": "Глава «Дальрефтранса» Андрей Гречкин: решения для развития и повышения эффективности рефконтейнерых перевозок",
@@ -86,18 +98,6 @@ window.NEWS = {
       "src": "The Loadstar",
       "date": "18.11.2026",
       "url": "https://theloadstar.com/msc-plans-to-triple-capacity-at-its-aysaport-transhipment-hub/"
-    },
-    {
-      "title": "Стоимость морской логистики: ставки выросли на 50% к январю",
-      "src": "SeaNews",
-      "date": "18.11.2026",
-      "url": "https://seanews.ru/2026/11/18/ru-stoimost-morskoj-logistiki-stavki-vyrosli-na-50-k-janvarju/"
-    },
-    {
-      "title": "Почти 74 трлн рублей потребуется транспортной отрасли до 2050 года",
-      "src": "SeaNews",
-      "date": "18.11.2026",
-      "url": "https://seanews.ru/2026/11/18/ru-pochti-74-trln-rublej-potrebuetsja-transportnoj-otrasli-do-2050-goda/"
     }
   ]
 };
