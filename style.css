@@ -102,6 +102,13 @@ article .note {
   margin: 16px 0;
 }
 article .note strong { color: var(--accent); }
+article .article-meta { color: #6b7a88; font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; margin: -8px 0 16px; }
+article .lead { font-size: 1.15rem; line-height: 1.55; color: #3a4a56; margin: 0 0 18px; }
+article .fact-box { background: #eef6fb; border-left: 4px solid var(--accent); border-radius: 6px; padding: 14px 18px; margin: 18px 0; font-weight: 600; color: var(--accent); }
+article blockquote { margin: 18px 0; padding: 12px 18px; border-left: 4px solid var(--accent-2); background: #f5f8fa; border-radius: 6px; font-style: italic; color: #44525e; }
+article ul.sources { list-style: none; padding-left: 0; }
+article ul.sources li { margin-bottom: 6px; font-size: 0.92rem; }
+article ul.sources li a { word-break: break-word; }
 
 /* Инфографика (блок-схемы) */
 figure.infographic { margin: 24px 0; text-align: center; }
