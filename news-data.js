@@ -1,43 +1,73 @@
 // Новости рынка логистики и перевозок (автообновление GitHub Actions из RSS).
 // Ручная правка перезапишется при следующем автообновлении.
 window.NEWS = {
-  "updated": "19.11.2026",
+  "updated": "20.11.2026",
   "items": [
     {
-      "title": "NYC push against delivery bill brings in legal and racial arguments",
+      "title": "Rethinking marine war risk insurance",
+      "src": "Splash 247",
+      "date": "20.11.2026",
+      "url": "https://splash247.com/rethinking-marine-war-risk-insurance/"
+    },
+    {
+      "title": "В порту Архангельск 5 декабря начнется период ледокольных проводок судов 2026–2027 годов",
+      "src": "PortNews",
+      "date": "20.11.2026",
+      "url": "https://portnews.ru/news/399889/"
+    },
+    {
+      "title": "Эксперимент по прохождению границы за 10 минут расширят",
+      "src": "SeaNews",
+      "date": "20.11.2026",
+      "url": "https://seanews.ru/2026/11/20/ru-jeksperiment-po-prohozhdeniju-granicy-za-10-minut-rasshirjat/"
+    },
+    {
+      "title": "Фрахтовый рынок Балтийского моря, неделя 47, 2026",
+      "src": "SeaNews",
+      "date": "20.11.2026",
+      "url": "https://seanews.ru/2026/11/20/ru-frahtovyj-rynok-baltijskogo-morja-nedelja-47-2026/"
+    },
+    {
+      "title": "Корабли Северного флота отработали применение ракетного и артиллерийского вооружения",
+      "src": "PortNews",
+      "date": "20.11.2026",
+      "url": "https://portnews.ru/news/399888/"
+    },
+    {
+      "title": "DOL sticks with independent contractor proposal, trucking applauds",
       "src": "FreightWaves",
       "date": "19.11.2026",
-      "url": "https://www.freightwaves.com/news/nyc-push-against-delivery-bill-brings-in-legal-and-racial-arguments"
+      "url": "https://www.freightwaves.com/news/dol-sticks-with-independent-contractor-proposal-trucking-applauds"
     },
     {
-      "title": "Sparq: Logistics AI is paying off, but buyers want speed",
+      "title": "The Driver Communication Problem Brokers Can’t Afford to Ignore",
       "src": "FreightWaves",
       "date": "19.11.2026",
-      "url": "https://www.freightwaves.com/news/sparq-logistics-ai-roi-survey"
+      "url": "https://www.freightwaves.com/news/the-driver-communication-problem-brokers-cant-afford-to-ignore"
     },
     {
-      "title": "Iran Intensifies Hormuz Tanker Attacks Just as Oil Prices Slide",
+      "title": "Court Ruling Threatens License for $2.1 Billion Texas Offshore Oil Export Project",
       "src": "gCaptain",
       "date": "19.11.2026",
-      "url": "https://gcaptain.com/iran-intensifies-hormuz-tanker-attacks-just-as-oil-prices-slide/"
+      "url": "https://gcaptain.com/court-ruling-threatens-license-for-2-1-billion-texas-offshore-oil-export-project/"
     },
     {
-      "title": "Panama Files Criminal Complaint Tied to CK Hutchison Ports Dispute",
+      "title": "В Евросоюзе санкции обрели «диспетчерскую»",
+      "src": "Logirus",
+      "date": "20.11.2026",
+      "url": "https://logirus.ru/news/custom_and_ved/v_evrosoyuze_sanktsii_obreli_dispetcherskuyu.html"
+    },
+    {
+      "title": "Who calls the shots when it comes to ship finance in Hong Kong?",
+      "src": "Splash 247",
+      "date": "19.11.2026",
+      "url": "https://splash247.com/who-calls-the-shots-when-it-comes-to-ship-finance-in-hong-kong/"
+    },
+    {
+      "title": "ARC Adds Another U.S.-Flag Ro/Ro Ship to Strengthen Military Sealift Capacity",
       "src": "gCaptain",
       "date": "19.11.2026",
-      "url": "https://gcaptain.com/panama-files-criminal-complaint-tied-to-ck-hutchison-ports-dispute/"
-    },
-    {
-      "title": "Грузопоток на Амуре к 2030 году планируется увеличить до 7 млн тонн в год",
-      "src": "PortNews",
-      "date": "19.11.2026",
-      "url": "https://portnews.ru/news/399871/"
-    },
-    {
-      "title": "Дноуглубление участка Чайковский шлюз — Сарапул позволит нарастить грузопоток по Каме на 25 млн тонн в год",
-      "src": "PortNews",
-      "date": "19.11.2026",
-      "url": "https://portnews.ru/news/399870/"
+      "url": "https://gcaptain.com/arc-adds-another-u-s-flag-ro-ro-ship-to-strengthen-military-sealift-capacity/"
     },
     {
       "title": "Расширение сети квантовых коммуникаций позволит снизить стоимость услуг",
@@ -58,12 +88,6 @@ window.NEWS = {
       "url": "https://www.rzd-partner.ru/wate-transport/news/rossiya-gotova-rasshirit-sotrudnichestvo-s-kitaem-po-razvitiyu-severnogo-morskogo-puti/"
     },
     {
-      "title": "Снижение затрат на документы даст МТК «Север – Юг» плюс $59,08 млрд торговли",
-      "src": "Logirus",
-      "date": "19.11.2026",
-      "url": "https://logirus.ru/news/infrastructure/snizhenie_zatrat_na_dokumenty_dast_mtk_sever_yug_plyus_59-08_mlrd_torgovli.html"
-    },
-    {
       "title": "Сергей Шишкарев обсудил с властями Сахалина развитие порта Корсаков",
       "src": "InfraNews",
       "date": "19.11.2026",
@@ -74,30 +98,6 @@ window.NEWS = {
       "src": "InfraNews",
       "date": "19.11.2026",
       "url": "https://www.infranews.ru/logistika/72169-proekt-mosta-dzhalinda-mohe-pervyj-etap-razvitiya-infrastruktury-zavershat-v-2027-godu/"
-    },
-    {
-      "title": "JFK holiday-pay complaints heat up AGI dispute with union",
-      "src": "The Loadstar",
-      "date": "19.11.2026",
-      "url": "https://theloadstar.com/jfk-holiday-pay-complaints-heat-up-agi-dispute-with-union/"
-    },
-    {
-      "title": "Sale of Neovia in the US and Turkey’s Ekol marks return of M&A to logistics",
-      "src": "The Loadstar",
-      "date": "19.11.2026",
-      "url": "https://theloadstar.com/sale-of-neovia-in-the-us-and-turkeys-ekol-marks-return-of-ma-to-logistics/"
-    },
-    {
-      "title": "Возможности и ограничения видеодетекции дыма на открытой площадке терминала",
-      "src": "SeaNews",
-      "date": "19.11.2026",
-      "url": "https://seanews.ru/2026/11/19/ru-vozmozhnosti-i-ogranichenija-videodetekcii-dyma-na-otkrytoj-ploshhadke-terminala/"
-    },
-    {
-      "title": "Torm hits back at Hafnia over rejected merger bids",
-      "src": "Splash 247",
-      "date": "19.11.2026",
-      "url": "https://splash247.com/torm-hits-back-at-hafnia-over-rejected-merger-bids/"
     }
   ]
 };
