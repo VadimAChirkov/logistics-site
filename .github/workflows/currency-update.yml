@@ -1,0 +1,35 @@
+name: Currency update (CBR)
+
+on:
+  schedule:
+    # Ежедневно 17:30 МСК (14:30 UTC)
+    - cron: '30 14 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch CBR rates and regenerate currency-data.js
+        run: python3 currency_fetch.py
+
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet currency-data.js; then
+            git add currency-data.js
+            git commit -m "Автообновление курсов валют ЦБ РФ"
+            git push
+          else
+            echo "No change — nothing to commit"
+          fi
