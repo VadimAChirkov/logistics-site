@@ -223,6 +223,25 @@ window.L10N = (function () {
   if (updEl) updEl.textContent = M.updated;
 })();
 
+// Курсы валют ЦБ РФ (USD, EUR, CNY, AED) — добавляются в строку индексов
+(function () {
+  var strip = document.getElementById('indices-strip');
+  var C = window.CURRENCY;
+  if (!strip || !C || !C.rates || !C.rates.length) return;
+  var en = document.documentElement.lang === 'en';
+  var parts = [];
+  for (var i = 0; i < C.rates.length; i++) {
+    var r = C.rates[i];
+    var cls = r.up ? 'scfi-delta-up' : 'scfi-delta-down';
+    var nm = en ? r.nameEn : r.nameRu;
+    parts.push('<span class="idx-item" title="' + nm + '"><strong>' + r.code + '</strong> ' + r.value + ' &#8381; <span class="' + cls + '">' + r.change + '</span></span>');
+  }
+  var fx = document.createElement('span');
+  fx.className = 'fx-strip';
+  fx.innerHTML = parts.join('<span class="idx-sep">·</span>');
+  strip.appendChild(fx);
+})();
+
 // Новости (данные из news-data.js)
 (function () {
   var newsBox = document.getElementById('news-widget');

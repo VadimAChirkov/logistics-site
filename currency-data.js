@@ -1,0 +1,2 @@
+// Курсы валют ЦБ РФ (автообновление ежедневно).
+window.CURRENCY = {"updated": "20.11.2026", "rates": [{"code": "USD", "nameRu": "Доллар США", "nameEn": "US Dollar", "value": "81,93", "change": "-0,30", "up": false}, {"code": "EUR", "nameRu": "Евро", "nameEn": "Euro", "value": "89,86", "change": "-0,50", "up": false}, {"code": "CNY", "nameRu": "Юань", "nameEn": "Chinese Yuan", "value": "12,25", "change": "-0,05", "up": false}, {"code": "AED", "nameRu": "Дирхам ОАЭ", "nameEn": "UAE Dirham", "value": "22,31", "change": "-0,08", "up": false}]};

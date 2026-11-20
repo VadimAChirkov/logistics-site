@@ -425,3 +425,6 @@ article pre code {
   visibility: visible;
   transform: translateY(0);
 }
+
+/* Курсы валют ЦБ РФ в строке индексов */
+.fx-strip { display: inline-flex; align-items: baseline; flex-wrap: wrap; gap: 4px 14px; padding-left: 12px; margin-left: 4px; border-left: 1px solid var(--border); }
