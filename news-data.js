@@ -4,100 +4,100 @@ window.NEWS = {
   "updated": "20.11.2026",
   "items": [
     {
-      "title": "Rethinking marine war risk insurance",
-      "src": "Splash 247",
+      "title": "Another Tanker Hit in Strait of Hormuz as Maritime Attacks Surge Worldwide",
+      "src": "gCaptain",
       "date": "20.11.2026",
-      "url": "https://splash247.com/rethinking-marine-war-risk-insurance/"
+      "url": "https://gcaptain.com/another-tanker-hit-in-strait-of-hormuz-as-maritime-attacks-surge-worldwide/"
     },
     {
-      "title": "В порту Архангельск 5 декабря начнется период ледокольных проводок судов 2026–2027 годов",
+      "title": "Groundtruth launches AI platform to automate freight billing with J.B. Hunt partnership",
+      "src": "FreightWaves",
+      "date": "20.11.2026",
+      "url": "https://www.freightwaves.com/news/groundtruth-launches-ai-platform-to-automate-freight-billing-with-j-b-hunt-partnership"
+    },
+    {
+      "title": "Trucking Rejection Rates: Why Holiday Shipping Gets SPICY",
+      "src": "FreightWaves",
+      "date": "20.11.2026",
+      "url": "https://www.freightwaves.com/news/trucking-rejection-rates-why-holiday-shipping-gets-spicy"
+    },
+    {
+      "title": "Houthis Order Ships to Leave Saudi Red Sea Ports After Hodeidah Airstrikes",
+      "src": "gCaptain",
+      "date": "20.11.2026",
+      "url": "https://gcaptain.com/houthis-order-ships-to-leave-saudi-red-sea-ports-after-hodeidah-airstrikes/"
+    },
+    {
+      "title": "ААНИИ: в Баренцевом море нилас и серый лед наблюдаются у архипелагов ЗФИ и Шпицбергена",
       "src": "PortNews",
       "date": "20.11.2026",
-      "url": "https://portnews.ru/news/399889/"
+      "url": "https://portnews.ru/news/399937/"
     },
     {
-      "title": "Эксперимент по прохождению границы за 10 минут расширят",
-      "src": "SeaNews",
-      "date": "20.11.2026",
-      "url": "https://seanews.ru/2026/11/20/ru-jeksperiment-po-prohozhdeniju-granicy-za-10-minut-rasshirjat/"
-    },
-    {
-      "title": "Фрахтовый рынок Балтийского моря, неделя 47, 2026",
-      "src": "SeaNews",
-      "date": "20.11.2026",
-      "url": "https://seanews.ru/2026/11/20/ru-frahtovyj-rynok-baltijskogo-morja-nedelja-47-2026/"
-    },
-    {
-      "title": "Корабли Северного флота отработали применение ракетного и артиллерийского вооружения",
+      "title": "Панама пожаловалась в прокуратуру на дочернюю компанию CK Hutchison",
       "src": "PortNews",
       "date": "20.11.2026",
-      "url": "https://portnews.ru/news/399888/"
+      "url": "https://portnews.ru/news/399932/"
     },
     {
-      "title": "DOL sticks with independent contractor proposal, trucking applauds",
-      "src": "FreightWaves",
-      "date": "19.11.2026",
-      "url": "https://www.freightwaves.com/news/dol-sticks-with-independent-contractor-proposal-trucking-applauds"
+      "title": "ОТЛК ЕРА и FESCO договорились развивать контейнерные ценовые индексы",
+      "src": "InfraNews",
+      "date": "20.11.2026",
+      "url": "https://www.infranews.ru/novosti/72198-otlk-era-i-fesco-dogovorilis-razvivat-kontejnernye-tsenovye-indeksy/"
     },
     {
-      "title": "The Driver Communication Problem Brokers Can’t Afford to Ignore",
-      "src": "FreightWaves",
-      "date": "19.11.2026",
-      "url": "https://www.freightwaves.com/news/the-driver-communication-problem-brokers-cant-afford-to-ignore"
-    },
-    {
-      "title": "Court Ruling Threatens License for $2.1 Billion Texas Offshore Oil Export Project",
-      "src": "gCaptain",
-      "date": "19.11.2026",
-      "url": "https://gcaptain.com/court-ruling-threatens-license-for-2-1-billion-texas-offshore-oil-export-project/"
-    },
-    {
-      "title": "В Евросоюзе санкции обрели «диспетчерскую»",
+      "title": "Минэк замыкает контрольно-надзорный контур: реестр админдел и ИИ-подсветка нарушений",
       "src": "Logirus",
       "date": "20.11.2026",
-      "url": "https://logirus.ru/news/custom_and_ved/v_evrosoyuze_sanktsii_obreli_dispetcherskuyu.html"
+      "url": "https://logirus.ru/news/infrastructure/minek_zamykaet_kontrolno-nadzornyy_kontur_reestr_admindel_i_ii-podsvetka_narusheniy.html"
     },
     {
-      "title": "Who calls the shots when it comes to ship finance in Hong Kong?",
-      "src": "Splash 247",
-      "date": "19.11.2026",
-      "url": "https://splash247.com/who-calls-the-shots-when-it-comes-to-ship-finance-in-hong-kong/"
-    },
-    {
-      "title": "ARC Adds Another U.S.-Flag Ro/Ro Ship to Strengthen Military Sealift Capacity",
-      "src": "gCaptain",
-      "date": "19.11.2026",
-      "url": "https://gcaptain.com/arc-adds-another-u-s-flag-ro-ro-ship-to-strengthen-military-sealift-capacity/"
-    },
-    {
-      "title": "Расширение сети квантовых коммуникаций позволит снизить стоимость услуг",
-      "src": "РЖД-Партнер",
-      "date": "19.11.2026",
-      "url": "https://www.rzd-partner.ru/zhd-transport/news/rasshirenie-seti-kvantovykh-kommunikatsiy-pozvolit-snizit-stoimost-uslug/"
-    },
-    {
-      "title": "Аптечка для автопарка: спрос на присадки удвоился",
+      "title": "В спорах о таможенных правилах ЕАЭС бизнес лишен права голоса",
       "src": "Logirus",
-      "date": "19.11.2026",
-      "url": "https://logirus.ru/news/transport/aptechka_dlya_avtoparka_spros_na_prisadki_udvoilsya.html"
+      "date": "20.11.2026",
+      "url": "https://logirus.ru/news/custom_and_ved/v_sporakh_o_tamozhennykh_pravilakh_eaes_biznes_lishen_prava_golosa.html"
     },
     {
-      "title": "Россия готова расширить сотрудничество с Китаем по развитию Северного морского пути",
+      "title": "Правительство направит 5,5 трлн рублей на реализацию новой транспортной стратегии в ближайшие три года",
+      "src": "InfraNews",
+      "date": "20.11.2026",
+      "url": "https://www.infranews.ru/novosti/72197-pravitelstvo-napravit-5-5-trln-rublej-na-realizatsiyu-novoj-transportnoj-strategii-v-blizhajshie-tri-goda/"
+    },
+    {
+      "title": "Transpac spots finally on the slide, but Asia-Med spike a surprise",
+      "src": "The Loadstar",
+      "date": "20.11.2026",
+      "url": "https://theloadstar.com/transpac-spots-finally-on-the-slide-but-asia-med-spike-a-surprise/"
+    },
+    {
+      "title": "Аналитический дайджест SeaNews, 16-20 ноября 2026",
+      "src": "SeaNews",
+      "date": "20.11.2026",
+      "url": "https://seanews.ru/2026/11/20/ru-analiticheskij-dajdzhest-seanews-16-20-nojabrja-2026/"
+    },
+    {
+      "title": "Analysis: IMO Net-Zero: now-or-never time draws near",
+      "src": "The Loadstar",
+      "date": "20.11.2026",
+      "url": "https://theloadstar.com/analysis-imo-net-zero-now-or-never-time-draws-near/"
+    },
+    {
+      "title": "Логистика из Турции: изменения маршрутов, сроков и стоимости",
+      "src": "SeaNews",
+      "date": "20.11.2026",
+      "url": "https://seanews.ru/2026/11/20/ru-logistika-iz-turcii-izmenenija-marshrutov-srokov-i-stoimosti/"
+    },
+    {
+      "title": "Общий парк грузовых вагонов в стране к 2030 году приблизится к 1,5 млн ед.",
       "src": "РЖД-Партнер",
-      "date": "19.11.2026",
-      "url": "https://www.rzd-partner.ru/wate-transport/news/rossiya-gotova-rasshirit-sotrudnichestvo-s-kitaem-po-razvitiyu-severnogo-morskogo-puti/"
+      "date": "20.11.2026",
+      "url": "https://www.rzd-partner.ru/zhd-transport/news/obshchiy-park-gruzovykh-vagonov-v-strane-k-2030-godu-priblizitsya-k-1-5-mln-ed/"
     },
     {
-      "title": "Сергей Шишкарев обсудил с властями Сахалина развитие порта Корсаков",
-      "src": "InfraNews",
-      "date": "19.11.2026",
-      "url": "https://www.infranews.ru/logistika/72171-sergej-shishkarev-obsudil-s-vlastyami-sahalina-razvitie-porta-korsakov/"
-    },
-    {
-      "title": "Проект моста Джалинда — Мохэ: первый этап развития инфраструктуры завершат в 2027 году",
-      "src": "InfraNews",
-      "date": "19.11.2026",
-      "url": "https://www.infranews.ru/logistika/72169-proekt-mosta-dzhalinda-mohe-pervyj-etap-razvitiya-infrastruktury-zavershat-v-2027-godu/"
+      "title": "В Дептрансе столицы выступают за локализацию производства СИМ в Москве",
+      "src": "РЖД-Партнер",
+      "date": "20.11.2026",
+      "url": "https://www.rzd-partner.ru/auto/news/v-deptranse-stolitsy-vystupayut-za-lokalizatsiyu-proizvodstva-sim-v-moskve-/"
     }
   ]
 };
