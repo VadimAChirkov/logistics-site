@@ -47,7 +47,7 @@ header {
   color: var(--accent);
 }
 .logo span { color: var(--muted); font-weight: 400; }
-nav { display: flex; flex-wrap: wrap; gap: 14px; order: 3; flex-basis: 100%; }
+nav { display: flex; flex-wrap: wrap; gap: 7px 14px; order: 3; flex-basis: 100%; }
 nav a {
   color: var(--text);
   font-size: 0.95rem;
