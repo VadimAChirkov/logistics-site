@@ -1,31 +1,31 @@
 // Новости рынка логистики и перевозок (автообновление GitHub Actions из RSS).
 // Ручная правка перезапишется при следующем автообновлении.
 window.NEWS = {
-  "updated": "20.11.2026",
+  "updated": "21.11.2026",
   "items": [
     {
-      "title": "Another Tanker Hit in Strait of Hormuz as Maritime Attacks Surge Worldwide",
+      "title": "More Than 110 Trade Groups Urge Deal as LA-Long Beach Port Strike Deadline Nears",
       "src": "gCaptain",
       "date": "20.11.2026",
-      "url": "https://gcaptain.com/another-tanker-hit-in-strait-of-hormuz-as-maritime-attacks-surge-worldwide/"
+      "url": "https://gcaptain.com/more-than-110-trade-groups-urge-deal-as-la-long-beach-port-strike-deadline-nears/"
+    },
+    {
+      "title": "J.B. Hunt broker liability case proceeding after split decision",
+      "src": "FreightWaves",
+      "date": "20.11.2026",
+      "url": "https://www.freightwaves.com/news/j-b-hunt-broker-liability-case-proceeding-after-split-decision"
+    },
+    {
+      "title": "Iran War Oil Premium Evaporates as Global Crude Supplies Surge",
+      "src": "gCaptain",
+      "date": "20.11.2026",
+      "url": "https://gcaptain.com/iran-war-oil-premium-evaporates-as-global-crude-supplies-surge/"
     },
     {
       "title": "Groundtruth launches AI platform to automate freight billing with J.B. Hunt partnership",
       "src": "FreightWaves",
       "date": "20.11.2026",
       "url": "https://www.freightwaves.com/news/groundtruth-launches-ai-platform-to-automate-freight-billing-with-j-b-hunt-partnership"
-    },
-    {
-      "title": "Trucking Rejection Rates: Why Holiday Shipping Gets SPICY",
-      "src": "FreightWaves",
-      "date": "20.11.2026",
-      "url": "https://www.freightwaves.com/news/trucking-rejection-rates-why-holiday-shipping-gets-spicy"
-    },
-    {
-      "title": "Houthis Order Ships to Leave Saudi Red Sea Ports After Hodeidah Airstrikes",
-      "src": "gCaptain",
-      "date": "20.11.2026",
-      "url": "https://gcaptain.com/houthis-order-ships-to-leave-saudi-red-sea-ports-after-hodeidah-airstrikes/"
     },
     {
       "title": "ААНИИ: в Баренцевом море нилас и серый лед наблюдаются у архипелагов ЗФИ и Шпицбергена",
@@ -44,18 +44,6 @@ window.NEWS = {
       "src": "InfraNews",
       "date": "20.11.2026",
       "url": "https://www.infranews.ru/novosti/72198-otlk-era-i-fesco-dogovorilis-razvivat-kontejnernye-tsenovye-indeksy/"
-    },
-    {
-      "title": "Минэк замыкает контрольно-надзорный контур: реестр админдел и ИИ-подсветка нарушений",
-      "src": "Logirus",
-      "date": "20.11.2026",
-      "url": "https://logirus.ru/news/infrastructure/minek_zamykaet_kontrolno-nadzornyy_kontur_reestr_admindel_i_ii-podsvetka_narusheniy.html"
-    },
-    {
-      "title": "В спорах о таможенных правилах ЕАЭС бизнес лишен права голоса",
-      "src": "Logirus",
-      "date": "20.11.2026",
-      "url": "https://logirus.ru/news/custom_and_ved/v_sporakh_o_tamozhennykh_pravilakh_eaes_biznes_lishen_prava_golosa.html"
     },
     {
       "title": "Правительство направит 5,5 трлн рублей на реализацию новой транспортной стратегии в ближайшие три года",
@@ -98,6 +86,18 @@ window.NEWS = {
       "src": "РЖД-Партнер",
       "date": "20.11.2026",
       "url": "https://www.rzd-partner.ru/auto/news/v-deptranse-stolitsy-vystupayut-za-lokalizatsiyu-proizvodstva-sim-v-moskve-/"
+    },
+    {
+      "title": "Subsea 7 seeks buyer for pipelay vessel ahead of Saipem merger",
+      "src": "Splash 247",
+      "date": "20.11.2026",
+      "url": "https://splash247.com/subsea-7-seeks-buyer-for-pipelay-vessel-ahead-of-saipem-merger/"
+    },
+    {
+      "title": "Seaway 7 lines up vessel trio for Scottish offshore wind project",
+      "src": "Splash 247",
+      "date": "20.11.2026",
+      "url": "https://splash247.com/seaway-7-lines-up-vessel-trio-for-scottish-offshore-wind-project/"
     }
   ]
 };
