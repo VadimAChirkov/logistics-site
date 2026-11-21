@@ -4,6 +4,30 @@ window.NEWS = {
   "updated": "21.11.2026",
   "items": [
     {
+      "title": "Two Tanker Incidents Reported Near Oman; Vessel Hit Mine East Of Hormuz",
+      "src": "gCaptain",
+      "date": "21.11.2026",
+      "url": "https://gcaptain.com/two-tanker-incidents-reported-near-oman-vessel-hit-mine-east-of-hormuz/"
+    },
+    {
+      "title": "К атакованному в Финском заливе сухогрузу подошло российское спасательное судно",
+      "src": "PortNews",
+      "date": "21.11.2026",
+      "url": "https://portnews.ru/news/399943/"
+    },
+    {
+      "title": "Russian Military-Linked Cargo Ship Burns After Suspected Drone Strike in Gulf of Finland",
+      "src": "gCaptain",
+      "date": "21.11.2026",
+      "url": "https://gcaptain.com/russian-military-linked-cargo-ship-burns-after-suspected-drone-strike-in-gulf-of-finland/"
+    },
+    {
+      "title": "Tentative union deal averts strike at Port of LA-Long Beach",
+      "src": "FreightWaves",
+      "date": "21.11.2026",
+      "url": "https://www.freightwaves.com/news/tentative-union-deal-averts-strike-at-port-of-la-long-beach"
+    },
+    {
       "title": "DHL Express makes customs clearance easier for small cross-border shippers",
       "src": "FreightWaves",
       "date": "21.11.2026",
@@ -16,46 +40,10 @@ window.NEWS = {
       "url": "https://portnews.ru/news/399942/"
     },
     {
-      "title": "Три танкера подверглись обстрелу у Ормузского пролива за сутки",
-      "src": "PortNews",
-      "date": "21.11.2026",
-      "url": "https://portnews.ru/news/399941/"
-    },
-    {
-      "title": "Панамский канал отыграл у засухи один фут – и пустил еще одно судно в сутки",
-      "src": "Logirus",
-      "date": "21.11.2026",
-      "url": "https://logirus.ru/news/global_logistics/panamskiy_kanal_otygral_u_zasukhi_odin_fut_i_pustil_eshche_odno_sudno_v_sutki.html"
-    },
-    {
-      "title": "More Than 110 Trade Groups Urge Deal as LA-Long Beach Port Strike Deadline Nears",
-      "src": "gCaptain",
-      "date": "20.11.2026",
-      "url": "https://gcaptain.com/more-than-110-trade-groups-urge-deal-as-la-long-beach-port-strike-deadline-nears/"
-    },
-    {
-      "title": "J.B. Hunt broker liability case proceeding after split decision",
-      "src": "FreightWaves",
-      "date": "20.11.2026",
-      "url": "https://www.freightwaves.com/news/j-b-hunt-broker-liability-case-proceeding-after-split-decision"
-    },
-    {
-      "title": "Iran War Oil Premium Evaporates as Global Crude Supplies Surge",
-      "src": "gCaptain",
-      "date": "20.11.2026",
-      "url": "https://gcaptain.com/iran-war-oil-premium-evaporates-as-global-crude-supplies-surge/"
-    },
-    {
       "title": "ОТЛК ЕРА и FESCO договорились развивать контейнерные ценовые индексы",
       "src": "InfraNews",
       "date": "20.11.2026",
       "url": "https://www.infranews.ru/novosti/72198-otlk-era-i-fesco-dogovorilis-razvivat-kontejnernye-tsenovye-indeksy/"
-    },
-    {
-      "title": "Минэк замыкает контрольно-надзорный контур: реестр админдел и ИИ-подсветка нарушений",
-      "src": "Logirus",
-      "date": "20.11.2026",
-      "url": "https://logirus.ru/news/infrastructure/minek_zamykaet_kontrolno-nadzornyy_kontur_reestr_admindel_i_ii-podsvetka_narusheniy.html"
     },
     {
       "title": "Правительство направит 5,5 трлн рублей на реализацию новой транспортной стратегии в ближайшие три года",
@@ -98,6 +86,18 @@ window.NEWS = {
       "src": "РЖД-Партнер",
       "date": "20.11.2026",
       "url": "https://www.rzd-partner.ru/auto/news/v-deptranse-stolitsy-vystupayut-za-lokalizatsiyu-proizvodstva-sim-v-moskve-/"
+    },
+    {
+      "title": "Subsea 7 seeks buyer for pipelay vessel ahead of Saipem merger",
+      "src": "Splash 247",
+      "date": "20.11.2026",
+      "url": "https://splash247.com/subsea-7-seeks-buyer-for-pipelay-vessel-ahead-of-saipem-merger/"
+    },
+    {
+      "title": "Seaway 7 lines up vessel trio for Scottish offshore wind project",
+      "src": "Splash 247",
+      "date": "20.11.2026",
+      "url": "https://splash247.com/seaway-7-lines-up-vessel-trio-for-scottish-offshore-wind-project/"
     }
   ]
 };
