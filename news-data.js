@@ -1,8 +1,14 @@
 // Новости рынка логистики и перевозок (автообновление GitHub Actions из RSS).
 // Ручная правка перезапишется при следующем автообновлении.
 window.NEWS = {
-  "updated": "21.11.2026",
+  "updated": "22.11.2026",
   "items": [
+    {
+      "title": "Shippers’ backup plan is getting more expensive",
+      "src": "FreightWaves",
+      "date": "22.11.2026",
+      "url": "https://www.freightwaves.com/news/shippers-backup-plan-is-getting-more-expensive"
+    },
     {
       "title": "Two Tanker Incidents Reported Near Oman; Vessel Hit Mine East Of Hormuz",
       "src": "gCaptain",
@@ -28,22 +34,28 @@ window.NEWS = {
       "url": "https://www.freightwaves.com/news/tentative-union-deal-averts-strike-at-port-of-la-long-beach"
     },
     {
-      "title": "DHL Express makes customs clearance easier for small cross-border shippers",
-      "src": "FreightWaves",
-      "date": "21.11.2026",
-      "url": "https://www.freightwaves.com/news/dhl-express-makes-customs-clearance-easier-for-small-cross-border-shippers"
-    },
-    {
       "title": "Судно атаковано в Финском заливе",
       "src": "PortNews",
       "date": "21.11.2026",
       "url": "https://portnews.ru/news/399942/"
     },
     {
+      "title": "Панамский канал отыграл у засухи один фут – и пустил еще одно судно в сутки",
+      "src": "Logirus",
+      "date": "21.11.2026",
+      "url": "https://logirus.ru/news/global_logistics/panamskiy_kanal_otygral_u_zasukhi_odin_fut_i_pustil_eshche_odno_sudno_v_sutki.html"
+    },
+    {
       "title": "ОТЛК ЕРА и FESCO договорились развивать контейнерные ценовые индексы",
       "src": "InfraNews",
       "date": "20.11.2026",
       "url": "https://www.infranews.ru/novosti/72198-otlk-era-i-fesco-dogovorilis-razvivat-kontejnernye-tsenovye-indeksy/"
+    },
+    {
+      "title": "Минэк замыкает контрольно-надзорный контур: реестр админдел и ИИ-подсветка нарушений",
+      "src": "Logirus",
+      "date": "20.11.2026",
+      "url": "https://logirus.ru/news/infrastructure/minek_zamykaet_kontrolno-nadzornyy_kontur_reestr_admindel_i_ii-podsvetka_narusheniy.html"
     },
     {
       "title": "Правительство направит 5,5 трлн рублей на реализацию новой транспортной стратегии в ближайшие три года",
@@ -86,18 +98,6 @@ window.NEWS = {
       "src": "РЖД-Партнер",
       "date": "20.11.2026",
       "url": "https://www.rzd-partner.ru/auto/news/v-deptranse-stolitsy-vystupayut-za-lokalizatsiyu-proizvodstva-sim-v-moskve-/"
-    },
-    {
-      "title": "Subsea 7 seeks buyer for pipelay vessel ahead of Saipem merger",
-      "src": "Splash 247",
-      "date": "20.11.2026",
-      "url": "https://splash247.com/subsea-7-seeks-buyer-for-pipelay-vessel-ahead-of-saipem-merger/"
-    },
-    {
-      "title": "Seaway 7 lines up vessel trio for Scottish offshore wind project",
-      "src": "Splash 247",
-      "date": "20.11.2026",
-      "url": "https://splash247.com/seaway-7-lines-up-vessel-trio-for-scottish-offshore-wind-project/"
     }
   ]
 };
