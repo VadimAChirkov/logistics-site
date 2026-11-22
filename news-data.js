@@ -4,6 +4,30 @@ window.NEWS = {
   "updated": "22.11.2026",
   "items": [
     {
+      "title": "В Финском заливе началась буксировка атакованного беспилотниками судна «Спарта II»",
+      "src": "PortNews",
+      "date": "23.11.2026",
+      "url": "https://portnews.ru/news/399963/"
+    },
+    {
+      "title": "Australia Criticizes US Congressional Budget Office Over AUKUS Comments",
+      "src": "gCaptain",
+      "date": "22.11.2026",
+      "url": "https://gcaptain.com/australia-criticizes-us-congressional-budget-office-over-aukus-comments/"
+    },
+    {
+      "title": "News in Brief Podcast | Week 46 | Routes, rates and One Record readiness",
+      "src": "The Loadstar",
+      "date": "22.11.2026",
+      "url": "https://theloadstar.com/news-in-brief-podcast-week-46-routes-rates-and-one-record-readiness/"
+    },
+    {
+      "title": "Suspected Drone Attack Caused Explosion On Russian Ship At Benghazi Port",
+      "src": "gCaptain",
+      "date": "22.11.2026",
+      "url": "https://gcaptain.com/suspected-drone-attack-caused-explosion-on-russian-ship-at-benghazi-port/"
+    },
+    {
       "title": "Borderlands Mexico: Truckers secure 29 agreements on highway safety after nationwide strike",
       "src": "FreightWaves",
       "date": "22.11.2026",
@@ -16,28 +40,10 @@ window.NEWS = {
       "url": "https://portnews.ru/news/399947/"
     },
     {
-      "title": "НИС «Эколог» завершило первый после длительного ремонта рейс и прибыло в Петрозаводск",
-      "src": "PortNews",
-      "date": "22.11.2026",
-      "url": "https://portnews.ru/news/399946/"
-    },
-    {
       "title": "Shippers’ backup plan is getting more expensive",
       "src": "FreightWaves",
       "date": "22.11.2026",
       "url": "https://www.freightwaves.com/news/shippers-backup-plan-is-getting-more-expensive"
-    },
-    {
-      "title": "Two Tanker Incidents Reported Near Oman; Vessel Hit Mine East Of Hormuz",
-      "src": "gCaptain",
-      "date": "21.11.2026",
-      "url": "https://gcaptain.com/two-tanker-incidents-reported-near-oman-vessel-hit-mine-east-of-hormuz/"
-    },
-    {
-      "title": "Russian Military-Linked Cargo Ship Burns After Suspected Drone Strike in Gulf of Finland",
-      "src": "gCaptain",
-      "date": "21.11.2026",
-      "url": "https://gcaptain.com/russian-military-linked-cargo-ship-burns-after-suspected-drone-strike-in-gulf-of-finland/"
     },
     {
       "title": "ОТЛК ЕРА и FESCO договорились развивать контейнерные ценовые индексы",
@@ -62,12 +68,6 @@ window.NEWS = {
       "src": "SeaNews",
       "date": "20.11.2026",
       "url": "https://seanews.ru/2026/11/20/ru-analiticheskij-dajdzhest-seanews-16-20-nojabrja-2026/"
-    },
-    {
-      "title": "Analysis: IMO Net-Zero: now-or-never time draws near",
-      "src": "The Loadstar",
-      "date": "20.11.2026",
-      "url": "https://theloadstar.com/analysis-imo-net-zero-now-or-never-time-draws-near/"
     },
     {
       "title": "Логистика из Турции: изменения маршрутов, сроков и стоимости",
