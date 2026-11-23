@@ -1,13 +1,37 @@
 // Новости рынка логистики и перевозок (автообновление GitHub Actions из RSS).
 // Ручная правка перезапишется при следующем автообновлении.
 window.NEWS = {
-  "updated": "22.11.2026",
+  "updated": "23.11.2026",
   "items": [
     {
-      "title": "В Финском заливе началась буксировка атакованного беспилотниками судна «Спарта II»",
+      "title": "На территории административно-бытового комплекса в порту Восточный откроют пункт пропуска",
       "src": "PortNews",
       "date": "23.11.2026",
-      "url": "https://portnews.ru/news/399963/"
+      "url": "https://portnews.ru/news/399954/"
+    },
+    {
+      "title": "Отгрузка метанола с НЗМУ начнется в первой половине 2027 года",
+      "src": "PortNews",
+      "date": "23.11.2026",
+      "url": "https://portnews.ru/news/399951/"
+    },
+    {
+      "title": "Ограниченный режим работы аэропортов Дальнего Востока мешает развитию авиаперевозок",
+      "src": "РЖД-Партнер",
+      "date": "23.11.2026",
+      "url": "https://www.rzd-partner.ru/aviation/news/ogranichennyy-rezhim-raboty-aeroportov-dalnego-vostoka-meshaet-razvitiyu-aviaperevozok/"
+    },
+    {
+      "title": "Определены регионы для тестирования доставки дронами",
+      "src": "SeaNews",
+      "date": "23.11.2026",
+      "url": "https://seanews.ru/2026/11/23/ru-opredeleny-regiony-dlja-testirovanija-dostavki-dronami/"
+    },
+    {
+      "title": "Регистр выдал документы на краболовное судно «Мыс Наварин»",
+      "src": "SeaNews",
+      "date": "23.11.2026",
+      "url": "https://seanews.ru/2026/11/23/ru-registr-vydal-dokumenty-na-krabolovnoe-sudno-mys-navarin/"
     },
     {
       "title": "Australia Criticizes US Congressional Budget Office Over AUKUS Comments",
@@ -34,12 +58,6 @@ window.NEWS = {
       "url": "https://www.freightwaves.com/news/borderlands-mexico-truckers-secure-29-agreements-on-highway-safety-after-nationwide-strike"
     },
     {
-      "title": "Находкинский судоремонтный завод планирует расширять производство судов",
-      "src": "PortNews",
-      "date": "22.11.2026",
-      "url": "https://portnews.ru/news/399947/"
-    },
-    {
       "title": "Shippers’ backup plan is getting more expensive",
       "src": "FreightWaves",
       "date": "22.11.2026",
@@ -64,28 +82,10 @@ window.NEWS = {
       "url": "https://theloadstar.com/transpac-spots-finally-on-the-slide-but-asia-med-spike-a-surprise/"
     },
     {
-      "title": "Аналитический дайджест SeaNews, 16-20 ноября 2026",
-      "src": "SeaNews",
-      "date": "20.11.2026",
-      "url": "https://seanews.ru/2026/11/20/ru-analiticheskij-dajdzhest-seanews-16-20-nojabrja-2026/"
-    },
-    {
-      "title": "Логистика из Турции: изменения маршрутов, сроков и стоимости",
-      "src": "SeaNews",
-      "date": "20.11.2026",
-      "url": "https://seanews.ru/2026/11/20/ru-logistika-iz-turcii-izmenenija-marshrutov-srokov-i-stoimosti/"
-    },
-    {
       "title": "Общий парк грузовых вагонов в стране к 2030 году приблизится к 1,5 млн ед.",
       "src": "РЖД-Партнер",
       "date": "20.11.2026",
       "url": "https://www.rzd-partner.ru/zhd-transport/news/obshchiy-park-gruzovykh-vagonov-v-strane-k-2030-godu-priblizitsya-k-1-5-mln-ed/"
-    },
-    {
-      "title": "В Дептрансе столицы выступают за локализацию производства СИМ в Москве",
-      "src": "РЖД-Партнер",
-      "date": "20.11.2026",
-      "url": "https://www.rzd-partner.ru/auto/news/v-deptranse-stolitsy-vystupayut-za-lokalizatsiyu-proizvodstva-sim-v-moskve-/"
     },
     {
       "title": "Subsea 7 seeks buyer for pipelay vessel ahead of Saipem merger",
