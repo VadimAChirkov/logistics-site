@@ -4,100 +4,100 @@ window.NEWS = {
   "updated": "23.11.2026",
   "items": [
     {
-      "title": "На территории административно-бытового комплекса в порту Восточный откроют пункт пропуска",
+      "title": "Spain to Ban Ship Scrubber Wastewater Discharges Starting July 2027",
+      "src": "gCaptain",
+      "date": "23.11.2026",
+      "url": "https://gcaptain.com/spain-to-ban-ship-scrubber-wastewater-discharges-starting-july-2027/"
+    },
+    {
+      "title": "U.S. Targets Financial Networks Behind Iran’s Tanker Fleet and Oil Trade",
+      "src": "gCaptain",
+      "date": "23.11.2026",
+      "url": "https://gcaptain.com/u-s-targets-financial-networks-behind-irans-tanker-fleet-and-oil-trade/"
+    },
+    {
+      "title": "Экипаж атакованного беспилотниками сухогруза «Спарта II» доставлен в Санкт-Петербург",
       "src": "PortNews",
       "date": "23.11.2026",
-      "url": "https://portnews.ru/news/399954/"
+      "url": "https://portnews.ru/news/400018/"
     },
     {
-      "title": "Отгрузка метанола с НЗМУ начнется в первой половине 2027 года",
+      "title": "Why AI Is Paramount to Optimizing Air Cargo",
+      "src": "FreightWaves",
+      "date": "23.11.2026",
+      "url": "https://www.freightwaves.com/news/why-ai-is-paramount-to-optimizing-air-cargo"
+    },
+    {
+      "title": "Bank challenges trucking CEO’s $8.5M Florida estate amid bankruptcy",
+      "src": "FreightWaves",
+      "date": "23.11.2026",
+      "url": "https://www.freightwaves.com/news/bank-challenges-trucking-ceos-8-5m-florida-estate-amid-bankruptcy"
+    },
+    {
+      "title": "Задержан губернатор Мурманской области Андрей Чибис",
       "src": "PortNews",
       "date": "23.11.2026",
-      "url": "https://portnews.ru/news/399951/"
+      "url": "https://portnews.ru/news/400012/"
     },
     {
-      "title": "Ограниченный режим работы аэропортов Дальнего Востока мешает развитию авиаперевозок",
+      "title": "Уголь ищет обход: Казахстан примеряет белорусский, каспийский и латвийский маршруты",
+      "src": "Logirus",
+      "date": "23.11.2026",
+      "url": "https://logirus.ru/news/transport/ugol_ishchet_obkhod_kazakhstan_primeryaet_belorusskiy_kaspiyskiy_i_latviyskiy_marshruty.html"
+    },
+    {
+      "title": "Турпоток из России на Кубу может восстановиться до 150–180 тыс. человек после возобновления прямых рейсов",
       "src": "РЖД-Партнер",
       "date": "23.11.2026",
-      "url": "https://www.rzd-partner.ru/aviation/news/ogranichennyy-rezhim-raboty-aeroportov-dalnego-vostoka-meshaet-razvitiyu-aviaperevozok/"
+      "url": "https://www.rzd-partner.ru/logistics/news/turpotok-iz-rossii-na-kubu-mozhet-vosstanovitsya-do-150-180-tys-chelovek-posle-vozobnovleniya-pryamy/"
     },
     {
-      "title": "Определены регионы для тестирования доставки дронами",
-      "src": "SeaNews",
-      "date": "23.11.2026",
-      "url": "https://seanews.ru/2026/11/23/ru-opredeleny-regiony-dlja-testirovanija-dostavki-dronami/"
-    },
-    {
-      "title": "Регистр выдал документы на краболовное судно «Мыс Наварин»",
-      "src": "SeaNews",
-      "date": "23.11.2026",
-      "url": "https://seanews.ru/2026/11/23/ru-registr-vydal-dokumenty-na-krabolovnoe-sudno-mys-navarin/"
-    },
-    {
-      "title": "Australia Criticizes US Congressional Budget Office Over AUKUS Comments",
-      "src": "gCaptain",
-      "date": "22.11.2026",
-      "url": "https://gcaptain.com/australia-criticizes-us-congressional-budget-office-over-aukus-comments/"
-    },
-    {
-      "title": "News in Brief Podcast | Week 46 | Routes, rates and One Record readiness",
+      "title": "New and expanding trade flows give African airfreight sector a boost",
       "src": "The Loadstar",
-      "date": "22.11.2026",
-      "url": "https://theloadstar.com/news-in-brief-podcast-week-46-routes-rates-and-one-record-readiness/"
+      "date": "23.11.2026",
+      "url": "https://theloadstar.com/new-and-expanding-trade-flows-give-african-airfreight-sector-a-boost/"
     },
     {
-      "title": "Suspected Drone Attack Caused Explosion On Russian Ship At Benghazi Port",
-      "src": "gCaptain",
-      "date": "22.11.2026",
-      "url": "https://gcaptain.com/suspected-drone-attack-caused-explosion-on-russian-ship-at-benghazi-port/"
-    },
-    {
-      "title": "Borderlands Mexico: Truckers secure 29 agreements on highway safety after nationwide strike",
-      "src": "FreightWaves",
-      "date": "22.11.2026",
-      "url": "https://www.freightwaves.com/news/borderlands-mexico-truckers-secure-29-agreements-on-highway-safety-after-nationwide-strike"
-    },
-    {
-      "title": "Shippers’ backup plan is getting more expensive",
-      "src": "FreightWaves",
-      "date": "22.11.2026",
-      "url": "https://www.freightwaves.com/news/shippers-backup-plan-is-getting-more-expensive"
-    },
-    {
-      "title": "ОТЛК ЕРА и FESCO договорились развивать контейнерные ценовые индексы",
+      "title": "НМТП и «Новоросцемент» прорабатывают проект терминала для перевалки удобрений и зерна",
       "src": "InfraNews",
-      "date": "20.11.2026",
-      "url": "https://www.infranews.ru/novosti/72198-otlk-era-i-fesco-dogovorilis-razvivat-kontejnernye-tsenovye-indeksy/"
+      "date": "23.11.2026",
+      "url": "https://www.infranews.ru/info/72209-nmtp-i-novorostsement-prorabatyvayut-proekt-terminala-dlya-perevalki-udobrenij-i-zerna/"
     },
     {
-      "title": "Правительство направит 5,5 трлн рублей на реализацию новой транспортной стратегии в ближайшие три года",
-      "src": "InfraNews",
-      "date": "20.11.2026",
-      "url": "https://www.infranews.ru/novosti/72197-pravitelstvo-napravit-5-5-trln-rublej-na-realizatsiyu-novoj-transportnoj-strategii-v-blizhajshie-tri-goda/"
-    },
-    {
-      "title": "Transpac spots finally on the slide, but Asia-Med spike a surprise",
-      "src": "The Loadstar",
-      "date": "20.11.2026",
-      "url": "https://theloadstar.com/transpac-spots-finally-on-the-slide-but-asia-med-spike-a-surprise/"
-    },
-    {
-      "title": "Общий парк грузовых вагонов в стране к 2030 году приблизится к 1,5 млн ед.",
+      "title": "Тележки для первого российского высокоскоростного поезда прошли предварительные испытания",
       "src": "РЖД-Партнер",
-      "date": "20.11.2026",
-      "url": "https://www.rzd-partner.ru/zhd-transport/news/obshchiy-park-gruzovykh-vagonov-v-strane-k-2030-godu-priblizitsya-k-1-5-mln-ed/"
+      "date": "23.11.2026",
+      "url": "https://www.rzd-partner.ru/zhd-transport/news/telezhki-dlya-pervogo-rossiyskogo-vysokoskorostnogo-poezda-proshli-predvaritelnye-ispytaniya/"
     },
     {
-      "title": "Subsea 7 seeks buyer for pipelay vessel ahead of Saipem merger",
-      "src": "Splash 247",
-      "date": "20.11.2026",
-      "url": "https://splash247.com/subsea-7-seeks-buyer-for-pipelay-vessel-ahead-of-saipem-merger/"
+      "title": "Товарооборот России и Китая в октябре 2026 года остается на высоком уровне, экспорт бьет рекорды",
+      "src": "InfraNews",
+      "date": "23.11.2026",
+      "url": "https://www.infranews.ru/novosti/72194-tovarooborot-rossii-i-kitaya-v-oktyabre-2026-goda-ostaetsya-na-vysokom-urovne-eksport-bet-rekordy/"
     },
     {
-      "title": "Seaway 7 lines up vessel trio for Scottish offshore wind project",
-      "src": "Splash 247",
-      "date": "20.11.2026",
-      "url": "https://splash247.com/seaway-7-lines-up-vessel-trio-for-scottish-offshore-wind-project/"
+      "title": "Польские автоперевозчики требовали общих сроков оплаты, Еврокомиссия отказала",
+      "src": "Logirus",
+      "date": "23.11.2026",
+      "url": "https://logirus.ru/news/global_logistics/polskie_avtoperevozchiki_trebovali_obshchikh_srokov_oplaty_evrokomissiya_otkazala.html"
+    },
+    {
+      "title": "Начаты испытания паротурбинных установок атомного ледокола «Чукотка»",
+      "src": "SeaNews",
+      "date": "23.11.2026",
+      "url": "https://seanews.ru/2026/11/23/ru-nachaty-ispytanija-paroturbinnyh-ustanovok-atomnogo-ledokola-chukotka/"
+    },
+    {
+      "title": "Air traffic strike disrupts Liège and Brussels cargo ahead of Black Friday",
+      "src": "The Loadstar",
+      "date": "23.11.2026",
+      "url": "https://theloadstar.com/air-traffic-strike-disrupts-liege-and-brussels-cargo-ahead-of-black-friday/"
+    },
+    {
+      "title": "Переданы заказчику два новых сухогруза проекта RSD59",
+      "src": "SeaNews",
+      "date": "23.11.2026",
+      "url": "https://seanews.ru/2026/11/23/ru-peredany-zakazchiku-dva-novyh-suhogruza-proekta-rsd59/"
     }
   ]
 };
