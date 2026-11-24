@@ -107,6 +107,55 @@
       <p>The <strong>ETSNG</strong> — Unified Tariff and Statistical Nomenclature of Goods — contains <strong>12 sections</strong> (agricultural products; timber, woodworking and pulp-and-paper products; metal ores; fuel and energy products; mineral raw materials and construction materials; metallurgical products; machinery; chemical products; food products; light and printing industry products; other goods; organic chemistry products).</p>
       <p>Under the ETSNG item, each good is assigned a <strong>tariff class</strong> — <strong>first, second or third</strong> (the first class has the lowest tariffs, the third the highest). Coefficients to tariffs for the carriage of individual goods (in loaded and empty runs) are set separately.</p>
 
+      <h2>Group and block-train (route) consignments</h2>
+      <p>Group and block-train consignments occupy a special place: on the one hand, they are types of consignment by which the tariff is calculated (Tariff Guide No. 1), on the other — a technology whose organisation is governed by separate Rules for the carriage of goods by sender's routes. Both parts are brought together below.</p>
+
+      <h3>Basic definitions (Art. 2 of the Russian Railways Charter)</h3>
+      <ul>
+        <li><strong>Group consignment</strong> — a consignment of goods whose carriage requires <strong>more than one wagon</strong> but <strong>less than a block-train consignment</strong>.</li>
+        <li><strong>Block-train (route) consignment</strong> — a consignment of goods whose carriage under <strong>one consignment note</strong> requires wagons in a number meeting the norms established for sender's routes <strong>by weight or length</strong>.</li>
+        <li><strong>Sender's route</strong> — a train of a weight or length established by the carrier, formed by the consignor on a non-public track <strong>or</strong> under a contract with the carrier on public tracks, with the obligatory condition of releasing in transit <strong>at least one technical station</strong> from the re-marshalling of such train (Art. 13 of the Charter).</li>
+      </ul>
+
+      <h3>Tariff part (Tariff Guide No. 1)</h3>
+      <p>The type of consignment is established under clause 16.2 of TG No. 1. For wagon, group and block-train consignments, the <strong>tariff class of the goods</strong> (under the ETSNG) is determined.</p>
+      <p><strong>Recording in the consignment note (field 38 "Type of consignment"):</strong></p>
+      <ul>
+        <li>"ВО" — wagon consignment;</li>
+        <li>"ГО" — group consignment (tendered under <strong>one consignment note</strong>);</li>
+        <li>"М" — block-train (route) consignment.</li>
+      </ul>
+      <p><strong>The factors of Table No. 5</strong> (clause 17.1 of TG No. 1) apply to tariff schemes И1–И7, И14–И18, No. 8, 8(1), 9–13, 19–24, 31 — depending on the <strong>number of wagons in the consignment</strong> (wagon/group) and the <strong>technology</strong> (sender's route):</p>
+      <table>
+        <thead><tr><th>Number of wagons / technology</th><th>up to 510 km</th><th>511–1000 km</th><th>1001–2000 km</th><th>over 2000 km</th></tr></thead>
+        <tbody>
+          <tr><td>1 wagon</td><td>1.08</td><td>1.04</td><td>1.03</td><td>1.01</td></tr>
+          <tr><td>2 wagons</td><td>1.02</td><td>1.01</td><td>1.01</td><td>1.00</td></tr>
+          <tr><td>3–5 wagons</td><td>1.00</td><td>1.00</td><td>1.00</td><td>1.00</td></tr>
+          <tr><td>6–20 wagons</td><td>0.97</td><td>0.98</td><td>1.00</td><td>1.00</td></tr>
+          <tr><td>over 20 wagons</td><td>0.95</td><td>0.97</td><td>0.98</td><td>1.00</td></tr>
+          <tr><td><strong>Sender's route — direct</strong></td><td><strong>0.85</strong></td><td><strong>0.89</strong></td><td><strong>0.92</strong></td><td><strong>0.95</strong></td></tr>
+          <tr><td><strong>Sender's route — with splitting</strong></td><td><strong>0.90</strong></td><td><strong>0.92</strong></td><td><strong>0.95</strong></td><td><strong>0.97</strong></td></tr>
+        </tbody>
+      </table>
+      <p>The logic of the table: a single wagon carries a surcharge (up to +8%), while a large consignment (6 or more wagons) and a sender's route carry a discount (a direct route up to −15%).</p>
+      <p><strong>Condition for applying the route factors (clause 17.3):</strong> the factor for a block-train consignment applies when <strong>field 1 "Special remarks"</strong> of the note carries the remark <strong>"Sender's route No. ___ direct"</strong> or <strong>"Sender's route No. ___ with splitting at station _________"</strong> — regardless of the number of notes by which the carriage is recorded.</p>
+      <p><strong>Carriage by a dedicated train:</strong> carriage by wagon/group consignments as a dedicated train under a specially developed timetable uses separate factors (Table No. 22 of Annex No. 1 to TG No. 1). Field 38 records "ВО-ОП" (wagon consignment by dedicated train) or "ГО-ОП-___" (group consignment by dedicated train of ___ wagons), and field 7 "Speed" records "fast".</p>
+
+      <h3>Organisational part — Rules for the carriage of goods by sender's routes</h3>
+      <p><strong>Until 01.03.2027</strong>, the Rules for the carriage of goods by sender's routes on rail transport (Order of the Ministry of Railways of Russia No. 10Ts of 29.03.1999, as amended — Orders of the Russian Ministry of Transport No. 94 of 10.06.2009 and No. 258 of 03.10.2011) are in force.</p>
+      <p><strong>From 01.03.2027</strong>, the new Rules for the carriage of goods and empty freight wagons by rail, establishing the basic conditions and procedure for organising the carriage of goods by sender's routes, come into force (Order of the Russian Ministry of Transport No. 238 of 27.05.2026, registered with the Russian Ministry of Justice on 09.07.2026 No. 87429; in force until 01.03.2033).</p>
+      <p>Key provisions of the new Rules (No. 238):</p>
+      <ol>
+        <li><strong>Basis</strong> — a contract between the carrier and the consignor (sender) and/or the owner of a non-public track (or the infrastructure owner), a train of established weight/length with the obligatory release of at least one technical station from re-marshalling under the train formation plan.</li>
+        <li><strong>An application to organise a route</strong> is submitted to the carrier (electronically with an e-signature or on paper); it is reviewed within up to 30 calendar days; the consignor is notified of the result by registered letter or e-mail.</li>
+        <li><strong>Types of routes</strong> (from one departure station): direct (to one destination station, addressed to one or several consignees) and with splitting at stations determined by the infrastructure owner.</li>
+        <li><strong>Core and attached part:</strong> where there is a point of change (a station where the weight/length is reduced), the route consists of a core (follows without re-formation to the destination station) and an attached part (to the point of change in the route, then in a freight train).</li>
+        <li><strong>Agreement on acceptance</strong> — the consignor agrees the acceptance procedure with the consignee and sends written consent to the carrier; before carriage, an application for carriage (Order of the Russian Ministry of Transport No. 216 of 17.07.2025) or a request-notification for empty wagons (Order No. 374 of 07.12.2016) is submitted.</li>
+        <li><strong>Recording of documents</strong> — under one or several notes, in accordance with Rules No. 256 (of 27.07.2020) and the Rules for the carriage of goods by groups of wagons under one note (Order of the Russian Ministry of Transport No. 32 of 26.02.2015).</li>
+        <li><strong>Carrier verification</strong> — when a route is tendered, the carrier may verify that the actual weight/length of the train meets the norms.</li>
+      </ol>
+
       <h2>Tariff Guide No. 2 — charges for the use of wagons and containers</h2>
       <p><strong>Tariff Guide No. 2</strong> — <a href="https://www.consultant.ru/document/cons_doc_LAW_38208/" target="_blank" rel="noopener noreferrer">Rules for the application of charges for the use of wagons and containers of the federal rail transport</a> (approved by FEC of Russia Resolution No. 35/12 of 19.06.2002, as amended on 29.04.2015). It sets the charge for the time wagons and containers spend with the consignor/consignee (under loading, unloading, waiting, etc.).</p>
       <ul>
