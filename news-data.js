@@ -1,8 +1,56 @@
 // Новости рынка логистики и перевозок (автообновление GitHub Actions из RSS).
 // Ручная правка перезапишется при следующем автообновлении.
 window.NEWS = {
-  "updated": "25.11.2026",
+  "updated": "26.11.2026",
   "items": [
+    {
+      "title": "Выручка Суэцкого канала с начала ноября выросла вдвое — до $593 млн",
+      "src": "PortNews",
+      "date": "26.11.2026",
+      "url": "https://portnews.ru/news/400152/"
+    },
+    {
+      "title": "Bernhard Schulte Shipmanagement: Shipping’s transformation is a people challenge",
+      "src": "Splash 247",
+      "date": "26.11.2026",
+      "url": "https://splash247.com/bernhard-schulte-shipmanagement-shippings-transformation-is-a-people-challenge/"
+    },
+    {
+      "title": "IMO’s false flag tally climbs to 587 ships",
+      "src": "Splash 247",
+      "date": "26.11.2026",
+      "url": "https://splash247.com/imos-false-flag-tally-climbs-to-587-ships/"
+    },
+    {
+      "title": "РЖД сохранят возможность посадки в поезда по бумажному паспорту",
+      "src": "РЖД-Партнер",
+      "date": "26.11.2026",
+      "url": "https://www.rzd-partner.ru/zhd-transport/news/rzhd-sokhranyat-vozmozhnost-posadki-v-poezda-po-bumazhnomu-pasportu/"
+    },
+    {
+      "title": "“K” Line строит газовозы под американский сжиженный газ",
+      "src": "SeaNews",
+      "date": "26.11.2026",
+      "url": "https://seanews.ru/2026/11/26/ru-k-line-stroit-gazovozy-pod-amerikanskij-szhizhennyj-gaz/"
+    },
+    {
+      "title": "Срок подъема затонувшего в порту Мурманск судна «Бриз» перенесен на 1 апреля 2028 года",
+      "src": "PortNews",
+      "date": "26.11.2026",
+      "url": "https://portnews.ru/news/400151/"
+    },
+    {
+      "title": "Грузовые железнодорожные перевозки между Россией и Казахстаном выросли на 3,1%",
+      "src": "РЖД-Партнер",
+      "date": "26.11.2026",
+      "url": "https://www.rzd-partner.ru/zhd-transport/news/gruzovye-zheleznodorozhnye-perevozki-mezhdu-rossiey-i-kazakhstanom-vyrosli-na-3-1/"
+    },
+    {
+      "title": "«Газпром нефть» запатентовала технологии производства биотоплива",
+      "src": "SeaNews",
+      "date": "26.11.2026",
+      "url": "https://seanews.ru/2026/11/26/ru-gazprom-neft-zapatentovala-tehnologii-proizvodstva-biotopliva/"
+    },
     {
       "title": "U.S. Targets China, EU With New Tariffs Citing Overcapacity",
       "src": "gCaptain",
@@ -28,12 +76,6 @@ window.NEWS = {
       "url": "https://www.freightwaves.com/news/shein-feels-impact-of-eu-import-fees-as-revenue-slides-6"
     },
     {
-      "title": "Отряд кораблей ТОФ совершил деловой заход в порт Тилава в Мьянме",
-      "src": "PortNews",
-      "date": "25.11.2026",
-      "url": "https://portnews.ru/news/400119/"
-    },
-    {
       "title": "Alphaliner: Ставки фрахтования контейнеровозов свидетельствуют о сохраняющемся дефиците тоннажа",
       "src": "InfraNews",
       "date": "25.11.2026",
@@ -46,58 +88,16 @@ window.NEWS = {
       "url": "https://logirus.ru/news/infrastructure/malenkaya_vetka_s_bolshimi_ambitsiyami_proekt_mokhe_magadan_pereshel_ot_slov_k_relsam.html"
     },
     {
-      "title": "Ж/д перевозки по МТК «Север — Юг» за 10 месяцев 2026 года выросли на 11,5% и достигли 8,9 млн тонн",
-      "src": "PortNews",
-      "date": "25.11.2026",
-      "url": "https://portnews.ru/news/400118/"
-    },
-    {
       "title": "Атаки на склады «срезали» 2,7% онлайн-оборота нон-фуда",
       "src": "Logirus",
       "date": "25.11.2026",
       "url": "https://logirus.ru/news/e-commerce/ataki_na_sklady_srezali_2-7_onlayn-oborota_non-fuda.html"
     },
     {
-      "title": "Реконструкцию аэропорта в Орле возобновят в 2027 году",
-      "src": "РЖД-Партнер",
-      "date": "25.11.2026",
-      "url": "https://www.rzd-partner.ru/aviation/news/rekonstruktsiyu-aeroporta-v-orle-vozobnovyat-v-2027-godu/"
-    },
-    {
       "title": "Карта слияний в американской железнодорожной индустрии",
       "src": "InfraNews",
       "date": "25.11.2026",
       "url": "https://www.infranews.ru/info/72243-karta-sliyanij-v-amerikanskoj-zheleznodorozhnoj-industrii/"
-    },
-    {
-      "title": "Вышел выпуск исследования Ставки и грузовые вагоны за октябрь",
-      "src": "РЖД-Партнер",
-      "date": "25.11.2026",
-      "url": "https://www.rzd-partner.ru/zhd-transport/news/vyshel-vypusk-issledovaniya-stavki-i-gruzovye-vagony-za-oktyabr-2511/"
-    },
-    {
-      "title": "APM Terminals plans 1.4m teu expansion at Rotterdam’s Maasvlakte II",
-      "src": "The Loadstar",
-      "date": "25.11.2026",
-      "url": "https://theloadstar.com/apm-terminals-plans-1-4m-teu-expansion-at-rotterdams-maasvlakte-ii/"
-    },
-    {
-      "title": "Maersk warns of UK logistics bottlenecks as port congestion persists globally",
-      "src": "The Loadstar",
-      "date": "25.11.2026",
-      "url": "https://theloadstar.com/maersk-warns-of-uk-logistics-bottlenecks-as-port-congestion-persists-globally/"
-    },
-    {
-      "title": "Shenzhen Energy makes $44m dry bulk newbuild move",
-      "src": "Splash 247",
-      "date": "25.11.2026",
-      "url": "https://splash247.com/shenzhen-energy-makes-44m-dry-bulk-newbuild-move/"
-    },
-    {
-      "title": "Передан заказчику сухогруз «Архип Куинджи»",
-      "src": "SeaNews",
-      "date": "25.11.2026",
-      "url": "https://seanews.ru/2026/11/25/ru-peredan-zakazchiku-suhogruz-arhip-kuindzhi/"
     }
   ]
 };
