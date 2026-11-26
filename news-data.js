@@ -4,100 +4,88 @@ window.NEWS = {
   "updated": "26.11.2026",
   "items": [
     {
-      "title": "Выручка Суэцкого канала с начала ноября выросла вдвое — до $593 млн",
+      "title": "Махачкалинский порт запустит первую очередь зернового терминала через год",
+      "src": "InfraNews",
+      "date": "26.11.2026",
+      "url": "https://www.infranews.ru/novosti/72259-mahachkalinskij-port-zapustit-pervuyu-ochered-zernovogo-terminala-cherez-god/"
+    },
+    {
+      "title": "ААНИИ: в проливе Санникова наблюдается однолетний тонкий лед",
       "src": "PortNews",
       "date": "26.11.2026",
-      "url": "https://portnews.ru/news/400152/"
+      "url": "https://portnews.ru/news/400171/"
     },
     {
-      "title": "Bernhard Schulte Shipmanagement: Shipping’s transformation is a people challenge",
-      "src": "Splash 247",
+      "title": "Déjà vu in Miami as FedEx MD-11 freighter overshoots runway",
+      "src": "FreightWaves",
       "date": "26.11.2026",
-      "url": "https://splash247.com/bernhard-schulte-shipmanagement-shippings-transformation-is-a-people-challenge/"
+      "url": "https://www.freightwaves.com/news/deja-vu-in-miami-as-fedex-md-11-freighter-overshoots-runway"
     },
     {
-      "title": "IMO’s false flag tally climbs to 587 ships",
-      "src": "Splash 247",
-      "date": "26.11.2026",
-      "url": "https://splash247.com/imos-false-flag-tally-climbs-to-587-ships/"
-    },
-    {
-      "title": "РЖД сохранят возможность посадки в поезда по бумажному паспорту",
-      "src": "РЖД-Партнер",
-      "date": "26.11.2026",
-      "url": "https://www.rzd-partner.ru/zhd-transport/news/rzhd-sokhranyat-vozmozhnost-posadki-v-poezda-po-bumazhnomu-pasportu/"
-    },
-    {
-      "title": "“K” Line строит газовозы под американский сжиженный газ",
-      "src": "SeaNews",
-      "date": "26.11.2026",
-      "url": "https://seanews.ru/2026/11/26/ru-k-line-stroit-gazovozy-pod-amerikanskij-szhizhennyj-gaz/"
-    },
-    {
-      "title": "Срок подъема затонувшего в порту Мурманск судна «Бриз» перенесен на 1 апреля 2028 года",
+      "title": "HR-директор «Портового альянса» рассказала о вызовах, которые современная логистика ставит перед кадровыми службами",
       "src": "PortNews",
       "date": "26.11.2026",
-      "url": "https://portnews.ru/news/400151/"
+      "url": "https://portnews.ru/news/400176/"
     },
     {
-      "title": "Грузовые железнодорожные перевозки между Россией и Казахстаном выросли на 3,1%",
+      "title": "5 non-domiciled drivers want CDLs reinstated as battle separately moves through courts",
+      "src": "FreightWaves",
+      "date": "26.11.2026",
+      "url": "https://www.freightwaves.com/news/5-non-domiciled-drivers-want-cdls-reinstated-as-battle-separately-moves-through-courts"
+    },
+    {
+      "title": "Первый этап строительства зернового терминала в порту Махачкалы завершат в октябре 2027 года",
       "src": "РЖД-Партнер",
       "date": "26.11.2026",
-      "url": "https://www.rzd-partner.ru/zhd-transport/news/gruzovye-zheleznodorozhnye-perevozki-mezhdu-rossiey-i-kazakhstanom-vyrosli-na-3-1/"
+      "url": "https://www.rzd-partner.ru/logistics/news/pervyy-etap-stroitelstva-zernovogo-terminala-v-portu-makhachkaly-zavershat-v-oktyabre-2027-goda/"
     },
     {
-      "title": "«Газпром нефть» запатентовала технологии производства биотоплива",
+      "title": "Hormuz Tanker Traffic Rises This Month Even as Attacks Increase",
+      "src": "gCaptain",
+      "date": "26.11.2026",
+      "url": "https://gcaptain.com/hormuz-tanker-traffic-rises-this-month-even-as-attacks-increase/"
+    },
+    {
+      "title": "В Калининградской области запустят первый круизный туристический поезд",
+      "src": "РЖД-Партнер",
+      "date": "26.11.2026",
+      "url": "https://www.rzd-partner.ru/zhd-transport/news/v-kaliningradskoy-oblasti-zapustyat-pervyy-kruiznyy-turisticheskiy-poezd/"
+    },
+    {
+      "title": "Crew Member Dies After Diesel Tanker Capsizes Off Ibiza, No Pollution So Far",
+      "src": "gCaptain",
+      "date": "26.11.2026",
+      "url": "https://gcaptain.com/crew-member-dies-after-diesel-tanker-capsizes-off-ibiza-no-pollution-so-far/"
+    },
+    {
+      "title": "Асель Жанасова провела первые встречи с российскими коллегами в статусе вице-премьера и главы Минтранса Казахстана",
+      "src": "InfraNews",
+      "date": "26.11.2026",
+      "url": "https://www.infranews.ru/novosti/72255-asel-zhanasova-provela-pervye-vstrechi-s-rossijskimi-kollegami-v-statuse-vitse-premera-i-glavy-mintransa-kazahstana/"
+    },
+    {
+      "title": "Green shipping needs global, rather than costlier regional, rules",
+      "src": "The Loadstar",
+      "date": "26.11.2026",
+      "url": "https://theloadstar.com/green-shipping-needs-global-rather-than-costlier-regional-rules/"
+    },
+    {
+      "title": "Nvidia halts server shipments to Asian markets as new US export rules bite",
+      "src": "The Loadstar",
+      "date": "26.11.2026",
+      "url": "https://theloadstar.com/nvidia-halts-server-shipments-to-asian-markets-as-new-us-export-rules-bite/"
+    },
+    {
+      "title": "Бизнес готов обновлять технику только при коротких сроках окупаемости",
       "src": "SeaNews",
       "date": "26.11.2026",
-      "url": "https://seanews.ru/2026/11/26/ru-gazprom-neft-zapatentovala-tehnologii-proizvodstva-biotopliva/"
+      "url": "https://seanews.ru/2026/11/26/ru-biznes-gotov-obnovljat-tehniku-tolko-pri-korotkih-srokah-okupaemosti/"
     },
     {
-      "title": "U.S. Targets China, EU With New Tariffs Citing Overcapacity",
-      "src": "gCaptain",
-      "date": "25.11.2026",
-      "url": "https://gcaptain.com/u-s-targets-china-eu-with-new-tariffs-citing-overcapacity/"
-    },
-    {
-      "title": "IMO Sounds Alarm Over Shortage of Training Berths for Future Seafarers",
-      "src": "gCaptain",
-      "date": "25.11.2026",
-      "url": "https://gcaptain.com/imo-sounds-alarm-over-shortage-of-training-berths-for-future-seafarers/"
-    },
-    {
-      "title": "Asia-US West Coast container spot rates fall below $8,000 as US avoids LA-Long Beach port strike",
-      "src": "FreightWaves",
-      "date": "25.11.2026",
-      "url": "https://www.freightwaves.com/news/asia-us-west-coast-container-spot-rates-fall-below-8000-as-us-avoids-la-long-beach-port-strike"
-    },
-    {
-      "title": "Shein feels impact of EU import fees as revenue slides 6%",
-      "src": "FreightWaves",
-      "date": "25.11.2026",
-      "url": "https://www.freightwaves.com/news/shein-feels-impact-of-eu-import-fees-as-revenue-slides-6"
-    },
-    {
-      "title": "Alphaliner: Ставки фрахтования контейнеровозов свидетельствуют о сохраняющемся дефиците тоннажа",
-      "src": "InfraNews",
-      "date": "25.11.2026",
-      "url": "https://www.infranews.ru/novosti/72246-alphaliner-stavki-frahtovaniya-kontejnerovozov-svidetelstvuyut-o-sohranyayushhemsya-defitsite-tonnazha/"
-    },
-    {
-      "title": "Маленькая ветка с большими амбициями: проект «Мохэ – Магадан» перешел от слов к рельсам",
-      "src": "Logirus",
-      "date": "25.11.2026",
-      "url": "https://logirus.ru/news/infrastructure/malenkaya_vetka_s_bolshimi_ambitsiyami_proekt_mokhe_magadan_pereshel_ot_slov_k_relsam.html"
-    },
-    {
-      "title": "Атаки на склады «срезали» 2,7% онлайн-оборота нон-фуда",
-      "src": "Logirus",
-      "date": "25.11.2026",
-      "url": "https://logirus.ru/news/e-commerce/ataki_na_sklady_srezali_2-7_onlayn-oborota_non-fuda.html"
-    },
-    {
-      "title": "Карта слияний в американской железнодорожной индустрии",
-      "src": "InfraNews",
-      "date": "25.11.2026",
-      "url": "https://www.infranews.ru/info/72243-karta-sliyanij-v-amerikanskoj-zheleznodorozhnoj-industrii/"
+      "title": "Назначения в ФТС",
+      "src": "SeaNews",
+      "date": "26.11.2026",
+      "url": "https://seanews.ru/2026/11/26/ru-naznachenija-v-fts-11/"
     }
   ]
 };
