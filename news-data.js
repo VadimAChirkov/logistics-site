@@ -1,8 +1,50 @@
 // Новости рынка логистики и перевозок (автообновление GitHub Actions из RSS).
 // Ручная правка перезапишется при следующем автообновлении.
 window.NEWS = {
-  "updated": "26.11.2026",
+  "updated": "27.11.2026",
   "items": [
+    {
+      "title": "Longer voyages mask stagnating seaborne trade: UNCTAD",
+      "src": "Splash 247",
+      "date": "27.11.2026",
+      "url": "https://splash247.com/longer-voyages-mask-stagnating-seaborne-trade-unctad/"
+    },
+    {
+      "title": "ADM exits shipowning with $88m fleet sale to Hayfin Capital",
+      "src": "Splash 247",
+      "date": "27.11.2026",
+      "url": "https://splash247.com/adm-exits-shipowning-with-88m-fleet-sale-to-hayfin-capital/"
+    },
+    {
+      "title": "Кубки Приморья в карате и хоккее – спортивные итоги «Восточного Порта» в ноябре",
+      "src": "РЖД-Партнер",
+      "date": "27.11.2026",
+      "url": "https://www.rzd-partner.ru/other/news/kubki-primorya-v-karate-i-khokkee-sportivnye-itogi-vostochnogo-porta-v-noyabre-/"
+    },
+    {
+      "title": "Росприроднадзор расследует загрязнение реки Кизань (Астраханская область) с перевернувшейся баржи",
+      "src": "PortNews",
+      "date": "27.11.2026",
+      "url": "https://portnews.ru/news/400186/"
+    },
+    {
+      "title": "«Портовый Альянс» подписал контракт на экспорт 600 тыс. тонн пшеницы через Мурманский МТП",
+      "src": "PortNews",
+      "date": "27.11.2026",
+      "url": "https://portnews.ru/news/400180/"
+    },
+    {
+      "title": "Фрахтовый рынок Азовского и Каспийского моря, 48 неделя, 2026",
+      "src": "SeaNews",
+      "date": "27.11.2026",
+      "url": "https://seanews.ru/2026/11/27/ru-frahtovyj-rynok-azovskogo-i-kaspijskogo-morja-48-nedelja-2026/"
+    },
+    {
+      "title": "Студенты МТУСИ разработали систему управления грузоперевозками",
+      "src": "SeaNews",
+      "date": "27.11.2026",
+      "url": "https://seanews.ru/2026/11/27/ru-studenty-mtusi-razrabotali-sistemu-upravlenija-gruzoperevozkami/"
+    },
     {
       "title": "Махачкалинский порт запустит первую очередь зернового терминала через год",
       "src": "InfraNews",
@@ -10,22 +52,10 @@ window.NEWS = {
       "url": "https://www.infranews.ru/novosti/72259-mahachkalinskij-port-zapustit-pervuyu-ochered-zernovogo-terminala-cherez-god/"
     },
     {
-      "title": "ААНИИ: в проливе Санникова наблюдается однолетний тонкий лед",
-      "src": "PortNews",
-      "date": "26.11.2026",
-      "url": "https://portnews.ru/news/400171/"
-    },
-    {
       "title": "Déjà vu in Miami as FedEx MD-11 freighter overshoots runway",
       "src": "FreightWaves",
       "date": "26.11.2026",
       "url": "https://www.freightwaves.com/news/deja-vu-in-miami-as-fedex-md-11-freighter-overshoots-runway"
-    },
-    {
-      "title": "HR-директор «Портового альянса» рассказала о вызовах, которые современная логистика ставит перед кадровыми службами",
-      "src": "PortNews",
-      "date": "26.11.2026",
-      "url": "https://portnews.ru/news/400176/"
     },
     {
       "title": "5 non-domiciled drivers want CDLs reinstated as battle separately moves through courts",
@@ -44,12 +74,6 @@ window.NEWS = {
       "src": "gCaptain",
       "date": "26.11.2026",
       "url": "https://gcaptain.com/hormuz-tanker-traffic-rises-this-month-even-as-attacks-increase/"
-    },
-    {
-      "title": "В Калининградской области запустят первый круизный туристический поезд",
-      "src": "РЖД-Партнер",
-      "date": "26.11.2026",
-      "url": "https://www.rzd-partner.ru/zhd-transport/news/v-kaliningradskoy-oblasti-zapustyat-pervyy-kruiznyy-turisticheskiy-poezd/"
     },
     {
       "title": "Crew Member Dies After Diesel Tanker Capsizes Off Ibiza, No Pollution So Far",
@@ -74,18 +98,6 @@ window.NEWS = {
       "src": "The Loadstar",
       "date": "26.11.2026",
       "url": "https://theloadstar.com/nvidia-halts-server-shipments-to-asian-markets-as-new-us-export-rules-bite/"
-    },
-    {
-      "title": "Бизнес готов обновлять технику только при коротких сроках окупаемости",
-      "src": "SeaNews",
-      "date": "26.11.2026",
-      "url": "https://seanews.ru/2026/11/26/ru-biznes-gotov-obnovljat-tehniku-tolko-pri-korotkih-srokah-okupaemosti/"
-    },
-    {
-      "title": "Назначения в ФТС",
-      "src": "SeaNews",
-      "date": "26.11.2026",
-      "url": "https://seanews.ru/2026/11/26/ru-naznachenija-v-fts-11/"
     }
   ]
 };
