@@ -1,8 +1,20 @@
 // Новости рынка логистики и перевозок (автообновление GitHub Actions из RSS).
 // Ручная правка перезапишется при следующем автообновлении.
 window.NEWS = {
-  "updated": "27.11.2026",
+  "updated": "28.11.2026",
   "items": [
+    {
+      "title": "Обучающихся и сотрудников ГУМРФ наградили за работу в кибердружинах",
+      "src": "PortNews",
+      "date": "28.11.2026",
+      "url": "https://portnews.ru/news/400235/"
+    },
+    {
+      "title": "Китай на вершине, Россия в середине: Kept расставил страны по готовности к беспилотникам",
+      "src": "Logirus",
+      "date": "28.11.2026",
+      "url": "https://logirus.ru/news/infrastructure/kitay_na_vershine_rossiya_v_seredine_kept_rasstavil_strany_po_gotovnosti_k_bespilotnikam.html"
+    },
     {
       "title": "Been a long time: Expeditors meets analysts, discloses revenue shares",
       "src": "FreightWaves",
@@ -10,22 +22,10 @@ window.NEWS = {
       "url": "https://www.freightwaves.com/news/been-a-long-time-expeditors-meets-analysts-discloses-revenue-shares"
     },
     {
-      "title": "Precious Shipping lines up five-ship buying spree",
-      "src": "Splash 247",
-      "date": "27.11.2026",
-      "url": "https://splash247.com/precious-shipping-lines-up-five-ship-buying-spree/"
-    },
-    {
       "title": "На Севмаше состоялась церемония поднятия флага на АПЛ «Пермь»",
       "src": "PortNews",
       "date": "27.11.2026",
       "url": "https://portnews.ru/news/400234/"
-    },
-    {
-      "title": "Мировая торговля зерном вступает в новую эпоху — World Grain & Pulses Forum 2027 пройдет в Дубае",
-      "src": "PortNews",
-      "date": "27.11.2026",
-      "url": "https://portnews.ru/news/400228/"
     },
     {
       "title": "Chinese Military Tests New Taiwan Landing Tactics in Coastal Drills",
@@ -58,12 +58,6 @@ window.NEWS = {
       "url": "https://www.infranews.ru/logistika/72275-dolya-zheleznodorozhnogo-transporta-v-gruzoperevozkah-shvejtsarii-upala-do-35-novyj-antirekord/"
     },
     {
-      "title": "Marine Alliance snaps up German marine insurance broker Marincon",
-      "src": "Splash 247",
-      "date": "27.11.2026",
-      "url": "https://splash247.com/marine-alliance-snaps-up-german-marine-insurance-broker-marincon/"
-    },
-    {
       "title": "Container spot rates set to rise as carriers launch peak season surcharges",
       "src": "The Loadstar",
       "date": "27.11.2026",
@@ -88,16 +82,22 @@ window.NEWS = {
       "url": "https://www.rzd-partner.ru/zhd-transport/news/kakim-budet-rynok-podvizhnogo-sostava-v-2027-godu-perspektivy-proizvodstva-i-remonta-obsudyat-na-kon/"
     },
     {
-      "title": "Drewry ставит на декабрь: от $1 тыс. до $1,5 тыс. сверху. Перевозчики идут ва-банк",
-      "src": "Logirus",
-      "date": "27.11.2026",
-      "url": "https://logirus.ru/news/global_logistics/drewry_stavit_na_dekabr_ot_1_tys_do_1-5_tys_sverkhu_perevozchiki_idut_va-bank.html"
-    },
-    {
       "title": "Аналитический дайджест SeaNews, 23-27 ноября 2026",
       "src": "SeaNews",
       "date": "27.11.2026",
       "url": "https://seanews.ru/2026/11/27/ru-analiticheskij-dajdzhest-seanews-23-27-nojabrja-2026/"
+    },
+    {
+      "title": "Запрет на экспорт гречихи",
+      "src": "SeaNews",
+      "date": "27.11.2026",
+      "url": "https://seanews.ru/2026/11/27/ru-zapret-na-jeksport-grechihi/"
+    },
+    {
+      "title": "Кубки Приморья в карате и хоккее – спортивные итоги «Восточного Порта» в ноябре",
+      "src": "РЖД-Партнер",
+      "date": "27.11.2026",
+      "url": "https://www.rzd-partner.ru/other/news/kubki-primorya-v-karate-i-khokkee-sportivnye-itogi-vostochnogo-porta-v-noyabre-/"
     }
   ]
 };
